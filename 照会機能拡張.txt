@@ -1,119 +1,109 @@
-フォーム上でルート画像をセルに転記する処理
-  ・『登録』ボタンのクリックイベントに追加
-  ・クリップボードの画像データを取得して、登録する行のセルコメント画像として追加。
-                                                                                  
+'□■━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+'■	実績照会フォーム
+'■		①フォーム上でルート画像をセルに転記する処理 □
+'■   ②複数の場所で絞込可能にする								 □
+'■   ③ルート画像について、枠内に収まるように表示させる。□
+'■   ④ルートリスト、下ボタンと↑ボタンの遷移で、画像表示＋合計値表示
+'■
+'■
+'■
+'┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+	
+	'①フォーム上でルート画像をセルに転記する処理 □
+	'	  □『登録』ボタンのクリックイベントに追加
+	'	  □クリップボードの画像データを取得して、登録する行のセルコメント画像として追加。
 
 
-■照会フォーム
-
-  '複数の場所で絞込可能にする。------------------------------------------------------              
+  '②複数の場所で絞込可能にする								 □
+  '		□絞込CBを、チェックボックスありのLvに変更
+  '		□以下コードを追加  ①
+				------------------------------------------------------  
   
-  '□絞込CBを、チェックボックスありのLvに変更
-    
-    '絞込Lv中で、チェックされているリストを辞書登録する
-    dim 絞込F as boolean
-    dim 絞込LvItem as ListItem
-    Dim 絞込場所DicInps
-    Dim 絞込場所Dic As Object
-    Dim 絞込場所DicKey As String
-    Dim 絞込場所DicItem As String
-    Set 絞込場所Dic = CreateObject("Scripting.Dictionary")
-    絞込F = false    
-    for each 絞込LvItem in 絞込Lv.Listitems
-      if 絞込LvItem.checked = true then
-        絞込F = True
-        絞込場所DicKey = 絞込LvItem.subitems(★)  '絞込Lvの場所列のIndex
-        絞込場所DicItem = "1"                     '使わないが、さしあたり"1"を格納 
-        If Not 絞込場所Dic.Exists(絞込場所DicKey) Then
-          絞込場所Dic.Add 絞込場所dickey,絞込場所DicItem
-        end if
-      end if
-    next 
-    
-    
-    ・
-    ・
-    ・                       
-    
-    
-    
-'□リストに表示する明細を検索する処理中に、以下を追加
-'□既存の場所CBの処理を削除
-    '場所を絞込条件に含める場合
-    if 絞込F = true then
-      if 絞込場所Dic.Exists(★)         '★：走査中の場所。シートから取得？
-         '場所以外の条件
-      end if
-    else
-      '場所以外の条件
-    end if
-     
+  				'絞込Lv中で、チェックされているリストを辞書登録する
+    				dim 絞込F as boolean
+				    dim 絞込LvItem as ListItem
+				    Dim 絞込場所DicInps
+				    Dim 絞込場所Dic As Object
+				    Dim 絞込場所DicKey As String
+				    Dim 絞込場所DicItem As String
+				    Set 絞込場所Dic = CreateObject("Scripting.Dictionary")
+				    絞込F = false    
+				    for each 絞込LvItem in 絞込Lv.Listitems
+				      if 絞込LvItem.checked = true then
+				        絞込F = True
+				        絞込場所DicKey = 絞込LvItem.subitems(★)  '絞込Lvの場所列のIndex
+				        絞込場所DicItem = "1"                     '使わないが、さしあたり"1"を格納 
+				        If Not 絞込場所Dic.Exists(絞込場所DicKey) Then
+				          絞込場所Dic.Add 絞込場所dickey,絞込場所DicItem
+				        end if
+				      end if
+				    next 
+												    ・
+												    ・
+												    ・                       
+				------------------------------------------------------  
+	'   □既存の場所CBの処理を削除        
+  '		□以下コードを追加(リストに表示する明細を検索する処理中)  ②
+				------------------------------------------------------
+	    		'場所を絞込条件に含める場合
+	    		if 絞込F = true then
+	      		if 絞込場所Dic.Exists(★)         '★：走査中の場所。シートから取得？		
+	         		'場所以外の条件
+	      		end if
+	    		else
+	      		'場所以外の条件
+	    		end if
+				------------------------------------------------------
+				     
     ----------------------------------------------------------------------------------------------
-■ルート画像について、枠内に収まるように表示させる。
-  ImageコントロールのPictureSizeModeプロパティの値を、fmPictureSizeModeZoom   にする。
-    Image.PictureSizeMode = fmPictureSizeModeZoom
+	'③ルート画像について、枠内に収まるように表示させる。
+  		'ImageコントロールのPictureSizeModeプロパティの値を、fmPictureSizeModeZoom   にする。
+    	'Image.PictureSizeMode = fmPictureSizeModeZoom
     
-■ルートリスト、下ボタンと↑ボタンの遷移で、画像表示＋合計値表示
-   '□ルートリストのクリックイベントで、合計値表示をする
-   '□ルートリストのKeyPressイベントを追加。↑ボタンと↓ボタン押下によるリスト遷移でも、画像表示＋合計値表示を行う。
-			'□画像表示と合計値表示を部品化し、LvIndexを引数とする。
-   
-   ’'□ルートリストのクリックイベントで、合計値表示をする
-      Private sub Lv1_Click
-        call 合計値表示(Listitem) '★追加
-      end sub
-             
-      	'□ルートリストのKeyPressイベントを追加。↑ボタンと↓ボタン押下によるリスト遷移でも、画像表示＋合計値表示を行う。
-      	'KeyPress の値
-      	'↑：vbKeyUp
-      	'↓：vbKeyDown                           
-					
 
-		Private Sub Lv1_KeyDown(KeyCode As Integer, ByVal Shift As Integer)
-			'リスト上で↑ボタンか↓ボタンが押されたとき、その位置のLvのIndexを取得
-
-
-		    Dim LvIndex As Long
-		        
-		    If Lv1.ListItems.count > 0 Then 'リストが1件以上あるときだけ。
+	'④ルートリスト、下ボタンと↑ボタンの遷移で、画像表示＋合計値表示
+  '		□ルートリストのクリックイベントで、合計値表示をする
+	   		------------------------------------------------------
+	      Private sub Lv1_Click
+	        call 合計値表示(LvIndex) '★追加
+	      end sub
+				------------------------------------------------------             
+'		□ルートリストのKeyPressイベントを追加。
+'			↑ボタンと↓ボタン押下によるリスト遷移でも、画像表示＋合計値表示を行う。
+				------------------------------------------------------
+				Private Sub Lv1_KeyDown(KeyCode As Integer, ByVal Shift As Integer)
+					'リスト上で↑ボタンか↓ボタンが押されたとき、その位置のLvのIndexを取得
+			  	Dim LvIndex As Long		        
+		    	If Lv1.ListItems.count > 0 Then 'リストが1件以上あるときだけ。
 		        If KeyCode = vbKeyUp Or KeyCode = vbKeyDown Then    'リスト上で↑ボタンか↓ボタンが押された。
-		            If KeyCode = vbKeyUp Then
-		                If Lv1.SelectedItem.Index > 1 Then
-		                    LvIndex = Lv1.SelectedItem.Index - 1
-		                Else
-		                    LvIndex = Lv1.SelectedItem.Index
-		                End If
+		        	If KeyCode = vbKeyUp Then
+		          	If Lv1.SelectedItem.Index > 1 Then
+		            	LvIndex = Lv1.SelectedItem.Index - 1
+		            Else
+		            	LvIndex = Lv1.SelectedItem.Index
 		            End If
-		            If KeyCode = vbKeyDown Then
-		                If Lv1.SelectedItem.Index < Lv1.ListItems.count Then
-		                    LvIndex = Lv1.SelectedItem.Index + 1
-		                Else
-		                    LvIndex = Lv1.SelectedItem.Index
-		                End If
+		         	End If
+		          If KeyCode = vbKeyDown Then
+		          	If Lv1.SelectedItem.Index < Lv1.ListItems.count Then
+		            	LvIndex = Lv1.SelectedItem.Index + 1
+		            Else
+		            	LvIndex = Lv1.SelectedItem.Index
 		            End If
-		        		
-		        		'画像表示
+		          End If		        		
+		        	
+		        	'画像表示   ★
 		        			
+		        	'合計値表示	★
 		        		
-		        		
-		        		'合計値表示
-		        		
-		        		
-		        
-		        
-		        
-		        
-		            
 		        End If
-
-		    End If
-		     
-
-		End Sub						
-						
+		    	End If
+				End Sub						
 						
 			'□画像表示と合計値表示を部品化し、LvIndexを引数とする。
+			
+					                                                    
 					
+			
       	
       
       
@@ -129,6 +119,7 @@
     
     
     
+
     
 
   
