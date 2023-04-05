@@ -169,7 +169,7 @@ Private Sub セット登録_追加()
     End If
     
     
-    ★★ここまで
+    
     
     'すでにそのセットに登録されているルートははじく
     Dim WS As Worksheet
@@ -184,10 +184,13 @@ Private Sub セット登録_追加()
     Set ルートDic = CreateObject("Scripting.Dictionary")
     
     
-    
+       ★★ここまで
     For i = 2 To LastRow
         If WS.Cells(i, 1).Value = SetName Then
-            MsgBox "既に登録済みのセット名です。", vbExclamation
+        	ルートDicKey = 
+            If Not Dic.Exists(dickey) Then
+    		Dic.Add dickey,dicitem
+end if
             GoTo ext
         End If
     Next i
