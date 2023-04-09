@@ -131,6 +131,8 @@ ext:
     End If
     Set WS = Nothing
 End Sub
+
+
 Private Sub セット登録_追加()
 '    『追加』:リスト1件以上選択状態。
 '             セット一覧CBに登録済みセットが表示されている状態
