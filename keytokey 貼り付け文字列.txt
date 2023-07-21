@@ -1,0 +1,7 @@
+[
+  {"IsDisabled":false,"Name":"//","Arguments":["コメント"]},
+  {"IsDisabled":false,"Name":"MouseClick","Arguments":["MouseButton.Left","1","2","True"]},
+  {"IsDisabled":false,"Name":"MouseMove","Arguments":["1","2","3"]},
+  {"IsDisabled":false,"Name":"MouseOffset","Arguments":["1","2","3"]},
+  {"IsDisabled":false,"Name":"WaitSeconds","Arguments":["1"]}
+]
