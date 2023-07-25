@@ -1,0 +1,553 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KeyToKey.Enums</name>
+    </assembly>
+    <members>
+        <member name="T:KeyToKey.Enums.ExtendedKeyOptions">
+            <summary>
+            キーの設定
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ExtendedKeyOptions.Defualt">
+            <summary>
+            拡張キーかどうかを自動で設定します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ExtendedKeyOptions.Force">
+            <summary>
+            拡張キーとして設定します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ExtendedKeyOptions.Ignore">
+            <summary>
+            拡張キーとしては設定しません。
+            </summary>
+        </member>
+        <member name="T:KeyToKey.Enums.PixelFormats">
+            <summary>
+            ピクセルの形式
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Undefined">
+            <summary>
+            このピクセル形式は未定義です。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.DontCare">
+            <summary>
+            ピクセル形式は指定されていません。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Max">
+            <summary>
+            この列挙体の最大値。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Indexed">
+            <summary>
+            このピクセル データには、カラー インデックス値が含まれています。カラー インデックス値とは、個別の色の値ではなく、システム カラー テーブル内の色へのインデックスです。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Gdi">
+            <summary>
+            このピクセル データには GDI カラーが含まれています。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format16bppRgb555">
+            <summary>
+            1 ピクセルあたり 16 ビットの形式であることを指定します。つまり、赤、緑、および青のコンポーネントに、それぞれ 5 ビットを使用します。 残りのビットは使用されません。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format16bppRgb565">
+            <summary>
+            この形式は 1 ピクセルあたり 16 ビットであり、そのうちの 5 ビットが赤のコンポーネント、6 ビットが緑のコンポーネント、5 ビットが青のコンポーネントに使用されることを指定します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format24bppRgb">
+            <summary>
+            1 ピクセルあたり 24 ビットの形式であることを指定します。つまり、赤、緑、および青のコンポーネントに、それぞれ 8 ビットを使用します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format32bppRgb">
+            <summary>
+            1 ピクセルあたり 32 ビットの形式であることを指定します。つまり、赤、緑、および青のコンポーネントに、それぞれ 8 ビットを使用します。 残りの 8ビットは使用されません。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format1bppIndexed">
+            <summary>
+            ピクセル形式が 1 ピクセルあたり 1 ビットであり、インデックス付きのカラーを使用することを指定します。 したがって、カラー テーブルには 2 色含まれています。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format4bppIndexed">
+            <summary>
+            この形式が 1 ピクセルあたり 4 ビットであり、インデックス付きであることを指定します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format8bppIndexed">
+            <summary>
+            この形式が 1 ピクセルあたり 8 ビットであり、インデックス付きであることを指定します。 したがって、カラー テーブルには 256 色含まれています。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Alpha">
+            <summary>
+            ピクセル データには、事前乗算されないアルファ値が含まれています。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format16bppArgb1555">
+            <summary>
+            ピクセル形式は、1 ピクセルあたり 16 ビットです。 このカラー情報は、32,768 種類の色の濃淡を指定します。この情報の 5 ビットが赤、5 ビットが緑、5ビットが青、1 ビットがアルファです。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.PAlpha">
+            <summary>
+            このピクセル情報には、事前乗算されるアルファ値が含まれています。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format32bppPArgb">
+            <summary>
+            1 ピクセルあたり 32 ビットの形式であることを指定します。つまり、アルファ、赤、緑、および青のコンポーネントに、それぞれ 8 ビットを使用します。 アルファコンポーネントに応じて、赤、緑、および青のコンポーネントが事前乗算されます。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Extended">
+            <summary>
+            予約済み。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format16bppGrayScale">
+            <summary>
+            ピクセル形式は、1 ピクセルあたり 16 ビットです。 このカラー情報は 65,536 種類の灰色の濃淡を指定します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format48bppRgb">
+            <summary>
+            1 ピクセルあたり 48 ビットの形式であることを指定します。つまり、赤、緑、および青のコンポーネントに、それぞれ 16 ビットを使用します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format64bppPArgb">
+            <summary>
+            1 ピクセルあたり 64 ビットの形式であることを指定します。つまり、アルファ、赤、緑、および青のコンポーネントに、それぞれ 16 ビットを使用します。アルファ コンポーネントに応じて、赤、緑、および青のコンポーネントが事前乗算されます。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Canonical">
+            <summary>
+            既定のピクセル形式は、1 ピクセルあたり 32 ビットです。 この形式では、24 ビットの色深度と 8 ビットのアルファ チャネルが指定されます。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format32bppArgb">
+            <summary>
+            1 ピクセルあたり 32 ビットの形式であることを指定します。つまり、アルファ、赤、緑、および青のコンポーネントに、それぞれ 8 ビットを使用します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.PixelFormats.Format64bppArgb">
+            <summary>
+            1 ピクセルあたり 64 ビットの形式であることを指定します。つまり、アルファ、赤、緑、および青のコンポーネントに、それぞれ 16 ビットを使用します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.Unknown">
+            <summary>不明</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.DPadUp">
+            <summary>十字キー上</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.DPadDown">
+            <summary>十字キー下</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.DPadLeft">
+            <summary>十字キー左</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.DPadRight">
+            <summary>十字キー右</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.Start">
+            <summary>スタート</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.Back">
+            <summary>セレクト</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LeftStickPush">
+            <summary>左スティック押し込み</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RightStickPush">
+            <summary>右スティック押し込み</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LB">
+            <summary>L1</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RB">
+            <summary>L2</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.A">
+            <summary>✕</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.B">
+            <summary>○</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.X">
+            <summary>□</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.Y">
+            <summary>△</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LeftStickUp">
+            <summary>左スティック上</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LeftStickDown">
+            <summary>左スティック下</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LeftStickLeft">
+            <summary>左スティック左</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LeftStickRight">
+            <summary>左スティック右</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LeftStickUpLeft">
+            <summary>左スティック上左</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LeftStickUpRight">
+            <summary>左スティック上右</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LeftStickDownLeft">
+            <summary>左スティック下左</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LeftStickDownRight">
+            <summary>左スティック下右</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RightStickUp">
+            <summary>右スティック上</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RightStickDown">
+            <summary>右スティック下</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RightStickLeft">
+            <summary>右スティック左</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RightStickRight">
+            <summary>右スティック右</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RightStickUpLeft">
+            <summary>左スティック上左</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RightStickUpRight">
+            <summary>左スティック上右</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RightStickDownLeft">
+            <summary>左スティック下左</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RightStickDownRight">
+            <summary>左スティック下右</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.LT">
+            <summary>左トリガー </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.RT">
+            <summary>右トリガー</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton0">
+            <summary>拡張ボタン0</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton1">
+            <summary>拡張ボタン1</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton2">
+            <summary>拡張ボタン2</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton3">
+            <summary>拡張ボタン3</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton4">
+            <summary>拡張ボタン4</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton5">
+            <summary>拡張ボタン5</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton6">
+            <summary>拡張ボタン6</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton7">
+            <summary>拡張ボタン7</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton8">
+            <summary>拡張ボタン8</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton9">
+            <summary>拡張ボタン9</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton10">
+            <summary>拡張ボタン10</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton11">
+            <summary>拡張ボタン11</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton12">
+            <summary>拡張ボタン12</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton13">
+            <summary>拡張ボタン13</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton14">
+            <summary>拡張ボタン14</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.ControllerButtons.ExButton15">
+            <summary>拡張ボタン15</summary>
+        </member>
+        <member name="T:KeyToKey.Enums.WindowPopLocation">
+            <summary>
+            ウィンドウの表示位置を表します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPopLocation.ActiveWindow">
+            <summary>
+            アクティブウィンドウに表示します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPopLocation.ActiveWindowCenter">
+            <summary>
+            アクティブウィンドウの中央に表示します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPopLocation.ActiveWindowClient">
+            <summary>
+            アクティブウィンドウのクライアント領域に表示します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPopLocation.ActiveWindowClientCenter">
+            <summary>
+            アクティブウィンドウのクライアント領域の中央に表示します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPopLocation.MonitorWithCursor">
+            <summary>
+            カーソルのあるスクリーン全体に表示します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPopLocation.MonitorCenterWithCursor">
+            <summary>
+            カーソルのあるスクリーンの中央に表示します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPopLocation.WindowWithCursor">
+            <summary>
+            マウスカーソルの位置にあるウィンドウに表示します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPopLocation.WindowCenterWithCursor">
+            <summary>
+            マウスカーソルの位置にあるウィンドウの中央に表示します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPopLocation.WindowClientWithCursor">
+            <summary>
+            マウスカーソルの位置にあるウィンドウのクライアント領域に表示します。
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPopLocation.WindowClientCenterWithCursor">
+            <summary>
+            マウスカーソルの位置にあるウィンドウのクライアント領域の中央に表示します。
+            </summary>
+        </member>
+        <member name="T:KeyToKey.Enums.SpeechLanguage">
+            <summary>
+            言語
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.SpeechLanguage.Japanese">
+            <summary>
+            日本語
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.SpeechLanguage.Enlgish">
+            <summary>
+            英語
+            </summary>
+        </member>
+        <member name="T:KeyToKey.Enums.SystemSounds">
+            <summary></summary>
+        </member>
+        <member name="F:KeyToKey.Enums.SystemSounds.Asterisk">
+            <summary></summary>
+        </member>
+        <member name="F:KeyToKey.Enums.SystemSounds.Beep">
+            <summary></summary>
+        </member>
+        <member name="F:KeyToKey.Enums.SystemSounds.Exclamation">
+            <summary></summary>
+        </member>
+        <member name="F:KeyToKey.Enums.SystemSounds.Hand">
+            <summary></summary>
+        </member>
+        <member name="F:KeyToKey.Enums.SystemSounds.Question">
+            <summary></summary>
+        </member>
+        <member name="T:KeyToKey.Enums.TemplateMatchMode">
+            <summary>
+            テンプレートマッチングの方式
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.TemplateMatchMode.SAD">
+            <summary>
+            Sum of Absolute Difference
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.TemplateMatchMode.ZNCC">
+            <summary>
+            Zero means Normalized Cross Correlation
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.VirtualPositionDetectionMethod.Hook">
+            <summary>マウスフックを使用してすべてのマウス移動をキャンセルしつつ移動の検出しを行います。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.VirtualPositionDetectionMethod.Listener">
+            <summary>未実装</summary>
+        </member>
+        <member name="T:KeyToKey.Enums.WindowStates">
+            <summary>
+            https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-showwindow
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.Hide">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.ShowNormal">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.ShowMinimized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.ShowMaximized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.ShowNoActivate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.Show">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.Minimized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.ShowMinNoActive">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.ShowNa">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.Restore">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.ShowDefault">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowStates.ForceMinimize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:KeyToKey.Enums.WindowInsertAfter">
+            <summary>
+            https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setwindowpos
+            </summary>
+        </member>
+        <member name="P:KeyToKey.Enums.WindowInsertAfter.NoTopmost">
+            <summary>
+            ウィンドウをすべての最上位ウィンドウ (つまり、すべての最上位ウィンドウの後ろ) の上に配置します。ウィンドウが既に非最上位ウィンドウである場合、このフラグは無効です。
+            </summary>
+        </member>
+        <member name="P:KeyToKey.Enums.WindowInsertAfter.Topmost">
+            <summary>
+            ウィンドウをすべての非最上位ウィンドウの上に配置します。ウィンドウは、非アクティブにしても最上位の位置を維持します。
+            </summary>
+        </member>
+        <member name="P:KeyToKey.Enums.WindowInsertAfter.Top">
+            <summary>
+            ウィンドウを Z オーダーの一番上に配置します。
+            </summary>
+        </member>
+        <member name="P:KeyToKey.Enums.WindowInsertAfter.Bottom">
+            <summary>
+            ウィンドウを Z オーダーの下に配置します。hWnd パラメータが最上位ウィンドウを識別すると、ウィンドウの最上位のステータスが失われ、他のすべてのウィンドウの一番下に配置されます。
+            </summary>
+        </member>
+        <member name="T:KeyToKey.Enums.WindowPositionFlags">
+            <summary>
+            https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setwindowpos
+            </summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.NoSize">
+            <summary>現在のサイズを維持します。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.NoMove">
+            <summary>現在の座標を維持します。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.NoZOrder">
+            <summary>現在の表示順序（Zオーダー）を維持します。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.NoRedraw">
+            <summary>変更を再描画しません。このフラグを設定すると、いかなる種類の再描画も行われません。これは、クライアント領域、非クライアント領域 (タイトル バーとスクロール バーを含む)、およびウィンドウが移動された結果として発見された親ウィンドウの任意の部分に適用されます。このフラグを設定すると、アプリケーションは、ウィンドウおよび親ウィンドウの再描画が必要な部分を明示的に無効化または再描画する必要があります。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.NoActive">
+            <summary>ウィンドウをアクティブにしません。このフラグが設定されていない場合、ウィンドウはアクティブになり、最上位または最上位以外のグループの一番上に移動します(WindowInsertAfter パラメーターの設定に応じて異なります)</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.DrawFrame">
+            <summary>ウィンドウの周囲にフレームを描画します。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.FrameChanged">
+            <summary>SetWindowLong 関数を使用して、新しいフレーム スタイル セットを適用します。ウィンドウのサイズが変更されていない場合でも、ウィンドウにWM_NCCALCSIZEメッセージを送信します。このフラグを指定しない場合、WM_NCCALCSIZEはウィンドウのサイズが変更されているときにのみ送信されます。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.ShowWindow">
+            <summary>ウィンドウを表示します。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.HideWindow">
+            <summary>ウィンドウを非表示にします。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.NoSendChanging">
+            <summary>ウィンドウがWM_WINDOWPOSCHANGINGメッセージを受信できないようにします。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.AsyncWindowPosition">
+            <summary>呼び出し元のスレッドと、ウィンドウを所有するスレッドが異なる入力キューに接続されている場合、システムは、そのウィンドウを所有するスレッドに要求をポストします。これにより、他のスレッドが要求を処理している間、呼び出し元のスレッドがその実行をブロックするのを防ぎます。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.DefererErase">
+            <summary>WM_SYNCPAINT メッセージの生成を禁止します。</summary>
+        </member>
+        <member name="F:KeyToKey.Enums.WindowPositionFlags.NoSizeNoMove">
+            <summary>現在の座標とサイズを維持します。</summary>
+        </member>
+        <member name="T:KeyToKey.Enums.GWL">
+            <summary>
+            https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setwindowlonga
+            </summary>
+        </member>
+        <member name="T:KeyToKey.Enums.WindowStyles">
+            <summary>
+            GWL.Style: https://docs.microsoft.com/en-us/windows/desktop/winmsg/window-styles
+            </summary>
+        </member>
+        <member name="T:KeyToKey.Enums.ExWindowStyles">
+            <summary>
+            GWL.ExStyle: https://docs.microsoft.com/en-us/windows/win32/winmsg/extended-window-styles
+            </summary>
+        </member>
+    </members>
+</doc>

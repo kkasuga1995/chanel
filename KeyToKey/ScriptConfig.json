@@ -1,0 +1,24 @@
+{
+  "GlobalAssemblyCache": [
+    "System",
+    "System.Core",
+    "Microsoft.CSharp"
+  ],
+  "References": [
+    "Newtonsoft.Json.dll"
+  ],
+  "Namespaces": [
+    "System",
+    "System.Collections.Generic",
+    "System.IO",
+    "System.Linq",
+    "System.Text",
+    "System.Threading",
+    "System.Threading.Tasks",
+    "System.Runtime.InteropServices",
+    "System.Diagnostics",
+    "KeyToKey.Plugins",
+    "KeyToKey.Enums",
+    "Newtonsoft.Json"
+  ]
+}
