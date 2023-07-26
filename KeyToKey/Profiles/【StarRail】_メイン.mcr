@@ -963,12 +963,29 @@
       "Actions": [
         {
           "IsDisabled": false,
+          "Name": "//",
+          "Arguments": [
+            "郊外雪原１"
+          ]
+        },
+        {
+          "IsDisabled": false,
           "Name": "000_マップ開き拡大率を最小",
           "Arguments": []
         },
         {
           "IsDisabled": false,
-          "Name": "マップ移動_丹県司_侵蝕トンネル",
+          "Name": "マップ移動_流雲流し_積玉坊南側",
+          "Arguments": []
+        },
+        {
+          "IsDisabled": false,
+          "Name": "032_01_流雲流し",
+          "Arguments": []
+        },
+        {
+          "IsDisabled": false,
+          "Name": "032_02_流雲流し",
           "Arguments": []
         }
       ],
@@ -1838,7 +1855,14 @@
           "IsDisabled": false,
           "Name": "//",
           "Arguments": [
-            "常冬峠２まで、コメント整理完了　20230726"
+            "コメント整理完了：常冬峠２まで、　20230726"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "//",
+          "Arguments": [
+            "マクロ修正：032-2まで完了 20230727"
           ]
         },
         {
@@ -2808,11 +2832,6 @@
         },
         {
           "IsDisabled": false,
-          "Name": "020_03_大鉱区",
-          "Arguments": []
-        },
-        {
-          "IsDisabled": false,
           "Name": "//",
           "Arguments": [
             "----------------------------------------------------------------"
@@ -2830,6 +2849,35 @@
           "Name": "//",
           "Arguments": [
             "郊外雪原１"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "000_マップ開き拡大率を最小",
+          "Arguments": []
+        },
+        {
+          "IsDisabled": false,
+          "Name": "マップ移動_大鉱区_メイン鉱道",
+          "Arguments": []
+        },
+        {
+          "IsDisabled": false,
+          "Name": "020_03_01_大鉱区",
+          "Arguments": []
+        },
+        {
+          "IsDisabled": false,
+          "Name": "//",
+          "Arguments": [
+            "----------------------------------------------------------------"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "//",
+          "Arguments": [
+            ""
           ]
         },
         {
@@ -3529,7 +3577,14 @@
           "IsDisabled": false,
           "Name": "//",
           "Arguments": [
-            "郊外雪原１"
+            "■飛星小閣-------------------------------------------------"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "//",
+          "Arguments": [
+            "★位置ずれ★"
           ]
         },
         {
@@ -3600,7 +3655,7 @@
         },
         {
           "IsDisabled": false,
-          "Name": "マップ移動_廻星港_侵蝕",
+          "Name": "マップ移動_廻星港_虚影",
           "Arguments": []
         },
         {
@@ -3688,6 +3743,13 @@
           "Name": "//",
           "Arguments": [
             "郊外雪原１"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "//",
+          "Arguments": [
+            "★位置ずれ★"
           ]
         },
         {
@@ -5287,6 +5349,73 @@
             "Keys.W",
             "1000",
             "0",
+            "True"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "Tap",
+          "Arguments": [
+            "Keys.LButton",
+            "0",
+            "1000",
+            "True"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "WaitSeconds",
+          "Arguments": [
+            "20"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "Tap",
+          "Arguments": [
+            "Keys.LButton",
+            "0",
+            "1000",
+            "True"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "Tap",
+          "Arguments": [
+            "Keys.LButton",
+            "0",
+            "1000",
+            "True"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "Tap",
+          "Arguments": [
+            "Keys.LButton",
+            "0",
+            "1000",
+            "True"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "Tap",
+          "Arguments": [
+            "Keys.LButton",
+            "0",
+            "1000",
+            "True"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "Tap",
+          "Arguments": [
+            "Keys.LButton",
+            "0",
+            "1000",
             "True"
           ]
         },
@@ -7248,7 +7377,7 @@
           "IsDisabled": false,
           "Name": "MouseOffset",
           "Arguments": [
-            "-2300",
+            "-2200",
             "0",
             "100"
           ]
@@ -7258,7 +7387,7 @@
           "Name": "Tap",
           "Arguments": [
             "Keys.W",
-            "12333",
+            "11000",
             "100",
             "True"
           ]
@@ -7267,7 +7396,7 @@
           "IsDisabled": false,
           "Name": "MouseOffset",
           "Arguments": [
-            "1150",
+            "1300",
             "0",
             "100"
           ]
@@ -7277,7 +7406,7 @@
           "Name": "Tap",
           "Arguments": [
             "Keys.W",
-            "5000",
+            "3000",
             "0",
             "True"
           ]
@@ -11815,13 +11944,6 @@
           "IsDisabled": false,
           "Name": "@EndWhile",
           "Arguments": []
-        },
-        {
-          "IsDisabled": false,
-          "Name": "WaitSeconds",
-          "Arguments": [
-            "3"
-          ]
         }
       ],
       "Variables": [],
@@ -11884,7 +12006,7 @@
           "IsDisabled": false,
           "Name": "MouseOffset",
           "Arguments": [
-            "700",
+            "1200",
             "0",
             "100"
           ]
@@ -11894,26 +12016,7 @@
           "Name": "Tap",
           "Arguments": [
             "Keys.W",
-            "1000",
-            "100",
-            "True"
-          ]
-        },
-        {
-          "IsDisabled": false,
-          "Name": "MouseOffset",
-          "Arguments": [
-            "500",
-            "0",
-            "100"
-          ]
-        },
-        {
-          "IsDisabled": false,
-          "Name": "Tap",
-          "Arguments": [
-            "Keys.W",
-            "1000",
+            "3000",
             "100",
             "True"
           ]
@@ -11933,6 +12036,16 @@
           "Name": "WaitSeconds",
           "Arguments": [
             "20"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "Tap",
+          "Arguments": [
+            "Keys.LButton",
+            "0",
+            "1000",
+            "True"
           ]
         },
         {
@@ -12013,13 +12126,6 @@
           "IsDisabled": false,
           "Name": "@EndWhile",
           "Arguments": []
-        },
-        {
-          "IsDisabled": false,
-          "Name": "WaitSeconds",
-          "Arguments": [
-            "3"
-          ]
         }
       ],
       "Variables": [],
@@ -12182,13 +12288,6 @@
           "IsDisabled": false,
           "Name": "@EndWhile",
           "Arguments": []
-        },
-        {
-          "IsDisabled": false,
-          "Name": "WaitSeconds",
-          "Arguments": [
-            "3"
-          ]
         }
       ],
       "Variables": [],
@@ -12241,7 +12340,7 @@
           "IsDisabled": false,
           "Name": "MouseOffset",
           "Arguments": [
-            "200",
+            "300",
             "0",
             "100"
           ]
@@ -12251,7 +12350,7 @@
           "Name": "Tap",
           "Arguments": [
             "Keys.W",
-            "4000",
+            "5000",
             "100",
             "True"
           ]
@@ -12351,13 +12450,6 @@
           "IsDisabled": false,
           "Name": "@EndWhile",
           "Arguments": []
-        },
-        {
-          "IsDisabled": false,
-          "Name": "WaitSeconds",
-          "Arguments": [
-            "3"
-          ]
         }
       ],
       "Variables": [],
@@ -12410,7 +12502,7 @@
           "IsDisabled": false,
           "Name": "MouseOffset",
           "Arguments": [
-            "600",
+            "-1300",
             "0",
             "100"
           ]
@@ -12420,7 +12512,26 @@
           "Name": "Tap",
           "Arguments": [
             "Keys.W",
-            "2000",
+            "6000",
+            "100",
+            "True"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "MouseOffset",
+          "Arguments": [
+            "300",
+            "0",
+            "100"
+          ]
+        },
+        {
+          "IsDisabled": false,
+          "Name": "Tap",
+          "Arguments": [
+            "Keys.W",
+            "5000",
             "100",
             "True"
           ]
@@ -12448,7 +12559,7 @@
           "IsDisabled": false,
           "Name": "MouseOffset",
           "Arguments": [
-            "500",
+            "1000",
             "0",
             "100"
           ]
@@ -12458,7 +12569,7 @@
           "Name": "Tap",
           "Arguments": [
             "Keys.W",
-            "4000",
+            "5000",
             "100",
             "True"
           ]
@@ -12467,7 +12578,7 @@
           "IsDisabled": false,
           "Name": "MouseOffset",
           "Arguments": [
-            "-800",
+            "-700",
             "0",
             "100"
           ]
@@ -12486,7 +12597,7 @@
           "IsDisabled": false,
           "Name": "MouseOffset",
           "Arguments": [
-            "-200",
+            "-400",
             "0",
             "100"
           ]
@@ -12496,7 +12607,7 @@
           "Name": "Tap",
           "Arguments": [
             "Keys.W",
-            "1000",
+            "2000",
             "100",
             "True"
           ]
@@ -12596,17 +12707,10 @@
           "IsDisabled": false,
           "Name": "@EndWhile",
           "Arguments": []
-        },
-        {
-          "IsDisabled": false,
-          "Name": "WaitSeconds",
-          "Arguments": [
-            "3"
-          ]
         }
       ],
       "Variables": [],
-      "Name": "020_03_大鉱区",
+      "Name": "020_03_01_大鉱区",
       "IsExtern": false,
       "FileName": null,
       "DisallowAssign": false,
@@ -35943,7 +36047,7 @@
           "Name": "MouseMove",
           "Arguments": [
             "780",
-            "617",
+            "236",
             "100"
           ]
         },
