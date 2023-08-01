@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">振り分け設定</p>
+			<p class="HeaderM">概要</p>
+			<div class="Indent">
+				<p>ファイルをフォルダに振り分けるルールを設定します。</p>
+				<br />
+				<table class="Memo" width="625">
+					<tr>
+						<td class="RelativeHeader">関連</td>
+					</tr>
+					<tr>
+						<td class="Memo"><a href="ManualSortSetting.html">手動振り分け設定</a></td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">振り分けルール</p>
+			<div class="Indent">
+				<p>登録されているルールがリスト表示されます。</p>
+				<p>ルールに名前が付いている場合はその名前を表示し、名前が付いていない場合は、振り分け先のフォルダが表示されます。</p>
+				<br />
+				<p>ルール毎にチェックボックスが用意されています。チェックされているルールが有効になります。</p>
+				<br />
+				<p class="Red Bold">リストの並び順は重要です。</p>
+				<p>判定はリストの上にあるルールから順に下方向に向かって行われます。</p>
+				<p>途中のルールにヒットした場合、それより下のルールは無視されます。</p>
+				<br />
+				<p class="Bold Dot">登録</p>
+				<div class="Indent">
+					<p><span class="Button">＋</span>ボタンを押すか、エクスプローラ等からフォルダまたはファイルをドロップします。</p>
+					<p>ファイルがドロップされた場合は、登録される可能性のあるルール要素も追加されます。</p>
+				</div>
+				<p class="Bold Dot">編集</p>
+				<div class="Indent">
+					<p>編集したいルールを選択します。</p>
+					<p>ルール編集欄に選択したルールの内容が表示され、編集できるようになります。</p>
+				</div>
+				<p class="Bold Dot">削除</p>
+				<div class="Indent">
+					<p>削除したいルールを選択して、<span class="Button">－</span>ボタンを押します。</p>
+				</div>
+				<p class="Bold Dot">並べ替え</p>
+				<div class="Indent">
+					<p>ドラッグ＆ドロップで並べ替えが出来ます。</p>
+					<br />
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">ドラッグを開始するには、移動させたいルールをポイントした状態でマウスの左ボタンを長押しします。</td>
+						</tr>
+					</table>
+				</div>
+				<p class="Bold Dot">エクスポート</p>
+				<div class="Indent">
+					<p><span class="Button">→</span>ボタンを押すと、登録されているルールをタブ区切りテキストに書き出します。</p>
+				</div>
+				<p class="Bold Dot">インポート</p>
+				<div class="Indent">
+					<p><span class="Button">←</span>ボタンを押して、タブ区切りテキストからルールを追加できます。</p>
+				</div>
+			</div>
+
+			<p class="HeaderM">ルール編集</p>
+			<div class="Indent">
+				<p>ルールの名前、振り分け先のフォルダ等を指定します</p>
+				<br />
+				<p class="Bold Dot">フォルダ（振り分け先）</p>
+				<div class="Indent">
+					<p>振り分け先のフォルダを指定します。</p>
+					<p><span class="Button">＋</span>ボタンを押してフォルダツリーからフォルダを指定するか、フォルダやファイルをドロップするか、入力します。</p>
+					<br />
+					<p>存在しないフォルダを指定することも出来ます。</p>
+					<p>存在しないフォルダを指定する場合は、「フォルダ作成」を<span class="Button">する</span>に設定して下さい。</p>
+					<br />
+					<p>以下の書式文字を使用することで、ファイルに応じたフォルダに振り分けることも出来ます。</p>
+					<br />
+					<p class="Bold Dia">書式文字</p>
+					<br />
+					<div class="Indent">
+						<table width="580">
+							<tr>
+								<td class="ItemHeader">&lt;w&gt;</td>
+								<td class="Item">画像の幅</td>
+							</tr>
+							<tr>
+								<td class="ItemHeader">&lt;h&gt;</td>
+								<td class="Item">画像の高さ</td>
+							</tr>
+							<tr>
+								<td class="ItemHeader">&lt;s&gt;</td>
+								<td class="Item">画像のサイズ表記（「WUXGA」や「XGA」など、空白の場合があります）</td>
+							</tr>
+							<tr>
+								<td class="ItemHeader">&lt;S&gt;</td>
+								<td class="Item">画像のサイズによる用途（「iPhone」や「PSP」など、空白の場合があります）</td>
+							</tr>
+							<tr>
+								<td class="ItemHeader">&lt;nt:&gt;</td>
+								<td class="Item">新しい日時（更新日時と作成日時のうち新しい方の日時）<br /><p class="Small Gray">日時書式文字と組み合わせて使用します</p></td>
+							</tr>
+							<tr>
+								<td class="ItemHeader">&lt;ot:&gt;</td>
+								<td class="Item">古い日時（更新日時と作成日時のうち古い方の日時）<br /><p class="Small Gray">日時書式文字と組み合わせて使用します</p></td>
+							</tr>
+							<tr>
+								<td class="ItemHeader">&lt;ct:&gt;</td>
+								<td class="Item">作成日時<br /><p class="Small Gray">日時書式文字と組み合わせて使用します</p></td>
+							</tr>
+							<tr>
+								<td class="ItemHeader">&lt;wt:&gt;</td>
+								<td class="Item">更新日時<br /><p class="Small Gray">日時書式文字と組み合わせて使用します</p></td>
+							</tr>
+						</table>
+						<br />
+						<table class="Memo" width="580">
+							<tr>
+								<td class="RelativeHeader">関連</td>
+							</tr>
+							<tr>
+								<td class="Memo"><a href="DateFormat.html">日時書式文字</a></td>
+							</tr>
+						</table>
+						<table class="Memo" width="580">
+							<tr>
+								<td class="ExHeader" colspan="2">例</td>
+							</tr>
+							<tr>
+								<td class="Memo">D:\Pict\&lt;s&gt;\&lt;ct:yyyyMMdd&gt;</td>
+								<td class="Memo">画像サイズが 1920x1200 で作成日時が 2015年1月23日 のファイルの場合<br />⇒ D:\Pict\WUXGA\20150123 へ移動します。</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<p class="Bold Dot">名前</p>
+				<div class="Indent">
+					<p>ルールの名前を付けることが出来ます。</p>
+					<p>名前を付けない場合は、フォルダのパスが名前の代わりとして使用されます。</p>
+				</div>
+				<p class="Bold Dot">フォルダ作成</p>
+				<div class="Indent">
+					<p>振り分け先として存在しないフォルダが指定された場合に、フォルダ作成を<span class="Button">する</span>か<span class="Button">しない</span>かを指定します。</p>
+					<p>フォルダ作成を<span class="Button">しない</span>場合、振り分け（ファイルの移動）は行いません。</p>
+				</div>
+				<p class="Bold Dot">同名ファイルがある場合</p>
+				<div class="Indent">
+					<p>振り分け先に同じ名前のファイルが存在していた場合の動作を指定します。</p>
+					<br />
+					<table width="595">
+						<tr>
+							<td class="ItemHeader">何もしない</td>
+							<td class="Item">ファイルを移動しません</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">上書きする</td>
+							<td class="Item">ファイルを移動し上書きします</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">名前を変えて保存</td>
+							<td class="Item">ファイル名にサフィックスを付けて移動します<br /></td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">要素</p>
+				<div class="Indent">
+					<p>ルールを構成する要素がリスト表示されます。</p>
+					<p>要素毎にチェックボックスが用意されています。チェックされている要素が有効になります。</p>
+					<br />
+					<div class="Indent">
+						<p class="Bold Dia">登録</p>
+						<div class="Indent">
+							<p><span class="Button">＋</span>ボタンを押すか、エクスプローラ等からファイルをドロップします。</p>
+							<p>ファイルがドロップされた場合は、登録される可能性のある要素が登録されます。</p>
+						</div>
+						<p class="Bold Dia">編集</p>
+						<div class="Indent">
+							<p>編集したい要素を選択します。</p>
+							<p>選択した要素の内容が要素編集欄に表示され、編集できるようになります。</p>
+						</div>
+						<p class="Bold Dia">削除</p>
+						<div class="Indent">
+							<p>削除したい要素を選択して、<span class="Button">－</span>ボタンを押します。</p>
+						</div>
+					</div>
+				</div>
+
+				<p class="Bold Dot">要素編集</p>
+				<div class="Indent">
+					<p>ルール要素を編集します。</p>
+					<br />
+					<div class="Indent">
+						<p class="Bold Dia">論理</p>
+						<div class="Indent">
+							<p><span class="Button">AND</span>（論理積）または<span class="Button">OR</span>（論理和）を指定します。</p>
+							<br />
+							<table class="Memo" width="565">
+								<tr>
+									<td class="ExHeader" colspan="2">例</td>
+								</tr>
+								<tr>
+									<td class="Memo">
+										要素1 AND<br />
+										要素2 OR<br />
+										要素3 AND<br />
+										要素4 OR<br />
+									</td>
+									<td class="Memo">（要素1 かつ 要素3）または 要素2 または 要素4 と解釈されます。</td>
+								</tr>
+							</table>
+						</div>
+						<p class="Bold Dia">種類</p>
+						<div class="Indent">
+							<p>編集したい要素を選択します。</p>
+							<p>要素の種類を指定します。指定できるのは以下の7種類です。</p>
+							<br />
+							<table width="565">
+								<tr>
+									<td class="ItemHeader">ファイル名</td>
+									<td class="Item"></td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">拡張子</td>
+									<td class="Item"></td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">ファイルサイズ</td>
+									<td class="Item"></td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">作成日時</td>
+									<td class="Item"></td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">更新日時</td>
+									<td class="Item"></td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">高さ</td>
+									<td class="Item">画像の高さ（画像ファイルのみ）</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">幅</td>
+									<td class="Item">画像の幅（画像ファイルのみ）</td>
+								</tr>
+							</table>
+						</div>
+						<p class="Bold Dia">値</p>
+						<div class="Indent">
+							<p>種類に応じた値を入力します。</p>
+							<p>種類に<span class="Button">作成日時</span>、<span class="Button">更新日時</span>を指定した場合は、日時を表す文字列を入力します。</p>
+							<br />
+							<table class="Memo" width="565">
+								<tr>
+									<td class="ExHeader">例</td>
+								</tr>
+								<tr>
+									<td class="Memo">2012/01/03 ⇒ 2012年 1月 3日 0時 0分 0秒 を意味します。</td>
+								</tr>
+							</table>
+							<br />
+							<p>日時の判定はミリ秒まで判定されるので、条件に<span class="Button">に等しい</span>を指定した場合、ほぼヒットすることがありません。<span class="Button">以上</span><span class="Button">以下</span>などと組み合わせて使用して下さい。</p>
+							<br />
+							<p>種類に<span class="Button">拡張子</span>を指定した場合は、「.jpg」と「jpg」のどちらの書き方も有効です。</p>
+						</div>
+						<p class="Bold Dia">条件</p>
+						<div class="Indent">
+							<p>値を判定する条件を指定します。以下の6種類から選択します。</p>
+							<br />
+							<table width="565">
+								<tr>
+									<td class="ItemHeader">に等しい</td>
+									<td class="Item"></td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">より小さい</td>
+									<td class="Item">指定した値を含みません</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">以下</td>
+									<td class="Item">指定した値を含みます</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">より大きい</td>
+									<td class="Item">指定した値を含みません</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">以上</td>
+									<td class="Item">指定した値を含みます</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">正規表現</td>
+									<td class="Item">種類にファイル名を指定した場合のみ</td>
+								</tr>
+							</table>
+						</div>
+						<p class="Bold Dia">大文字小文字</p>
+						<div class="Indent">
+							<p>種類に<span class="Button">ファイル名</span>を指定した場合、大文字小文字を区別するか否かを指定します。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

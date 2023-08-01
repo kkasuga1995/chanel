@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">効率的に削除する</p>
+			<p class="HeaderM">重複/類似画像を効率的に削除する</p>
+			<div class="Indent">
+				<p class="Bold Dot">ポイント</p>
+				<div class="Indent">
+					<p>1) 1回毎の検索時間を短くすること</p>
+					<p>2) 1回毎の検索結果が膨大な量にならないようにすること</p>
+				</div>
+
+				<p class="Bold Dot">最初はフォルダ単位で小分けに処理</p>
+				<div class="Indent">
+					<p>検索対象のファイルが多いと、検索自体が遅くなるだけでなく、結果も膨大な量になるため、削除するファイルを見極めるのにも時間が掛かってしまいます。</p>
+					<br />
+					<p>最初に一番下の階層のフォルダ毎に重複を解消した後、対象フォルダを徐々に上位階層へ変更し、フォルダを跨いだ検索を行うようにすると、効率よく重複ファイルを削除できます。</p>
+					<br />
+					<p style="font-family: 'ＭＳ ゴシック';">　　順番　階層</p>
+					<p style="font-family: 'ＭＳ ゴシック';">　　----+-----------------</p>
+					<p style="font-family: 'ＭＳ ゴシック';">　　　5　フォルダ</p>
+					<p style="font-family: 'ＭＳ ゴシック';">　　　3　　├フォルダ</p>
+					<p style="font-family: 'ＭＳ ゴシック';">　　　2　　│├フォルダ</p>
+					<p style="font-family: 'ＭＳ ゴシック';">　　　2　　│└フォルダ</p>
+					<p style="font-family: 'ＭＳ ゴシック';">　　　1　　│　└フォルダ</p>
+					<p style="font-family: 'ＭＳ ゴシック';">　　　4　　└フォルダ</p>
+					<p style="font-family: 'ＭＳ ゴシック';">　　　3　　　└フォルダ</p>
+					<p style="font-family: 'ＭＳ ゴシック';">　　　2　　　　└フォルダ</p>
+					<p style="font-family: 'ＭＳ ゴシック';">　　　1　　　　　└フォルダ</p>
+				</div>
+
+				<p class="Bold Dot">重複解消後は、定期的に全体の重複チェック</p>
+				<div class="Indent">
+					<p>一度重複を解消した状態にしてしまえば、あとは画像フォルダ全体を対象にして定期的に重複チェックをすれば、重複がない状態を保つ事が容易になります。</p>
+					<br />
+					<p><span class="Bold">DupFileEliminator</span> は、検索対象のファイル数が多くても、実際に重複しているファイルが少ない場合、特に高速に動作するので、日々こまめに重複チェックをする用途に向きます。</p>
+				</div>
+
+				<p class="Bold Dot">類似画像検索は重複を解消した状態で</p>
+				<div class="Indent">
+					<p>類似画像検索は、重複ファイル検索よりも重く時間が掛かる処理です。</p>
+					<p>類似画像検索を行う前に、重複ファイル検索を行って重複を解消しておくことで、効率よく処理を行うことが出来ます。</p>
+				</div>
+
+				<p class="Bold Dot">全く同じ画像のはずなのに、重複ファイルとして検出されない場合</p>
+				<div class="Indent">
+					<p>このようなファイルを検出するには、メタデータ無視機能を使用して、データ本体のみを比較するか、類似画像検索を使用します。</p>
+					<br />
+					<p>多くの場合、メタデータが異なっているだけなので、メタデータ無視機能を使用するだけで、重複ファイルとして検出できるようになります。</p>
+					<br />
+					<p>稀にファイル内のデータ構造が異なっている事が原因で、重複ファイルとして検出されない場合があります。</p>
+					<p>この場合は、メタデータを無視しても検出できないので、類似画像検索を使用します。</p>
+					<br />
+					<p>類似画像検索の全てのパラメータを100%に設定する事で、類似度100%のファイルのみを検出することが出来ます。しかし、類似度が100%であっても、全てのピクセルが完全に一致しているとは限らないので、差分の表示を行って、一致率が100%であることを確認します。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								類似度100% = ほぼ同じ画像と判定した状態<br />
+								一致率100% = 全てのピクセルが完全に一致している状態
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

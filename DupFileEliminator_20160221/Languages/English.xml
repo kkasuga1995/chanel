@@ -1,0 +1,958 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language>
+  <Attributes>
+    <Culture>en-US</Culture>
+    <Description>DupFileEliminator Language File</Description>
+    <Language>English (United States)</Language>
+    <Updated>2016-02-20T14:07:59+09:00</Updated>
+    <Translators>
+      <Translator>ripobi-tan</Translator>
+      <Translator>Administrator</Translator>
+    </Translators>
+  </Attributes>
+  <General>
+    <Misc>
+      <!--COPY,PASTE-->
+      <COPY>Copy</COPY>
+      <CUT>Cut</CUT>
+      <PASTE>Paste</PASTE>
+      <!--ADD,DEL,SELECT-->
+      <ADD>Add</ADD>
+      <DELETE>Delete</DELETE>
+      <SELECT_ALL>Select All</SELECT_ALL>
+      <!--ON,OFF-->
+      <OFF>OFF</OFF>
+      <ON>ON</ON>
+      <!--YES,NO-->
+      <NO>No</NO>
+      <YES>Yes</YES>
+      <NONE>None</NONE>
+      <UNKNOWN>Unknown</UNKNOWN>
+      <!--OTHER-->
+      <KEY_FUNCTION>Func</KEY_FUNCTION>
+      <KEY_NUMPAD>Numpad</KEY_NUMPAD>
+      <KEY_OTHERS>Other</KEY_OTHERS>
+      <DEFAULT>Default</DEFAULT>
+      <CAPTION_BAR>Caption Bar</CAPTION_BAR>
+      <STATUS_BAR>Status Bar</STATUS_BAR>
+      <NO_USE>None</NO_USE>
+      <SMALL>Small</SMALL>
+      <LARGE>Large</LARGE>
+    </Misc>
+    <Symbol>
+      <BAR>-</BAR>
+      <ARROW>⇒</ARROW>
+      <ARROW2>⇔</ARROW2>
+    </Symbol>
+    <Unit>
+      <BYTE>Byte</BYTE>
+      <COMPUTER>PCs</COMPUTER>
+      <CPU>CPUs</CPU>
+      <DRIVE>Drives</DRIVE>
+      <FILE>Files</FILE>
+      <FOLDER>Folders</FOLDER>
+      <GROUP>Groups</GROUP>
+      <LOGICAL_CORE>Threads</LOGICAL_CORE>
+      <PHYSICAL_CORE>Cores</PHYSICAL_CORE>
+      <PIXEL>Pixel</PIXEL>
+      <SEC>sec</SEC>
+    </Unit>
+  </General>
+  <Control>
+    <TabName>
+      <TabPage_Action>Action</TabPage_Action>
+      <TabPage_Config>Settings</TabPage_Config>
+      <TabPage_Detail>Folder Detail</TabPage_Detail>
+      <TabPage_Filter>Filter</TabPage_Filter>
+      <TabPage_Folder>Folder</TabPage_Folder>
+      <TabPage_Group>Edit Link</TabPage_Group>
+      <TabPage_History>Histories</TabPage_History>
+      <TabPage_Rename>Renamer</TabPage_Rename>
+      <TabPage_Result>Result</TabPage_Result>
+      <TabPage_Sorter>Sorter</TabPage_Sorter>
+      <TabPage_Viewer>Viewer</TabPage_Viewer>
+    </TabName>
+    <Filter>
+      <!--Enumerator-->
+      <GroupBox_Enumerator>FileEnumerating</GroupBox_Enumerator>
+      <CheckBox_HideHardlinkedGroup>Exclude Hardlinked Group</CheckBox_HideHardlinkedGroup>
+      <CheckBox_SearchContainer>Recognize Container</CheckBox_SearchContainer>
+      <CheckBox_SearchDataSegment>Recognize(Ignore) Metadata</CheckBox_SearchDataSegment>
+      <CheckBox_SearchFileID>Get File ID for Accurate Searching</CheckBox_SearchFileID>
+      <CheckBox_SearchHiddenFile>Enumerate Hidden Folders / Files</CheckBox_SearchHiddenFile>
+      <CheckBox_SearchSubFolder>Enumerate Sub Folders</CheckBox_SearchSubFolder>
+      <CheckBox_SearchSystemFile>Enumerate System Files</CheckBox_SearchSystemFile>
+      <CheckBox_EnableFileLock>Use File Lock Function</CheckBox_EnableFileLock>
+      <CheckBox_HideLockedGroup>Exclude Locked Group</CheckBox_HideLockedGroup>
+      <CheckBox_ParseShortcut>Parse Shortcut(File)</CheckBox_ParseShortcut>
+      <CheckBox_ParseShortcutFolder>Parse Shortcut(Folder)</CheckBox_ParseShortcutFolder>
+      <CheckBox_ParseSymbolicLink>Parse Symbolic Link(File)</CheckBox_ParseSymbolicLink>
+      <CheckBox_ParseSymbolicLinkFolder>Parse Symbolic Link(Folder)</CheckBox_ParseSymbolicLinkFolder>
+      <TT_CheckBox_HideHardlinkedGroup>The group composed only of the symbolic link or the hard link to the same substance will be excluded from the result.</TT_CheckBox_HideHardlinkedGroup>
+      <TT_CheckBox_SearchDataSegment>Ignore the metadata, and compare only data body. It corresponds to JPEG, PNG, MP3, WAV.</TT_CheckBox_SearchDataSegment>
+      <TT_CheckBox_SearchFileID>Get the file ID.</TT_CheckBox_SearchFileID>
+      <TT_CheckBox_SearchHiddenFile>Include the hidden folder and file for searching.</TT_CheckBox_SearchHiddenFile>
+      <TT_CheckBox_SearchSubFolder>Include the sub folder for searching.</TT_CheckBox_SearchSubFolder>
+      <!--DateFilter-->
+      <GroupBox_DateTimeFilter>Date Filter</GroupBox_DateTimeFilter>
+      <CheckBox_DateFlt_Creation>Enable</CheckBox_DateFlt_Creation>
+      <CheckBox_DateFlt_LastWrite>Enable</CheckBox_DateFlt_LastWrite>
+      <Label_DateTimeFlt_Creation>Creation Date</Label_DateTimeFlt_Creation>
+      <Label_DateTimeFlt_LastWrite>Last Write Date</Label_DateTimeFlt_LastWrite>
+      <!--PictSizeFilter-->
+      <GroupBox_PictFilter>Picture Size Filter</GroupBox_PictFilter>
+      <CheckBox_EnablePictSizeFilter>Enable</CheckBox_EnablePictSizeFilter>
+      <Label_PictFlt_Height>Height</Label_PictFlt_Height>
+      <Label_PictFlt_Width>Width</Label_PictFlt_Width>
+      <!--RegExFilter-->
+      <GroupBox_RegExFilter>Regular Expression Filter</GroupBox_RegExFilter>
+      <CheckBox_EnableRegExFlter>Enable Regular Expression Filter</CheckBox_EnableRegExFlter>
+      <!--SizeFilter-->
+      <GroupBox_SizeFilter>File Size Filter</GroupBox_SizeFilter>
+      <CheckBox_EnableSizeFilter>Enable</CheckBox_EnableSizeFilter>
+      <!--Watcher-->
+      <GroupBox_Watcher>Folder / File Watcher</GroupBox_Watcher>
+      <CheckBox_DeleteFilesDuringWatch>Delete Checked During Watch</CheckBox_DeleteFilesDuringWatch>
+      <CheckBox_SortFilesDuringWatch>Sort Files During Watch</CheckBox_SortFilesDuringWatch>
+      <CheckBox_RenameFilesDuringWatch>Rename Files During Watch</CheckBox_RenameFilesDuringWatch>
+      <CheckBox_WatchSubFolder>Watch Sub Folders</CheckBox_WatchSubFolder>
+      <!--Other-->
+      <GroupBox_ExtFilter>Extension Filter</GroupBox_ExtFilter>
+      <GroupBox_FolderFilter>Folder Filter</GroupBox_FolderFilter>
+      <GroupBox_NameFilter>File Name Filter</GroupBox_NameFilter>
+    </Filter>
+    <GroupEditor>
+      <!--GroupEditor-->
+      <Button_Link>Link</Button_Link>
+      <Button_Target>Target</Button_Target>
+      <Button_Unlink>Unlink</Button_Unlink>
+      <GroupBox_Hardlink>Hardlink</GroupBox_Hardlink>
+      <GroupBox_ShortCut>Shortcut</GroupBox_ShortCut>
+      <GroupBox_SymbolicLink>Symbolic Link</GroupBox_SymbolicLink>
+      <!--Hisotory-->
+      <Button_UndoHistory>Undo</Button_UndoHistory>
+    </GroupEditor>
+    <Header>
+      <ACTION>Action</ACTION>
+      <CHECKBOX>Checkbox</CHECKBOX>
+      <CREATION_DATE>Creation Time</CREATION_DATE>
+      <CRITERIA_PICTURE>Criteria</CRITERIA_PICTURE>
+      <DETAIL>Detail</DETAIL>
+      <EXTENSION>Extension</EXTENSION>
+      <FILE_COUNT>File Count</FILE_COUNT>
+      <FILE_ID>File ID</FILE_ID>
+      <FILE_NAME>File Name</FILE_NAME>
+      <FILE_TYPE>File Type</FILE_TYPE>
+      <FOLDER>Folder</FOLDER>
+      <FOLDER_COUNT>Folder Count</FOLDER_COUNT>
+      <FOUND_COUNT>Found Count</FOUND_COUNT>
+      <ICON>Icon</ICON>
+      <LAST_WRITE_DATE>Last Write Time</LAST_WRITE_DATE>
+      <LINK_COUNT>Link Count</LINK_COUNT>
+      <LINK_TARGET>Link Target</LINK_TARGET>
+      <LOGIC>Logic</LOGIC>
+      <PICTURE_SIZE>Picture Size</PICTURE_SIZE>
+      <REGULAR_EXPRESSION>Regular Expression</REGULAR_EXPRESSION>
+      <RENAME_RULE>Rule</RENAME_RULE>
+      <RENAME_TYPE>Type</RENAME_TYPE>
+      <RENAME_MODE>Mode</RENAME_MODE>
+      <RENAME_POSITION>Position</RENAME_POSITION>
+      <RENAME_TARGET>Target</RENAME_TARGET>
+      <RENAME_EXPRESSION>Text/Expression</RENAME_EXPRESSION>
+      <RENAME_SOURCE>Source</RENAME_SOURCE>
+      <RENAME_FORMAT>Text/Format</RENAME_FORMAT>
+      <RENAME_CASE_SENSITIVE>CaseSensitive</RENAME_CASE_SENSITIVE>
+      <SEARCH_EXCLUDE>Exclude</SEARCH_EXCLUDE>
+      <SEARCH_FOLDER>Search Folder</SEARCH_FOLDER>
+      <SEARCH_INCLUDE>Include</SEARCH_INCLUDE>
+      <SIMILAR_PICTURE>Similar Picture</SIMILAR_PICTURE>
+      <SIMILARITY>Similarity</SIMILARITY>
+      <SIZE>Size</SIZE>
+      <SORT_CASE_SENSITIVE>Case Sensitive</SORT_CASE_SENSITIVE>
+      <SORT_CONDITION>Condition</SORT_CONDITION>
+      <SORT_RULE>Rule</SORT_RULE>
+      <SORT_TYPE>Type</SORT_TYPE>
+      <SORT_VALUE>Value</SORT_VALUE>
+      <THUMBNAIL>Thumbnail</THUMBNAIL>
+      <VOLUME_ID>Volume ID</VOLUME_ID>
+      <WATCH_FOLDER>Watch Folder</WATCH_FOLDER>
+      <HISTORY_DATETIME>DateTime</HISTORY_DATETIME>
+      <HISTORY_PROCESS>Process</HISTORY_PROCESS>
+      <HISTORY_SOURCE>Source</HISTORY_SOURCE>
+      <HISTORY_DESTINATION>Destination</HISTORY_DESTINATION>
+      <PICTURE_FILE>Picture File</PICTURE_FILE>
+    </Header>
+    <Renamer>
+      <GroupBox_Rename_Rules>Rename Rules</GroupBox_Rename_Rules>
+      <GroupBox_Rename_RuleEdit>Rule Edit</GroupBox_Rename_RuleEdit>
+      <Label_Rename_Title>Title</Label_Rename_Title>
+      <Label_Rename_Sort>Sort</Label_Rename_Sort>
+      <Label_Rename_StartNumber>Start</Label_Rename_StartNumber>
+      <Label_Rename_Step>Step</Label_Rename_Step>
+      <Label_Rename_OverWriteMode>If a same name file exists</Label_Rename_OverWriteMode>
+      <GroupBox_Rename_RuleElements>Elements</GroupBox_Rename_RuleElements>
+      <GroupBox_Rename_ElementEdit>Element Edit</GroupBox_Rename_ElementEdit>
+      <Label_Rename_Type>Type</Label_Rename_Type>
+      <Label_Rename_Mode>Mode</Label_Rename_Mode>
+      <Label_Rename_PositionType>Position</Label_Rename_PositionType>
+      <Label_Rename_CaseSensitive>Case Sensitive</Label_Rename_CaseSensitive>
+      <Label_Rename_TargetType>Target</Label_Rename_TargetType>
+      <Label_Rename_Expression>Text / Expression</Label_Rename_Expression>
+      <Label_Rename_Position>Position</Label_Rename_Position>
+      <Label_Rename_Length>Length</Label_Rename_Length>
+      <Label_Rename_SourceType>Source</Label_Rename_SourceType>
+      <Label_Rename_Format>Text / Format</Label_Rename_Format>
+    </Renamer>
+    <Setting>
+      <!--Visual-->
+      <GroupBox_VisualSettings>Visual</GroupBox_VisualSettings>
+      <CheckBox_HideButtonText>Hide Button Text</CheckBox_HideButtonText>
+      <CheckBox_PopupBaloonAfterSearching>Popup Baloon After Searching</CheckBox_PopupBaloonAfterSearching>
+      <CheckBox_PopupWindowAfterSearching>Popup Window After Searching</CheckBox_PopupWindowAfterSearching>
+      <CheckBox_ShowNotifyIconWhileMinimize>Show Notify Icon While Minimize</CheckBox_ShowNotifyIconWhileMinimize>
+      <CheckBox_ShowPictInToolTip>Show Thumbnail In Tooltip</CheckBox_ShowPictInToolTip>
+      <TT_CheckBox_ShowPictInToolTip>The image and the content of the text file are displayed in the tooltip of the result. </TT_CheckBox_ShowPictInToolTip>
+      <!--FileOperation-->
+      <GroupBox_FileOperation>File Operation</GroupBox_FileOperation>
+      <CheckBox_IgnoreReadOnly>Ignore Readonly Attribute</CheckBox_IgnoreReadOnly>
+      <TT_CheckBox_IgnoreReadOnly>Ignore the read only attribute for deleting or moving.</TT_CheckBox_IgnoreReadOnly>
+      <!--Viewer-->
+      <GroupBox_ViewerSettings>Viewer</GroupBox_ViewerSettings>
+      <CheckBox_EnableAnimation>Enable Animation</CheckBox_EnableAnimation>
+      <CheckBox_EnableComicMode>Enable Comic Mode</CheckBox_EnableComicMode>
+      <CheckBox_EnableDetectSpread>Ignore Spread</CheckBox_EnableDetectSpread>
+      <CheckBox_EnableFadeAnimation>Enable Fade Animation</CheckBox_EnableFadeAnimation>
+      <CheckBox_EnableSecondaryViewer>Enable Sub Viewer</CheckBox_EnableSecondaryViewer>
+      <CheckBox_ShowColorFilterPanel>Show Color Filter Panel</CheckBox_ShowColorFilterPanel>
+      <CheckBox_KeepScrollPosition>Keep Scroll Position</CheckBox_KeepScrollPosition>
+      <RadioButton_KeepScrollPositionSimiralityOnly>Similar Images Only</RadioButton_KeepScrollPositionSimiralityOnly>
+      <RadioButton_KeepScrollPositionAlways>Always</RadioButton_KeepScrollPositionAlways>
+      <Label_CacheSize>Cache Size</Label_CacheSize>
+      <CheckBox_ShowSizeInViewer>Show Properties</CheckBox_ShowSizeInViewer>
+      <TT_CheckBox_EnableSecondaryViewer>Enable the secondary viewer for comparing the images.</TT_CheckBox_EnableSecondaryViewer>
+      <TT_CheckBox_ShowSizeInViewer>Show picture properties in the viewer.</TT_CheckBox_ShowSizeInViewer>
+      <!--Other-->
+      <GroupBox_OtherSettings>Other</GroupBox_OtherSettings>
+      <CheckBox_EnableFolderContextMenuAutoSort>Enable Auto Sort of Folder Browsing</CheckBox_EnableFolderContextMenuAutoSort>
+      <CheckBox_SurpressMemoryUsageAutomatically>Surpress Memory Usage Automatically</CheckBox_SurpressMemoryUsageAutomatically>
+      <CheckBox_UseIntuitiveSort>Use Intuitive Sort</CheckBox_UseIntuitiveSort>
+      <CheckBox_UseFolderBrowseDialog>Use Folder Browse Dialog</CheckBox_UseFolderBrowseDialog>
+      <Label_TrimDatabase>Database</Label_TrimDatabase>
+      <Button_TrimDatabase>Trim</Button_TrimDatabase>
+      <Label_DetectDrives>Drive/Network</Label_DetectDrives>
+      <Button_DetectDrives>Detect</Button_DetectDrives>
+      <CheckBox_DetectDisks>Detect Drives</CheckBox_DetectDisks>
+      <CheckBox_DetectNetworkPC>Detect Network PC</CheckBox_DetectNetworkPC>
+      <Label_NetworkTimeout>Timeout</Label_NetworkTimeout>
+      <Label_Encode>Encode Method</Label_Encode>
+      <Label_SupressDialog>Supress Dialog</Label_SupressDialog>
+      <Button_ResetSupressDialog>Reset</Button_ResetSupressDialog>
+      <TT_Button_DetectDrives>Detect physical drives and network computers.</TT_Button_DetectDrives>
+      <!--Application-->
+      <GroupBox_Application>Application</GroupBox_Application>
+      <TextBlock_App>Please configure the full path of the application for cooperation.</TextBlock_App>
+      <!--ExportFormat-->
+      <GroupBox_ExportFormat>Export Format</GroupBox_ExportFormat>
+      <TextBlock_ExportFormat>Specify Export Format</TextBlock_ExportFormat>
+      <Lable_ExportFormat>Format</Lable_ExportFormat>
+      <!--Automation-->
+      <GroupBox_AutomationSettings>Automation</GroupBox_AutomationSettings>
+      <GroupBox_AutomationSettings>Automation</GroupBox_AutomationSettings>
+      <GroupBox_AutomationSettings>Automation</GroupBox_AutomationSettings>
+      <GroupBox_AutomationSettings>Automation</GroupBox_AutomationSettings>
+      <GroupBox_AutomationSettings>Automation</GroupBox_AutomationSettings>
+      <!--Font-->
+      <GroupBox_FontSettings>Font</GroupBox_FontSettings>
+      <!--Picture-->
+      <GroupBox_ExtPicture>Picture File</GroupBox_ExtPicture>
+      <Label_ExtPicture_Description>Extension of the file for treating as a picture.</Label_ExtPicture_Description>
+      <!--Mouse-->
+      <GroupBox_MouseOp>Mouse Operation</GroupBox_MouseOp>
+      <Label_MouseWheel>Wheel Threshold</Label_MouseWheel>
+      <Label_MouseInertia>Inertia</Label_MouseInertia>
+      <!--DuplicatesConfig-->
+      <GroupBox_DuplicatesSettings>Duplicate File Search</GroupBox_DuplicatesSettings>
+      <CheckBox_Duplicates_CompareOnlySameFileName>Compare Only Same File Name Items</CheckBox_Duplicates_CompareOnlySameFileName>
+      <Label_Duplicates_HashType>Type</Label_Duplicates_HashType>
+      <!--SimirarityConfig-->
+      <GroupBox_SimilaritySettings>Similar Image Search</GroupBox_SimilaritySettings>
+      <CheckBox_Similar_CompareOnlySameAspect>Reject Defferent Size</CheckBox_Similar_CompareOnlySameAspect>
+      <CheckBox_Similar_CompareOnlySameSize>Reject Different Aspect Ratio</CheckBox_Similar_CompareOnlySameSize>
+      <CheckBox_Similar_CompareOnlySameFileName>Compare Files That Has Same File Name</CheckBox_Similar_CompareOnlySameFileName>
+      <CheckBox_Similar_CompareOnlySigleFrameImage>Reject Multi Frame Image</CheckBox_Similar_CompareOnlySigleFrameImage>
+      <CheckBox_Similar_CompareRotatedImage>Compare Rotated Image</CheckBox_Similar_CompareRotatedImage>
+      <CheckBox_Similar_SearceOnlyPerfectConcordanceImages>Search Only Perfect Concordance Images</CheckBox_Similar_SearceOnlyPerfectConcordanceImages>
+      <Label_Similar_PresetParameter>Preset Parameter</Label_Similar_PresetParameter>
+      <Label_Similar_Brightness>Brightness</Label_Similar_Brightness>
+      <Label_Similar_BrightnessHigh>Contrast</Label_Similar_BrightnessHigh>
+      <Label_Similar_Histogram>Histogram</Label_Similar_Histogram>
+      <Label_Similar_Hue>Hue</Label_Similar_Hue>
+      <TT_CheckBox_Similar_CompareOnlySameAspect>Check the similarity of the pictures with same aspect ratio.</TT_CheckBox_Similar_CompareOnlySameAspect>
+      <TT_CheckBox_Similar_CompareOnlySameSize>Check the similarity of the pictures with same width and same height.</TT_CheckBox_Similar_CompareOnlySameSize>
+      <!--Menu-->
+      <GroupBox_MenuVisibilitySettings>Menu Visibility</GroupBox_MenuVisibilitySettings>
+      <GroupBox_SearchType>Search Type</GroupBox_SearchType>
+      <GroupBox_Result>Context Menu in Result List</GroupBox_Result>
+      <GroupBox_AutoCheck>Auto Check</GroupBox_AutoCheck>
+      <!--Shortcut-->
+      <GroupBox_ShortcutSettings>Shortcut</GroupBox_ShortcutSettings>
+      <Label_ShortcutSettings_Description>Settings of Shortcut</Label_ShortcutSettings_Description>
+    </Setting>
+    <SimilarityType>
+      <!--SimilarityType-->
+      <TYPE_CUSTOM>Custom</TYPE_CUSTOM>
+      <TYPE_EXPLICIT>Explicit</TYPE_EXPLICIT>
+      <TYPE_FUZZY>Fuzzy</TYPE_FUZZY>
+      <TYPE_STANDARD>Standard</TYPE_STANDARD>
+    </SimilarityType>
+    <Sorter>
+      <!--Sorter-->
+      <GroupBox_SortRules>Sort Rules</GroupBox_SortRules>
+      <GroupBox_RuleEdit>Rule Edit</GroupBox_RuleEdit>
+      <GroupBox_RuleElements>Rule Elements</GroupBox_RuleElements>
+      <GroupBox_ElementEdit>Element Edit</GroupBox_ElementEdit>
+      <Label_RuleEdit_Folder>Destination</Label_RuleEdit_Folder>
+      <Label_RuleEdit_Title>Title</Label_RuleEdit_Title>
+      <Label_RuleEdit_CreateFolder>Create Folder</Label_RuleEdit_CreateFolder>
+      <Label_RuleEdit_Mode>If a same name file exists</Label_RuleEdit_Mode>
+      <Label_ElementEdit_CaseSensitive>Case Sensitive</Label_ElementEdit_CaseSensitive>
+      <Label_ElementEdit_Condition>Condition</Label_ElementEdit_Condition>
+      <Label_ElementEdit_Logic>Logic</Label_ElementEdit_Logic>
+      <Label_ElementEdit_Type>Type</Label_ElementEdit_Type>
+      <Label_ElementEdit_Value>Value</Label_ElementEdit_Value>
+      <TT_Button_ExportRule>Export Rules To A Text File.</TT_Button_ExportRule>
+      <TT_Button_ImportRule>Import Rules From A Text File.</TT_Button_ImportRule>
+      <!--MoveTo-->
+      <GroupBox_MoveTo>Move To</GroupBox_MoveTo>
+    </Sorter>
+    <ToolBar>
+      <!--Search-->
+      <GroupBox_Search>Search</GroupBox_Search>
+      <Button_Start>Start</Button_Start>
+      <TT_Button_SearchType>Select search type or process type.</TT_Button_SearchType>
+      <TT_Button_Start>Start searching.</TT_Button_Start>
+      <!--AutoCheck-->
+      <GroupBox_FileSelect>Check</GroupBox_FileSelect>
+      <Button_AutoCheck>Auto</Button_AutoCheck>
+      <Button_Uncheck>Uncheck</Button_Uncheck>
+      <TT_Button_AutoCheck>Check the files for deletion by the pre-set rules. </TT_Button_AutoCheck>
+      <TT_Button_Uncheck>Uncheck all files.</TT_Button_Uncheck>
+      <!--FileDeleting-->
+      <GroupBox_FileDelete>Delete</GroupBox_FileDelete>
+      <Button_DeleteChecked>Delete</Button_DeleteChecked>
+      <CheckBox_DeleteEmptyFolder>Delete Empty Folder</CheckBox_DeleteEmptyFolder>
+      <CheckBox_EnableAccelaratedRecycleBin>Accelarate File Deleting Process</CheckBox_EnableAccelaratedRecycleBin>
+      <CheckBox_UseRecycleBin>Use Recycle Bin</CheckBox_UseRecycleBin>
+      <TT_Button_DeleteChecked>Delete checked files.</TT_Button_DeleteChecked>
+      <TT_CheckBox_DeleteEmptyFolder>After file deletion, the empty folder will be deleted.</TT_CheckBox_DeleteEmptyFolder>
+      <TT_CheckBox_UseRecycleBin>Use the recycle bin for file and folder deleting.</TT_CheckBox_UseRecycleBin>
+    </ToolBar>
+    <ToolTip>
+      <TT_Add>Add</TT_Add>
+      <TT_Delete>Remove</TT_Delete>
+      <TT_Button_Abort>Abort</TT_Button_Abort>
+      <TT_Button_AddFolder>Add folder for searching.</TT_Button_AddFolder>
+      <TT_Button_DelFolder>Remove selected search folders.</TT_Button_DelFolder>
+    </ToolTip>
+    <ColorFilter>
+      <!--ColorFilter-->
+      <GroupBox_ColorFilter>ColorFilter</GroupBox_ColorFilter>
+      <CheckBox_EnableColorFilter>Eneble</CheckBox_EnableColorFilter>
+      <TextBlock_Filter_Red>Red</TextBlock_Filter_Red>
+      <TextBlock_Filter_Green>Green</TextBlock_Filter_Green>
+      <TextBlock_Filter_Blue>Blue</TextBlock_Filter_Blue>
+      <TextBlock_Filter_Brightness>Brightness</TextBlock_Filter_Brightness>
+      <CheckBox_EnableNaturalBrightness>Use Natural Brightness</CheckBox_EnableNaturalBrightness>
+      <TextBlock_Filter_Contrast>Contrast</TextBlock_Filter_Contrast>
+      <Button_ResetColorFilter>Reset</Button_ResetColorFilter>
+    </ColorFilter>
+  </Control>
+  <Text>
+    <Action>
+      <!--Result-->
+      <STR_ABORTED_COLON>Aborted : </STR_ABORTED_COLON>
+      <STR_ABORTED_TIMEOUT_COLON>Aborted(Timeout)：</STR_ABORTED_TIMEOUT_COLON>
+      <STR_COMPLETED>Complete</STR_COMPLETED>
+      <STR_COMPLETED_ALL>All Completed</STR_COMPLETED_ALL>
+      <STR_COMPLETED_COLON>Complete : </STR_COMPLETED_COLON>
+      <STR_CURRENT_COLON>Current : </STR_CURRENT_COLON>
+      <STR_DETECTED_COLON>Detected : </STR_DETECTED_COLON>
+      <STR_FAILED_COLON>Fail : </STR_FAILED_COLON>
+      <STR_PREPARING>Preparing</STR_PREPARING>
+      <STR_REMAINING_COLON>Remaining : </STR_REMAINING_COLON>
+      <STR_STARTED>Started</STR_STARTED>
+      <STR_STARTED_COLON>Started : </STR_STARTED_COLON>
+      <STR_SUCCEEDED_COLON>Success : </STR_SUCCEEDED_COLON>
+      <STR_SKIPPED_COLON>Skip :</STR_SKIPPED_COLON>
+      <STR_STANDBY>Standby</STR_STANDBY>
+      <STR_TOTAL_COLON>Total : </STR_TOTAL_COLON>
+      <!--Process-->
+      <PROC_CHECK_ABAILABLE_MEMORY>Abailable Memory Checking</PROC_CHECK_ABAILABLE_MEMORY>
+      <PROC_CHECK_FILES>File Checking</PROC_CHECK_FILES>
+      <PROC_CREATE_HARDLINK>Replacing by Hardlink</PROC_CREATE_HARDLINK>
+      <PROC_CREATE_SHORTCUT>Replacing by Shortcut</PROC_CREATE_SHORTCUT>
+      <PROC_CREATE_SYMBOLICLINK>Replacing by Symbolic Link</PROC_CREATE_SYMBOLICLINK>
+      <PROC_DECODE_FILE_NAME>Filename Decoding</PROC_DECODE_FILE_NAME>
+      <PROC_ENCODE_FILE_NAME>Filename Encoding</PROC_ENCODE_FILE_NAME>
+      <PROC_DELETE_DATABASE>Database Deleting</PROC_DELETE_DATABASE>
+      <PROC_DELETE_FILES>File Deleting</PROC_DELETE_FILES>
+      <PROC_DELETE_FOLDERS>Folder Deleteng</PROC_DELETE_FOLDERS>
+      <PROC_DELETE_THUMBNAIL_CACHE>Thumbnail Cache Deleting</PROC_DELETE_THUMBNAIL_CACHE>
+      <PROC_DETECTE_CPU>CPU Detecting</PROC_DETECTE_CPU>
+      <PROC_DETECTE_NETWORK_DRIVES>Network Detecting</PROC_DETECTE_NETWORK_DRIVES>
+      <PROC_DETECTE_PHYSICAL_DRIVES>Drive Detecting</PROC_DETECTE_PHYSICAL_DRIVES>
+      <PROC_ENUMERATE>Enumerating</PROC_ENUMERATE>
+      <PROC_READ_CRITERIA_FILES>Criteria File Reading</PROC_READ_CRITERIA_FILES>
+      <PROC_READ_FILES>File Reading</PROC_READ_FILES>
+      <PROC_RECOGNIZE_METADATA>Metadata Recognizing</PROC_RECOGNIZE_METADATA>
+      <PROC_RENAME_FILES>File Renaming</PROC_RENAME_FILES>
+      <PROC_REMOVE_METADATA>Metadeta Removing</PROC_REMOVE_METADATA>
+      <PROC_SEARCH_DUPLICATES>Duplicate File Searching</PROC_SEARCH_DUPLICATES>
+      <PROC_SEARCH_SIMILARITIES>Similar Image Searching</PROC_SEARCH_SIMILARITIES>
+      <PROC_SORT_FILES>File Sorting</PROC_SORT_FILES>
+      <PROC_TRIM_DATABASE>Database Trimming</PROC_TRIM_DATABASE>
+      <PROC_UNLINK_HARDLINK>Hardlink Unlinking</PROC_UNLINK_HARDLINK>
+      <PROC_UNLINK_SHORTCUT>Shourtcut Unlinking</PROC_UNLINK_SHORTCUT>
+      <PROC_UNLINK_SYMBOLICLINK>Symbolic Link Unlinking</PROC_UNLINK_SYMBOLICLINK>
+      <PROC_WATCH_FOLDER>Folder Watching</PROC_WATCH_FOLDER>
+      <PROC_UNDO>Undo</PROC_UNDO>
+      <!--In Progress-->
+      <ON_COMPARING>Comparing...</ON_COMPARING>
+      <ON_COMPARING_LARGE>Comparing (large file)...</ON_COMPARING_LARGE>
+      <ON_DELETING_FILES>Deleting Files...</ON_DELETING_FILES>
+      <ON_DELETING_FOLDERS>Deleting Folders...</ON_DELETING_FOLDERS>
+      <ON_GROUPING>Grouping...</ON_GROUPING>
+      <ON_MOVING_FILES>Moving Files...</ON_MOVING_FILES>
+      <ON_SORTING>Sorting...</ON_SORTING>
+      <!--Action-->
+      <ACTION_CHECK_FILE>Checking</ACTION_CHECK_FILE>
+      <ACTION_COMPARE>Comparing</ACTION_COMPARE>
+      <ACTION_CREATE_FOLDER>Creating</ACTION_CREATE_FOLDER>
+      <ACTION_CREATE_HARDLINK>Creating</ACTION_CREATE_HARDLINK>
+      <ACTION_CREATE_SHORTCUT>Creating</ACTION_CREATE_SHORTCUT>
+      <ACTION_CREATE_SYMBOLICLINK>Creating</ACTION_CREATE_SYMBOLICLINK>
+      <ACTION_DECODE_FILE_NAME>Decoding</ACTION_DECODE_FILE_NAME>
+      <ACTION_DELETE_FILE>Deleting</ACTION_DELETE_FILE>
+      <ACTION_DELETE_FOLDER>Deleting</ACTION_DELETE_FOLDER>
+      <ACTION_ENCODE_FILE_NAME>Encoding</ACTION_ENCODE_FILE_NAME>
+      <ACTION_FIND_SHORTCUT>Shortcut Found</ACTION_FIND_SHORTCUT>
+      <ACTION_FIND_REPARSE_POINT>Reparse Point Found</ACTION_FIND_REPARSE_POINT>
+      <ACTION_GROUPING>Grouping</ACTION_GROUPING>
+      <ACTION_MOVE_FILE>Moving</ACTION_MOVE_FILE>
+      <ACTION_READ_FILE>Reading</ACTION_READ_FILE>
+      <ACTION_REDUCE_FILE_SIZE>Reduced</ACTION_REDUCE_FILE_SIZE>
+      <ACTION_REMOVE_METADATA>Removing</ACTION_REMOVE_METADATA>
+      <ACTION_RENAME_FILE>Renaming</ACTION_RENAME_FILE>
+      <ACTION_SORT>Narrowing Down</ACTION_SORT>
+      <ACTION_SORT_FILE>Sorting File</ACTION_SORT_FILE>
+      <ACTION_START_APPLICATION>Welcome to</ACTION_START_APPLICATION>
+      <ACTION_UNLINK_HARDLINK>Unlinking</ACTION_UNLINK_HARDLINK>
+      <ACTION_UNLINK_SHORTCUT>Unlinking</ACTION_UNLINK_SHORTCUT>
+      <ACTION_UNLINK_SYMBOLICLINK>Unlinking</ACTION_UNLINK_SYMBOLICLINK>
+      <!--Fail Reason-->
+      <REASON_ATTR_CHANGE_FAIL>(Fail Attr Changing)</REASON_ATTR_CHANGE_FAIL>
+      <REASON_CANNOT_GET_LINK>(Cannot Get Link)</REASON_CANNOT_GET_LINK>
+      <REASON_IOERROR>(I/O Error)</REASON_IOERROR>
+      <REASON_LINK_TO_PARENT>(Link To Parent)</REASON_LINK_TO_PARENT>
+      <REASON_NOT_ENCODED>(Not Encoded)</REASON_NOT_ENCODED>
+      <REASON_NOT_EXIST>(Not Found)</REASON_NOT_EXIST>
+      <REASON_NOT_EXIST_DIRECTORY>(Folder Not Found)</REASON_NOT_EXIST_DIRECTORY>
+      <REASON_NOT_LOCAL_WRITABLE_DRIVE>(Not Local Drive)</REASON_NOT_LOCAL_WRITABLE_DRIVE>
+      <REASON_NOT_NTFS_VOLUME>(Not NTFS Volume)</REASON_NOT_NTFS_VOLUME>
+      <REASON_NO_NEED_TO_ENCODE>(No Need To Encode)</REASON_NO_NEED_TO_ENCODE>
+      <REASON_NO_METADATA>(No Metadata)</REASON_NO_METADATA>
+      <REASON_EXIST_SAMENAME>(Exist SameName)</REASON_EXIST_SAMENAME>
+      <REASON_READONLY>(ReadOnly) </REASON_READONLY>
+      <REASON_RECYCLE_BIN>(To RecycleBin) </REASON_RECYCLE_BIN>
+      <REASON_UNAUTHORIZED>(UnAuthorized)</REASON_UNAUTHORIZED>
+      <!--Mode-->
+      <MODE_NORMAL_MEMORY_USAGE>Normal Mode</MODE_NORMAL_MEMORY_USAGE>
+      <MODE_SURPRESS_MEMORY_USAGE>Surpress Memory Usage</MODE_SURPRESS_MEMORY_USAGE>
+    </Action>
+    <ContextMenu>
+      <EDIT_MODE>Edit Mode</EDIT_MODE>
+      <LANGUAGE>Language 言語</LANGUAGE>
+      <QUIT>Quit</QUIT>
+      <!--AutoCheck-->
+      <AUTOCHECK_KEEP_NEWEST_LASTWRITE>Keep Newest 'Last Write Time'</AUTOCHECK_KEEP_NEWEST_LASTWRITE>
+      <AUTOCHECK_KEEP_OLDEST_LASTWRITE>Keep Oldest 'Last Write Time'</AUTOCHECK_KEEP_OLDEST_LASTWRITE>
+      <AUTOCHECK_KEEP_NEWEST_CREATION>Keep Newest 'Creation Time'</AUTOCHECK_KEEP_NEWEST_CREATION>
+      <AUTOCHECK_KEEP_OLDEST_CREATION>Keep Oldest 'Creation Time'</AUTOCHECK_KEEP_OLDEST_CREATION>
+      <AUTOCHECK_KEEP_LONGEST_PATH>Keep Longest Path</AUTOCHECK_KEEP_LONGEST_PATH>
+      <AUTOCHECK_KEEP_SHORTEST_PATH>Keep Shortest Path</AUTOCHECK_KEEP_SHORTEST_PATH>
+      <AUTOCHECK_KEEP_LONGEST_NAME>Keep Longest File Name</AUTOCHECK_KEEP_LONGEST_NAME>
+      <AUTOCHECK_KEEP_SHORTEST_NAME>Keep Shortest File Name</AUTOCHECK_KEEP_SHORTEST_NAME>
+      <AUTOCHECK_KEEP_LARGEST_FILE_SIZE>Keep Largest File Size</AUTOCHECK_KEEP_LARGEST_FILE_SIZE>
+      <AUTOCHECK_KEEP_SMALLEST_FILE_SIZE>Keep Smallest File Size</AUTOCHECK_KEEP_SMALLEST_FILE_SIZE>
+      <AUTOCHECK_KEEP_LAGEST_PICTURE_SIZE>Keep Largest Picture Size</AUTOCHECK_KEEP_LAGEST_PICTURE_SIZE>
+      <AUTOCHECK_KEEP_SMALLEST_PICTURE_SIZE>Keep Smallest Picture Size</AUTOCHECK_KEEP_SMALLEST_PICTURE_SIZE>
+      <AUTOCHECK_KEEP_LOSSLESS_PICTURE>Keep Lossless File Preferentially</AUTOCHECK_KEEP_LOSSLESS_PICTURE>
+      <AUTOCHECK_KEEP_CRITERIA>Keep Criteria</AUTOCHECK_KEEP_CRITERIA>
+      <!--Viewer-->
+      <VIEWER_CLEAR>Clear</VIEWER_CLEAR>
+      <VIEWER_FIT>Fit</VIEWER_FIT>
+      <VIEWER_WRAPTEXT>Wrap Text</VIEWER_WRAPTEXT>
+      <VIEWER_SHOW_EMPTY_LINE>Show Empty Line</VIEWER_SHOW_EMPTY_LINE>
+      <VIEWER_ROTATE_NONE>No Rotation</VIEWER_ROTATE_NONE>
+      <VIEWER_ROTATE_090>Rotation 90</VIEWER_ROTATE_090>
+      <VIEWER_ROTATE_180>Rotation 180</VIEWER_ROTATE_180>
+      <VIEWER_ROTATE_270>Rotation 270</VIEWER_ROTATE_270>
+      <VIEWER_SETTINGS>Settings</VIEWER_SETTINGS>
+      <VIEWER_ENABLE_SECONDARY_VIEWER>Enable Sub Viewer</VIEWER_ENABLE_SECONDARY_VIEWER>
+      <VIEWER_SHOW_SIZE_IN_VIEWER>Show Size in Viewer</VIEWER_SHOW_SIZE_IN_VIEWER>
+      <VIEWER_ENABLE_COMIC_MODE>Enable Comic Mode</VIEWER_ENABLE_COMIC_MODE>
+      <VIEWER_ENABLE_ENABLE_DETECT_SPREAD>Ignore Spread</VIEWER_ENABLE_ENABLE_DETECT_SPREAD>
+      <VIEWER_ENABLE_KEEP_SCROLL_POSITION>Keep Scroll Position</VIEWER_ENABLE_KEEP_SCROLL_POSITION>
+      <VIEWER_ENABLE_SHOW_COLOR_FILTER_PANEL>Shor Color Filter Panel</VIEWER_ENABLE_SHOW_COLOR_FILTER_PANEL>
+      <VIEWER_ENABLE_ANIMATION>Enable Animation</VIEWER_ENABLE_ANIMATION>
+      <VIEWER_ENABLE_FADE_ANIMATION>Enable Fade Animation</VIEWER_ENABLE_FADE_ANIMATION>
+      <!--FolderContextMenu-->
+      <AUTO_SORTING>AutoSort</AUTO_SORTING>
+      <CREATE_FOLDER>Create Folder</CREATE_FOLDER>
+      <!--Result-->
+      <ABORT_WATCHING>Abort Watching</ABORT_WATCHING>
+      <ADD_TO_EXCLUDE_FOLDER>Set Containing Folder To Excluding</ADD_TO_EXCLUDE_FOLDER>
+      <ADD_TO_EXCLUDE_FOLDERS>Set Containing Folders To Excluding</ADD_TO_EXCLUDE_FOLDERS>
+      <EDIT_GROUP>Edit Link</EDIT_GROUP>
+      <FOLDER_DETAIL>Show Folder Detail</FOLDER_DETAIL>
+      <CHECK_FILE_EXCEPT_GROUP>Check Except Selecting File</CHECK_FILE_EXCEPT_GROUP>
+      <CHECK_FOLDER>Check Containing Folder</CHECK_FOLDER>
+      <CHECK_FOLDER_EXCEPT>Check Except Containing Folder</CHECK_FOLDER_EXCEPT>
+      <CHECK_FOLDER_EXCEPT_GROUP>Check Except Containing Folder</CHECK_FOLDER_EXCEPT_GROUP>
+      <CHECK_FOLDER_SUB>Check Containing Folder (inc. Sub Folder)</CHECK_FOLDER_SUB>
+      <CHECK_FOLDER_SUB_EXCEPT>Check Except Containing Folder (inc. Sub Folder)</CHECK_FOLDER_SUB_EXCEPT>
+      <CHECK_FOLDERS>Check Containing Folders</CHECK_FOLDERS>
+      <CHECK_FOLDERS_EXCEPT>Check Except Containing Folders</CHECK_FOLDERS_EXCEPT>
+      <CHECK_FOLDERS_SUB>Check Containing Folders (inc. Sub Folder)</CHECK_FOLDERS_SUB>
+      <CHECK_FOLDERS_SUB_EXCEPT>Check Except Containing Folder (inc. Sub Folder)</CHECK_FOLDERS_SUB_EXCEPT>
+      <UNCHECK_FOLDER>Unckeck Containing Folder</UNCHECK_FOLDER>
+      <UNCHECK_FOLDER_SUB>Uncheck Containing Folder (inc. Sub Folder)</UNCHECK_FOLDER_SUB>
+      <UNCHECK_FOLDERS>Uncheck Conainging Folders</UNCHECK_FOLDERS>
+      <UNCHECK_FOLDERS_SUB>Uncheck Containing Folders (inc. Sub Folder)</UNCHECK_FOLDERS_SUB>
+      <REMOVE_FOLDER>Remove Containing Folder</REMOVE_FOLDER>
+      <REMOVE_FOLDERS>Remove Containing Folders</REMOVE_FOLDERS>
+      <REMOVE_GROUP>Remove Containing Group</REMOVE_GROUP>
+      <REMOVE_GROUPS>Remove Containing Groups</REMOVE_GROUPS>
+      <SELECTED_FILES>Highlighted Files...</SELECTED_FILES>
+      <REMOVE_FROM_LIST>Remove From List</REMOVE_FROM_LIST>
+      <MOVE_TO>Move to</MOVE_TO>
+      <TO_RECYCLEBIN>To RecycleBin</TO_RECYCLEBIN>
+      <CHECKED_FILES>Checked Files...</CHECKED_FILES>
+      <REPLACE_BY_HARDLINK>Replace by Hardlink</REPLACE_BY_HARDLINK>
+      <DECODE_FILE_NAME>Decode File Name</DECODE_FILE_NAME>
+      <ENCODE_FILE_NAME>Encode File Name</ENCODE_FILE_NAME>
+      <REMOVE_METADATA>Remove Unnecessary Metadata</REMOVE_METADATA>
+      <PROPERTIES>Properties</PROPERTIES>
+      <EXPORT_RESULT>Export Result</EXPORT_RESULT>
+      <!--Result-Similarities-->
+      <CHANGE_BASE_IMAGE>To Criteria</CHANGE_BASE_IMAGE>
+      <SHOW_DIFFERENCE>Show Difference</SHOW_DIFFERENCE>
+      <!--SearchType-->
+      <CMS_SEARCH_TYPE_DECODE_FILE_NAME>Decode File Name</CMS_SEARCH_TYPE_DECODE_FILE_NAME>
+      <CMS_SEARCH_TYPE_DELETE_THUMBNAIL_CACHE>Delete Thumbnail Cache</CMS_SEARCH_TYPE_DELETE_THUMBNAIL_CACHE>
+      <CMS_SEARCH_TYPE_DUPLICATE_FILES>Search Duplicate Files</CMS_SEARCH_TYPE_DUPLICATE_FILES>
+      <CMS_SEARCH_TYPE_DUPLICATE_FILES_SPECIFIED>Search Duplicate Files(Specified)</CMS_SEARCH_TYPE_DUPLICATE_FILES_SPECIFIED>
+      <CMS_SEARCH_TYPE_ENUMERATE>File Enumerate</CMS_SEARCH_TYPE_ENUMERATE>
+      <CMS_SEARCH_TYPE_RENAME_FILES>Rename Files</CMS_SEARCH_TYPE_RENAME_FILES>
+      <CMS_SEARCH_TYPE_REMOVE_METADATA>Remove Metadata</CMS_SEARCH_TYPE_REMOVE_METADATA>
+      <CMS_SEARCH_TYPE_SIMILAR_IMAGES>Search Similar Images</CMS_SEARCH_TYPE_SIMILAR_IMAGES>
+      <CMS_SEARCH_TYPE_SIMILAR_IMAGES_SPECIFIED>Search Similar Images(Specified)</CMS_SEARCH_TYPE_SIMILAR_IMAGES_SPECIFIED>
+      <CMS_SEARCH_TYPE_SORT_FILES>Sort Files</CMS_SEARCH_TYPE_SORT_FILES>
+      <CMS_SEARCH_TYPE_WATCH_DUPLICATES>Watch Duplicate Files</CMS_SEARCH_TYPE_WATCH_DUPLICATES>
+      <CMS_SEARCH_TYPE_WATCH_SIMILARITIES>Watch Similar Images</CMS_SEARCH_TYPE_WATCH_SIMILARITIES>
+      <!--Sorter-->
+      <SORTER_SPCIFIED_PICTURE_WIDTH>Picture Width</SORTER_SPCIFIED_PICTURE_WIDTH>
+      <SORTER_SPCIFIED_PICTURE_HEIGHT>Picture Height</SORTER_SPCIFIED_PICTURE_HEIGHT>
+      <SORTER_SPCIFIED_PICTURE_SIZE>Picture Size</SORTER_SPCIFIED_PICTURE_SIZE>
+      <SORTER_SPCIFIED_PICTURE_PURPOSE>Picture Purpose</SORTER_SPCIFIED_PICTURE_PURPOSE>
+      <SORTER_SPCIFIED_DATETIME_NEWEST>Newest Date</SORTER_SPCIFIED_DATETIME_NEWEST>
+      <SORTER_SPCIFIED_DATETIME_OLDEST>Oldest Date</SORTER_SPCIFIED_DATETIME_OLDEST>
+      <SORTER_SPCIFIED_DATETIME_CREATION>Creation Date</SORTER_SPCIFIED_DATETIME_CREATION>
+      <SORTER_SPCIFIED_DATETIME_LASTWRITE>LastWrite Date</SORTER_SPCIFIED_DATETIME_LASTWRITE>
+      <!--Renamer-->
+      <RENAMER_SPECIFIED_PICTURE>Picture</RENAMER_SPECIFIED_PICTURE>
+      <RENAMER_SPECIFIED_PICTURE_WIDTH>Width</RENAMER_SPECIFIED_PICTURE_WIDTH>
+      <RENAMER_SPECIFIED_PICTURE_HEIGHT>Height</RENAMER_SPECIFIED_PICTURE_HEIGHT>
+      <RENAMER_SPECIFIED_PICTURE_SIZE>Size Expression</RENAMER_SPECIFIED_PICTURE_SIZE>
+      <RENAMER_SPECIFIED_PICTURE_PURPOSE>Purpose</RENAMER_SPECIFIED_PICTURE_PURPOSE>
+      <RENAMER_SPECIFIED_PICTURE_SIZE_PURPOSE>Size and Purpose</RENAMER_SPECIFIED_PICTURE_SIZE_PURPOSE>
+      <RENAMER_SPECIFIED_DATETIME>Date and Time</RENAMER_SPECIFIED_DATETIME>
+      <RENAMER_SPECIFIED_DATETIME_YEAR2>Year (two low-order digits)</RENAMER_SPECIFIED_DATETIME_YEAR2>
+      <RENAMER_SPECIFIED_DATETIME_YEAR4>Year (four digits)</RENAMER_SPECIFIED_DATETIME_YEAR4>
+      <RENAMER_SPECIFIED_DATETIME_MONTH1>Month</RENAMER_SPECIFIED_DATETIME_MONTH1>
+      <RENAMER_SPECIFIED_DATETIME_MONTH2>Month (two digits)</RENAMER_SPECIFIED_DATETIME_MONTH2>
+      <RENAMER_SPECIFIED_DATETIME_DAY1>Day</RENAMER_SPECIFIED_DATETIME_DAY1>
+      <RENAMER_SPECIFIED_DATETIME_DAY2>Day (two digits)</RENAMER_SPECIFIED_DATETIME_DAY2>
+      <RENAMER_SPECIFIED_DATETIME_HOUR121>Hour (12-hour clock)</RENAMER_SPECIFIED_DATETIME_HOUR121>
+      <RENAMER_SPECIFIED_DATETIME_HOUR122>Hour (12-hour clock, two digits)</RENAMER_SPECIFIED_DATETIME_HOUR122>
+      <RENAMER_SPECIFIED_DATETIME_HOUR241>Hour (24-hour clock)</RENAMER_SPECIFIED_DATETIME_HOUR241>
+      <RENAMER_SPECIFIED_DATETIME_HOUR242>Hour (24-hour clock, two digits)</RENAMER_SPECIFIED_DATETIME_HOUR242>
+      <RENAMER_SPECIFIED_DATETIME_MINUTE1>Minuts</RENAMER_SPECIFIED_DATETIME_MINUTE1>
+      <RENAMER_SPECIFIED_DATETIME_MINUTE2>Minuts (two digits)</RENAMER_SPECIFIED_DATETIME_MINUTE2>
+      <RENAMER_SPECIFIED_DATETIME_SECOND1>Seconds</RENAMER_SPECIFIED_DATETIME_SECOND1>
+      <RENAMER_SPECIFIED_DATETIME_SECOND2>Seconds (two digits)</RENAMER_SPECIFIED_DATETIME_SECOND2>
+      <!--LViewStyle-->
+      <STYLE_CHANGE_FLOW_DIRECTION>Change Flow Direction</STYLE_CHANGE_FLOW_DIRECTION>
+      <STYLE_DIRECTION_LEFT_TO_RIGHT>Left to Right</STYLE_DIRECTION_LEFT_TO_RIGHT>
+      <STYLE_DIRECTION_RIGHT_TO_LEFT>Right to Left</STYLE_DIRECTION_RIGHT_TO_LEFT>
+      <STYLE_HIDE_EXTRA_TEXT>Hide Picture Properties</STYLE_HIDE_EXTRA_TEXT>
+      <STYLE_HIDE_FILENAME>Hide File Name</STYLE_HIDE_FILENAME>
+      <STYLE_SHOW_EXTRA_TEXT>Show Picture Properties</STYLE_SHOW_EXTRA_TEXT>
+      <STYLE_SHOW_FILENAME>Show File Name</STYLE_SHOW_FILENAME>
+      <STYLE_TO_LIST_DETAIL>Change To List Style</STYLE_TO_LIST_DETAIL>
+      <STYLE_TO_THUMBNAIL>Change To Thumbnail Style</STYLE_TO_THUMBNAIL>
+      <!--Sort-->
+      <SORT>Sort</SORT>
+      <SORT_BY_FILE>File Name</SORT_BY_FILE>
+      <SORT_BY_FOLDER>Folder</SORT_BY_FOLDER>
+      <SORT_BY_LENGTH>File Size</SORT_BY_LENGTH>
+      <SORT_BY_PATH>Path</SORT_BY_PATH>
+      <!--Setting-->
+      <CONFIG>Settings</CONFIG>
+      <CONFIG_ADJUST_THUMBNAIL_ASPECT_AUTOMATICALLY>Adjust Thumbnail Width</CONFIG_ADJUST_THUMBNAIL_ASPECT_AUTOMATICALLY>
+      <CONFIG_ENABLE_COMIC_MODE>Enable Comic Mode</CONFIG_ENABLE_COMIC_MODE>
+      <CONFIG_ENABLE_HIGH_QUALITY_SCALING>Enable High Quiality Scaling Allways</CONFIG_ENABLE_HIGH_QUALITY_SCALING>
+      <CONFIG_ENABLE_THUMBNAIL_REREADING>Enable Thumbnail Rereading</CONFIG_ENABLE_THUMBNAIL_REREADING>
+      <CONFIG_IGNORE_SPREAD_PAGE>Ignore Spread Page</CONFIG_IGNORE_SPREAD_PAGE>
+      <CONFIG_SEARCH_CONTAINER>Recognize Container</CONFIG_SEARCH_CONTAINER>
+      <CONFIG_SEARCH_SUB_FOLDER>Search Sub Folder</CONFIG_SEARCH_SUB_FOLDER>
+      <CONFIG_SHOW_NEXT_FOLDER>Show Next Folder</CONFIG_SHOW_NEXT_FOLDER>
+      <CONFIG_SHOW_SIZE_IN_VIEWER>Show Size in Viewer</CONFIG_SHOW_SIZE_IN_VIEWER>
+      <CONFIG_USE_INTUITIVE_SORT>Use Intuitive Sort</CONFIG_USE_INTUITIVE_SORT>
+    </ContextMenu>
+    <DialogMessage>
+      <CANNOT_USE_CHARACTOR_FILE>Contains characters that cannot be used in the file name.___The following character cannot be used for the file name.___" &lt; &gt; | : * ? \ /______Also the following word cannot be used for the file name.___CON, PRN, AUX, NUL, COM0～9, LPT0～9</CANNOT_USE_CHARACTOR_FILE>
+      <CANNOT_USE_CHARACTOR_FOLDER>Contains characters that cannot be used in the folder name.___The following character cannot be used for the folder name.___" &lt; &gt; | : * ?</CANNOT_USE_CHARACTOR_FOLDER>
+      <EXPORT_TITLE>Export</EXPORT_TITLE>
+      <IMPORT_TITLE>Import</IMPORT_TITLE>
+      <EXPORT_RESULT_TITLE>Export</EXPORT_RESULT_TITLE>
+      <INQUIRY_NOT_EXIST_FOLDER> is not found. Do you create it?</INQUIRY_NOT_EXIST_FOLDER>
+      <INPUT_NEW_FOLDER_NAME>Input new folder name.</INPUT_NEW_FOLDER_NAME>
+      <CHECKED_ALL>Groups that all files are checked is existing.___Do you want to continue the deletion?</CHECKED_ALL>
+      <SELECTED_ALL>Groups that all files are selected is existing.___Do you want to continue the deletion?</SELECTED_ALL>
+      <NO_VALID_RENAME_RULE>Renaming option is enabled,___but valid rename rule is not selected.______Press 'Yes' button to start the folder watching without rename option.</NO_VALID_RENAME_RULE>
+      <CONTAINTS_CONTINUOUS_RENAME_RULE>Rename rule that adds a continuous number is selected.___But cannot apply this rule during folder watching.______Press 'Yes' button to start the folder watching without rename option.</CONTAINTS_CONTINUOUS_RENAME_RULE>
+      <DELETING_FILE_TITLE>Delete File</DELETING_FILE_TITLE>
+      <NOT_EXIST> is not found.</NOT_EXIST>
+      <NOT_EXIST_TITLE>Cannot Open</NOT_EXIST_TITLE>
+      <WRITE_LANGUAGE_TITLE>Please select a language file to export.</WRITE_LANGUAGE_TITLE>
+      <WARNING_AUTOCHECK_SHOWING_FILTERED_RESULT>Filtered result is showing.___Auto check function is performed on the search results that are not filtering.______Do you want to continue?</WARNING_AUTOCHECK_SHOWING_FILTERED_RESULT>
+      <WARNING_DELETE_SHOWING_FILTERED_RESULT>Filtered result is showing.___Delete function is performed on the search results that are not filtering.______Do you want to continue?</WARNING_DELETE_SHOWING_FILTERED_RESULT>
+      <WARNING_DELETE_CHECKED_FILES>Delete checked files.______Do you want to continue?</WARNING_DELETE_CHECKED_FILES>
+    </DialogMessage>
+    <Item>
+      <DEFAULT_TEXT_FOLDER>Press '+' button, or drop files or folders here.</DEFAULT_TEXT_FOLDER>
+      <DEFAULT_TEXT_WATCH_FOLDER>Press '+' button, or drop files or folders here.</DEFAULT_TEXT_WATCH_FOLDER>
+      <DEFAULT_TEXT_RESULT>No result</DEFAULT_TEXT_RESULT>
+      <SORT_RULE_DEFAULT_TITLE>New Rule</SORT_RULE_DEFAULT_TITLE>
+      <SORT_RULE_DEFAULT_DIRECTORY>Push '+' button or drop a folder or write down</SORT_RULE_DEFAULT_DIRECTORY>
+    </Item>
+    <ShortMessage>
+      <ABORT_FILE_MOVING>Moving file was aborted.</ABORT_FILE_MOVING>
+      <EXIST_SAME_FILENAME>The file of the same name exists.</EXIST_SAME_FILENAME>
+      <FAIL_FILE_MOVING>Moving file failed.</FAIL_FILE_MOVING>
+      <FAIL_FILENAME_CHANGING>Renaming file failed.</FAIL_FILENAME_CHANGING>
+      <FAIL_FOLDER_CREATING>Creating folder failed.</FAIL_FOLDER_CREATING>
+      <LOAD_CONFIG_BACKUP>Loading of a configuration file failed. The settings recovered from the backup file.</LOAD_CONFIG_BACKUP>
+      <LOAD_CONFIG_FAIL>Loading of a configuration file failed. All settings were initialized.</LOAD_CONFIG_FAIL>
+      <LOAD_CONFIG_OLD>The configuration file for old version was loaded. Some settings were initialized.</LOAD_CONFIG_OLD>
+      <READONLY_FILE>The file is read only.</READONLY_FILE>
+      <SHOWING_FILTERED_RESULT>Showing filtered results</SHOWING_FILTERED_RESULT>
+      <SUCCESS_CONFIG_SAVING>Config saved.</SUCCESS_CONFIG_SAVING>
+      <SUCCESS_FILE_MOVING>File was moved.</SUCCESS_FILE_MOVING>
+      <SUCCESS_FILENAME_CHANGING>File name was changed.</SUCCESS_FILENAME_CHANGING>
+      <CHECKED>checked.</CHECKED>
+      <EXIST_SAME_ITEM>Exist same item.</EXIST_SAME_ITEM>
+      <INVALID_EXTENSION>Invalid extension.</INVALID_EXTENSION>
+      <INVALID_DEFINITION>Invalid definition.</INVALID_DEFINITION>
+      <INVALID_DIFINITION_FILTER>Invalid filter or command</INVALID_DIFINITION_FILTER>
+      <INVALID_EXPRESSION>Invalid expression.</INVALID_EXPRESSION>
+    </ShortMessage>
+    <Miscellaneous>
+      <GET_FILE_ID>Get Link</GET_FILE_ID>
+      <IGNORE_METADATA>Ignore Metadata</IGNORE_METADATA>
+      <PARSE_SHORTCUT>Parse Shortcut(File)</PARSE_SHORTCUT>
+      <PARSE_SYMBOLIC_LINK>Parse SymbolicLink(File)</PARSE_SYMBOLIC_LINK>
+      <MSC_PARSE_SHORTCUT_FOLDER>Parse Shortcut(Folder)</MSC_PARSE_SHORTCUT_FOLDER>
+      <MSC_PARSE_SYMBOLIC_LINK_FOLDER>Parse SymbolickLink(Folder)</MSC_PARSE_SYMBOLIC_LINK_FOLDER>
+      <SEARCH_HIDDEN>Search Hidden</SEARCH_HIDDEN>
+      <SEARCH_SUB_FOLDER>Search Sub Folder</SEARCH_SUB_FOLDER>
+      <SIZE_FILTER>Size Filter</SIZE_FILTER>
+      <BINARY>Binary</BINARY>
+      <!--SIMILARITY-->
+      <CONCORDANCE>Concordance</CONCORDANCE>
+      <CRITERIA_FILE>Criteria</CRITERIA_FILE>
+      <SIMILARITY>Sililarity</SIMILARITY>
+      <!--SerachButton-->
+      <SEARCH_TYPE_DECODE_FILE_NAME_UTF8>Decode(UTF-8)</SEARCH_TYPE_DECODE_FILE_NAME_UTF8>
+      <SEARCH_TYPE_DECODE_FILE_NAME_UTF16>Decode(UTF-16)</SEARCH_TYPE_DECODE_FILE_NAME_UTF16>
+      <SEARCH_TYPE_DECODE_FILE_NAME_EUC>Decode(EUC)</SEARCH_TYPE_DECODE_FILE_NAME_EUC>
+      <SEARCH_TYPE_DECODE_FILE_NAME_SHIFT_JIS>Decode(Shift-JIS)</SEARCH_TYPE_DECODE_FILE_NAME_SHIFT_JIS>
+      <SEARCH_TYPE_DELETE_THUMBNAIL_CACHE>Delete Thumbnail</SEARCH_TYPE_DELETE_THUMBNAIL_CACHE>
+      <SEARCH_TYPE_DUPLICATES>Search Dup Files</SEARCH_TYPE_DUPLICATES>
+      <SEARCH_TYPE_DUPLICATES_SPECIFIED>Duplicate Files(Spec)</SEARCH_TYPE_DUPLICATES_SPECIFIED>
+      <SEARCH_TYPE_ENUMERATE>File Enumerate</SEARCH_TYPE_ENUMERATE>
+      <SEARCH_TYPE_REMOVE_METADATA>Remove Metadata</SEARCH_TYPE_REMOVE_METADATA>
+      <SEARCH_TYPE_SIMILARITIES>Search Similar Img</SEARCH_TYPE_SIMILARITIES>
+      <SEARCH_TYPE_SIMILARITIES_SPECIFIED>Similar Img(Spec)</SEARCH_TYPE_SIMILARITIES_SPECIFIED>
+      <SEARCH_TYPE_SORT_FILES>Sort Files</SEARCH_TYPE_SORT_FILES>
+      <SEARCH_TYPE_RENAME>Rename Files</SEARCH_TYPE_RENAME>
+      <SEARCH_TYPE_WATCH_DUPLICATES>Watch Duplicate</SEARCH_TYPE_WATCH_DUPLICATES>
+      <SEARCH_TYPE_WATCH_SIMILARITIES>Watch Similar Img</SEARCH_TYPE_WATCH_SIMILARITIES>
+      <!--SortingRule1-->
+      <CASE_SENSITIVE>Yes</CASE_SENSITIVE>
+      <NO_CASE_SENSITIVE>No</NO_CASE_SENSITIVE>
+      <FILE_MOVE_DO_NOTHING>Do Nothing</FILE_MOVE_DO_NOTHING>
+      <FILE_MOVE_RENAME>Keep Both (Rename)</FILE_MOVE_RENAME>
+      <FILE_MOVE_OVERWRITE>Overwrite</FILE_MOVE_OVERWRITE>
+      <!--SortingRule2-->
+      <EQUAL_TO>Equal</EQUAL_TO>
+      <EXCLUDE>Exclude</EXCLUDE>
+      <EXORESSION>Regular Expression</EXORESSION>
+      <INCLUDE>Include</INCLUDE>
+      <LESS_THAN>Less Than</LESS_THAN>
+      <LESS_THAN_OR_EQUAL_TO>Lass Than or Equal</LESS_THAN_OR_EQUAL_TO>
+      <MORE_THAN>More Than</MORE_THAN>
+      <MORE_THAN_OR_EQUAL_TO>More Than or Equal</MORE_THAN_OR_EQUAL_TO>
+      <!--SortingRule3-->
+      <SORT_TYPE_CREATION_TIME>Creation Time</SORT_TYPE_CREATION_TIME>
+      <SORT_TYPE_HEIGHT>Height</SORT_TYPE_HEIGHT>
+      <SORT_TYPE_LAST_WRITE_TIME>Last Write Time</SORT_TYPE_LAST_WRITE_TIME>
+      <SORT_TYPE_LENGTH>File Size</SORT_TYPE_LENGTH>
+      <SORT_TYPE_NAME>File Name</SORT_TYPE_NAME>
+      <SORT_TYPE_WIDTH>Width</SORT_TYPE_WIDTH>
+      <!--RenamingRule1-->
+      <RENAME_TYPE_BOTH>Both</RENAME_TYPE_BOTH>
+      <RENAME_TYPE_EXTENTION>Extension</RENAME_TYPE_EXTENTION>
+      <RENAME_TYPE_NAME>Name</RENAME_TYPE_NAME>
+      <!--RenamingRule2-->
+      <RENAME_MODE_INSERT>Insert</RENAME_MODE_INSERT>
+      <RENAME_MODE_REPLACE>Replace</RENAME_MODE_REPLACE>
+      <RENAME_MODE_TRIM>Trim</RENAME_MODE_TRIM>
+      <!--RenamingRule3-->
+      <RENAME_POSITION_ALL>Any</RENAME_POSITION_ALL>
+      <RENAME_POSITION_END>End</RENAME_POSITION_END>
+      <RENAME_POSITION_START>Start</RENAME_POSITION_START>
+      <!--RenamingRule4-->
+      <RENAME_TARGET_ALL>All</RENAME_TARGET_ALL>
+      <RENAME_TARGET_DATE>Date</RENAME_TARGET_DATE>
+      <RENAME_TARGET_DATETIME>DateTime</RENAME_TARGET_DATETIME>
+      <RENAME_TARGET_EXPRESSION>Expression</RENAME_TARGET_EXPRESSION>
+      <RENAME_TARGET_POSITION>Position</RENAME_TARGET_POSITION>
+      <RENAME_TARGET_NUMERIC>Numeric</RENAME_TARGET_NUMERIC>
+      <RENAME_TARGET_PARENTHESES>(Numeric)</RENAME_TARGET_PARENTHESES>
+      <RENAME_TARGET_STRING>Text</RENAME_TARGET_STRING>
+      <RENAME_TARGET_TIME>Time</RENAME_TARGET_TIME>
+      <!--RenamingRule5-->
+      <RENAME_SOURCE_CREATION_DATE>CreationDate</RENAME_SOURCE_CREATION_DATE>
+      <RENAME_SOURCE_FIRST_LINE>FirstLine</RENAME_SOURCE_FIRST_LINE>
+      <RENAME_SOURCE_LASTWRITE_DATE>LastWriteDate</RENAME_SOURCE_LASTWRITE_DATE>
+      <RENAME_SOURCE_NOW>Now</RENAME_SOURCE_NOW>
+      <RENAME_SOURCE_PICTURE_SIZE>PictureSize</RENAME_SOURCE_PICTURE_SIZE>
+      <RENAME_SOURCE_SEQUENCE>Sequence</RENAME_SOURCE_SEQUENCE>
+      <RENAME_SOURCE_STRING>Text</RENAME_SOURCE_STRING>
+      <!--SimilarityType-->
+      <TYPE_CUSTOM>Custom</TYPE_CUSTOM>
+      <TYPE_EXPLICIT>Explicit</TYPE_EXPLICIT>
+      <TYPE_FUZZY>Fuzzy</TYPE_FUZZY>
+      <TYPE_STANDARD>Standard</TYPE_STANDARD>
+      <!--FileCompare-->
+      <COMPARE_TYPE_UNSPECIFIED>DoNothing</COMPARE_TYPE_UNSPECIFIED>
+      <COMPARE_TYPE_CREATION_TIME>CreationTime(Asc)</COMPARE_TYPE_CREATION_TIME>
+      <COMPARE_TYPE_CREATION_TIME_REV>CreationTime(Des)</COMPARE_TYPE_CREATION_TIME_REV>
+      <COMPARE_TYPE_DATA_LENGH>Size(Asc)</COMPARE_TYPE_DATA_LENGH>
+      <COMPARE_TYPE_DATA_LENGTH_REV>Size(Des)</COMPARE_TYPE_DATA_LENGTH_REV>
+      <COMPARE_TYPE_LASTWRITE_TIME>LastWriteTime(Asc)</COMPARE_TYPE_LASTWRITE_TIME>
+      <COMPARE_TYPE_LASTWRITE_TIME_REV>LastWriteTime(Des)</COMPARE_TYPE_LASTWRITE_TIME_REV>
+      <COMPARE_TYPE_NAME>Name(Asc)</COMPARE_TYPE_NAME>
+      <COMPARE_TYPE_NAME_REV>Name(Des)</COMPARE_TYPE_NAME_REV>
+      <COMPARE_TYPE_PATH>Path(Asc)</COMPARE_TYPE_PATH>
+      <COMPARE_TYPE_PATH_REV>Path(Des)</COMPARE_TYPE_PATH_REV>
+      <!--History-->
+      <HISTORY_COPY>Copy</HISTORY_COPY>
+      <HISTORY_DELETE>Delete</HISTORY_DELETE>
+      <HISTORY_MOVE>Move</HISTORY_MOVE>
+      <HISTORY_RECYCLEBIN>RecycleBin(Delete)</HISTORY_RECYCLEBIN>
+      <HISTORY_RENAME>Rename</HISTORY_RENAME>
+      <HISTORY_REMOVE_METADATA>Delete Metadata</HISTORY_REMOVE_METADATA>
+      <!--Window-->
+      <WINDOW>Visibility</WINDOW>
+      <WINDOW_BORDER>Border</WINDOW_BORDER>
+      <WINDOW_CAPTION_BAR>Caption Bar</WINDOW_CAPTION_BAR>
+      <WINDOW_LIST_FILE>File List</WINDOW_LIST_FILE>
+      <WINDOW_LIST_MOVE_TO>Move Target List</WINDOW_LIST_MOVE_TO>
+      <WINDOW_STATUS_BAR>Status Bar</WINDOW_STATUS_BAR>
+    </Miscellaneous>
+    <Status>
+      <!--Status-->
+      <ABORTING>Aborting</ABORTING>
+      <CHANGING_FILE_NAME>Changing File Name...</CHANGING_FILE_NAME>
+      <CHECKING_FILES>Checking Files...</CHECKING_FILES>
+      <COMPARING>Comparing...</COMPARING>
+      <DELETING_DATABESE>Deleting Database...</DELETING_DATABESE>
+      <DELETING_FILES>Deleting Files...</DELETING_FILES>
+      <DELETING_FOLDERS>Deleting Folders...</DELETING_FOLDERS>
+      <ENUMERATING>Enumerating</ENUMERATING>
+      <GROUPING>Grouping</GROUPING>
+      <IMAGE_PREPARING>Image Preparing...</IMAGE_PREPARING>
+      <LINKING>Linking...</LINKING>
+      <MAKING_DEFFERENCE>Making Difference</MAKING_DEFFERENCE>
+      <MOVING_FILES>Moving Files...</MOVING_FILES>
+      <PREPARING_READ_FILES>Preparing Read Files</PREPARING_READ_FILES>
+      <READING_CRITERIA_FILES>Reading Criteria Files</READING_CRITERIA_FILES>
+      <READING_PICTURE>Reading Pictures...</READING_PICTURE>
+      <RECOGNIZING_DATA_SEGMENTS>Recognizing Metadata</RECOGNIZING_DATA_SEGMENTS>
+      <REMOVING_METADATA>Removing Metadata...</REMOVING_METADATA>
+      <SORTING>Sorting</SORTING>
+      <TRIMING_DATABESE>Trimming Database...</TRIMING_DATABESE>
+      <UNLINKING>Unlinking...</UNLINKING>
+      <WATCHING>Watching</WATCHING>
+      <STATUS_UNDO>Undo</STATUS_UNDO>
+      <NOTIFY_SEARCH_DUPLICATES>Searching Duplicate Files</NOTIFY_SEARCH_DUPLICATES>
+      <NOTIFY_SEARCH_SILIMARITIES>Searching Similar Images</NOTIFY_SEARCH_SILIMARITIES>
+      <NOTIFY_WATCHING_DUPLICATES>Watching Duplicate Files</NOTIFY_WATCHING_DUPLICATES>
+      <NOTIFY_WATCHING_SILIMARITIES>Watching Similar Images</NOTIFY_WATCHING_SILIMARITIES>
+      <NOTIFY_FINISH>Finish!</NOTIFY_FINISH>
+    </Status>
+    <Viewer>
+      <BACKGROUND_COLOR>Color</BACKGROUND_COLOR>
+      <GIF_ANIMATION_SETTINGS>Animated GIF</GIF_ANIMATION_SETTINGS>
+      <GIF_ANIMATION_SPEED>Animation Speed</GIF_ANIMATION_SPEED>
+      <CANNOT_SHOW>Cannot show this file,
+The file may be broken,
+or be not picture file.</CANNOT_SHOW>
+      <CANNOT_SHOW_DIFFERENT_SIZE>Cannot show difference since picture size is different</CANNOT_SHOW_DIFFERENT_SIZE>
+      <CANNOT_SHOW_NOT_SUPPORTED>This file format cannot be shown.</CANNOT_SHOW_NOT_SUPPORTED>
+      <CANNOT_OPEN_UNAUTORIZED>Cannot open file due to unauthorized access</CANNOT_OPEN_UNAUTORIZED>
+      <CANNOT_OPEN_IOERROR>Cannot open the file.
+Other processes might use the file. </CANNOT_OPEN_IOERROR>
+      <CANNOT_OPEN>Cannot open the file.</CANNOT_OPEN>
+      <INSTRUCTION_CRITERIA_DUPLICATES>You can search duplicate files to the showing file in the viewer.
+If you want specify other criteria file, drop a file to the viewer.</INSTRUCTION_CRITERIA_DUPLICATES>
+      <INSTRUCTION_CRITERIA_SIMILARITIES>You can search similar images to the showing file in the viewer.
+If you want specify other criteria file, drop a file to the viewer.</INSTRUCTION_CRITERIA_SIMILARITIES>
+      <INSTRUCTION_FILE_DROP_DUPLICATES>You can search duplicate files of criteria, 
+To specify the criteria, drop a file in the viewer.</INSTRUCTION_FILE_DROP_DUPLICATES>
+      <INSTRUCTION_FILE_DROP_SIMILARITIES>You can search similar images of criteria,
+To specify the criteria, drop a immage file in the viewer.</INSTRUCTION_FILE_DROP_SIMILARITIES>
+    </Viewer>
+  </Text>
+  <Shortcut>
+    <Sc_Viewer>
+      <!--Sc Viewer-->
+      <SHORTCUT_HEADER_VIEWER>Viewer</SHORTCUT_HEADER_VIEWER>
+      <CHANGE_SCALE_FIT>Fit to Bound</CHANGE_SCALE_FIT>
+      <CHANGE_SCALE_100>100%</CHANGE_SCALE_100>
+      <CHANGE_SCALE_200>200%</CHANGE_SCALE_200>
+      <TOGGLE_ENABLE_COLOR_FILTER>Toggle Enable Color Adjustment</TOGGLE_ENABLE_COLOR_FILTER>
+      <TOGGLE_ENABLE_SECONDARY_VIEWER>Toggle Enable Secondary Viewer</TOGGLE_ENABLE_SECONDARY_VIEWER>
+      <TOGGLE_SHOW_COLOR_FILTER_PANEL>Toggle Show Color Adjust Panel</TOGGLE_SHOW_COLOR_FILTER_PANEL>
+      <TOGGLE_SHOW_CRITERIA_TEMPORARY>Toggle Show Criteria Temporary</TOGGLE_SHOW_CRITERIA_TEMPORARY>
+      <TOGGLE_SHOW_SIZE_IN_VIEWER>Toggle Show Size In Viewer</TOGGLE_SHOW_SIZE_IN_VIEWER>
+      <SHOW_DIFFERENCE_FILE>Show Difference (File)</SHOW_DIFFERENCE_FILE>
+      <SHOW_DIFFERENCE_GROUP>Show Difference (Group)</SHOW_DIFFERENCE_GROUP>
+      <SHOW_DIFFERENCE_ALWAYS>Show Difference (Always)</SHOW_DIFFERENCE_ALWAYS>
+      <CHANGE_EMPHASIZE_MODE_NONE>Change Emphasize Mode (None)</CHANGE_EMPHASIZE_MODE_NONE>
+      <CAHNGE_EMPHASIZE_MODE_MAXIMIZE>Change Emphasize Mode (Maximize)</CAHNGE_EMPHASIZE_MODE_MAXIMIZE>
+      <CAHNGE_EMPHASIZE_MODE_REDHIGHLIGHT>Change Emphasize Mode (RedHighlight)</CAHNGE_EMPHASIZE_MODE_REDHIGHLIGHT>
+      <ROTATE_NONE>No Rotation</ROTATE_NONE>
+      <ROTATE_CLOCKWISE_090>Rotate (90)</ROTATE_CLOCKWISE_090>
+      <ROTATE_CLOCKWISE_180>Rotate (180)</ROTATE_CLOCKWISE_180>
+      <ROTATE_CLOCKWISE_270>Rotate (270)</ROTATE_CLOCKWISE_270>
+    </Sc_Viewer>
+    <Sc_Result>
+      <!--Sc Result-->
+      <SHORTCUT_HEADER_RESULT>Result</SHORTCUT_HEADER_RESULT>
+      <UNCHECK>Uncheck</UNCHECK>
+      <CHECK_BY_FOLDER_EXCEPT_GROUP>Check Except Selecting Folder(Group)</CHECK_BY_FOLDER_EXCEPT_GROUP>
+      <CHECK_BY_FILE_EXCEPT_GROUP>Check Except Selecting File(Group)</CHECK_BY_FILE_EXCEPT_GROUP>
+      <CHECK_BY_FOLDER_EXCEPT>Check Except Selecting Folder</CHECK_BY_FOLDER_EXCEPT>
+      <CHECK_BY_FOLDER_EXCEPT_SUB>Check Except Selecting Folder Tree</CHECK_BY_FOLDER_EXCEPT_SUB>
+      <CHECK_BY_FOLDER>Check Selecting Folder</CHECK_BY_FOLDER>
+      <CHECK_BY_FOLDER_SUB>Check Selecting Folder Tree</CHECK_BY_FOLDER_SUB>
+      <UNCHECK_BY_FOLDER>Unckeck Selecting Folder</UNCHECK_BY_FOLDER>
+      <UNCHECK_BY_FOLDER_SUB>Unckeck Selecting Folder Tree</UNCHECK_BY_FOLDER_SUB>
+      <ADD_TO_EXCLUDE_FOLDER>Add To Exclude Folder</ADD_TO_EXCLUDE_FOLDER>
+      <OPEN_FOLDER_BY_EXPLORER>Open Folder By Explorer</OPEN_FOLDER_BY_EXPLORER>
+      <REMOVE_META_DATA>Remove Metadata</REMOVE_META_DATA>
+      <SHOW_PROPERTIES>Show Properties</SHOW_PROPERTIES>
+      <EXPORT_RESULT>Export Results</EXPORT_RESULT>
+      <REMOVE_CHECKED_FILES>Remove Checked Files</REMOVE_CHECKED_FILES>
+      <REMOVE_SELECTED_FILES>Remove Selected Files</REMOVE_SELECTED_FILES>
+      <REMOVE_SELECTED_FOLDER>Remove Selected Folder</REMOVE_SELECTED_FOLDER>
+      <REMOVE_SELECTED_GROUP>Remove Selected Group</REMOVE_SELECTED_GROUP>
+      <EDIT_LINK>グループのリンクを編集する</EDIT_LINK>
+      <SHOW_FOLDER_DETAIL>Show Folder Detail</SHOW_FOLDER_DETAIL>
+      <REPLACE_BY_HARDLINK>Replace By Hardlink</REPLACE_BY_HARDLINK>
+      <MOVE_TO_RECYCLEBIN_CHECKED>Move Checked Files To Recyclebin</MOVE_TO_RECYCLEBIN_CHECKED>
+      <MOVE_TO_RECYCLEBIN_SELECTED>Move Selected Files To Recyclebin</MOVE_TO_RECYCLEBIN_SELECTED>
+      <SORT_RESULT_DATALENGTH>Sort By Datalength</SORT_RESULT_DATALENGTH>
+      <SORT_RESULT_DIRECTORY>Sort By Folder</SORT_RESULT_DIRECTORY>
+      <SORT_RESULT_NAME>Sort By Name</SORT_RESULT_NAME>
+      <SORT_RESULT_PATH>Sort By Path</SORT_RESULT_PATH>
+      <CHANGE_CRITERIA>Change Griteria</CHANGE_CRITERIA>
+      <TOGGLE_FILE_LOCK>Toggle Lock</TOGGLE_FILE_LOCK>
+      <LOCK_FILE>Lock File</LOCK_FILE>
+      <UNLOCK_FILE>Unlock File</UNLOCK_FILE>
+    </Sc_Result>
+    <Sc_AutoCheck>
+      <!--Sc AutoCheck-->
+      <SHORTCUT_HEADER_AUTOCHECK>AutoCheck</SHORTCUT_HEADER_AUTOCHECK>
+      <AUTOCHECK_KEEP_NEWEST_CREATION>Keep Newest Creation</AUTOCHECK_KEEP_NEWEST_CREATION>
+      <AUTOCHECK_KEEP_OLDEST_CREATION>Keep Oldest Creation</AUTOCHECK_KEEP_OLDEST_CREATION>
+      <AUTOCHECK_KEEP_NEWEST_LASTWRITE>Keep Newest LastWrite</AUTOCHECK_KEEP_NEWEST_LASTWRITE>
+      <AUTOCHECK_KEEP_OLDEST_LASTWRITE>Keep Oldest LastWrite</AUTOCHECK_KEEP_OLDEST_LASTWRITE>
+      <AUTOCHECK_KEEP_LONGEST_NAME>Keep Longest Name</AUTOCHECK_KEEP_LONGEST_NAME>
+      <AUTOCHECK_KEEP_SHORTEST_NAME>Keep Shortest Name</AUTOCHECK_KEEP_SHORTEST_NAME>
+      <AUTOCHECK_KEEP_LONGEST_PATH>Keep Longest Path</AUTOCHECK_KEEP_LONGEST_PATH>
+      <AUTOCHECK_KEEP_SHORTEST_PATH>Keep Shortest Path</AUTOCHECK_KEEP_SHORTEST_PATH>
+      <AUTOCHECK_KEEP_LARGEST_FILESIZE>Keep Lagest FileSize</AUTOCHECK_KEEP_LARGEST_FILESIZE>
+      <AUTOCHECK_KEEP_SMALEST_FILESIZE>Keep Smallest FileSize</AUTOCHECK_KEEP_SMALEST_FILESIZE>
+      <AUTOCHECK_KEEP_LAGEST_PICTURE_SIZE>Keep Lagest PictureSize</AUTOCHECK_KEEP_LAGEST_PICTURE_SIZE>
+      <AUTOCHECK_KEEP_SMALLEST_PICTURE_SIZE>Keep Smallest PictureSize</AUTOCHECK_KEEP_SMALLEST_PICTURE_SIZE>
+      <AUTOCHECK_KEEP_LOSSLESS_PICTURE>Keep Lossless Picture</AUTOCHECK_KEEP_LOSSLESS_PICTURE>
+      <AUTOCHECK_KEEP_CRITERIA>Keep Criteria</AUTOCHECK_KEEP_CRITERIA>
+    </Sc_AutoCheck>
+    <Sc_ViewStyle>
+      <!--Sc ViewStyle-->
+      <SHORTCUT_HEADER_VIEWSTYLE>View Style</SHORTCUT_HEADER_VIEWSTYLE>
+      <SET_RESULT_VIEW_STYLE_DETAIL>Detail</SET_RESULT_VIEW_STYLE_DETAIL>
+      <SET_RESULT_VIEW_STYLE_THUMBNAIL>Thumbnail (Tile)</SET_RESULT_VIEW_STYLE_THUMBNAIL>
+      <SET_RESULT_VIEW_STYLE_HTHUMBNAIL>Thumbnail (Right To Left)</SET_RESULT_VIEW_STYLE_HTHUMBNAIL>
+      <SET_RESULT_VIEW_STYLE_HTHUMBNAIL_REVERSE>Thumbnail (Left To Right)</SET_RESULT_VIEW_STYLE_HTHUMBNAIL_REVERSE>
+      <TOGGLE_EXTRA_TEXT_SETTING>Toggle Show Extra Text</TOGGLE_EXTRA_TEXT_SETTING>
+    </Sc_ViewStyle>
+    <Sc_SearchType>
+      <!--Sc SearchType-->
+      <SHORTCUT_HEADER_SEARCH_TYPE>Search Type</SHORTCUT_HEADER_SEARCH_TYPE>
+      <SET_SEARCH_TYPE_DECODE_UTF8>Change Mode to Decode FileName （UTF-8）</SET_SEARCH_TYPE_DECODE_UTF8>
+      <SET_SEARCH_TYPE_DECODE_UTF16>Change Mode to Decode FileName （UTF-16）</SET_SEARCH_TYPE_DECODE_UTF16>
+      <SET_SEARCH_TYPE_DECODE_EUC>Change Mode to Decode FileName （EUC）</SET_SEARCH_TYPE_DECODE_EUC>
+      <SET_SEARCH_TYPE_DECODE_ShiftJIS>Change Mode to Decode FileName （ShiftJIS）</SET_SEARCH_TYPE_DECODE_ShiftJIS>
+      <SET_SEARCH_TYPE_DELETE_THUMBNAIL_CACHE>Change Mode to Delete Thumbnail Cache</SET_SEARCH_TYPE_DELETE_THUMBNAIL_CACHE>
+      <SET_SEARCH_TYPE_DUPLICATES>Change Mode to Search Duplicate Files</SET_SEARCH_TYPE_DUPLICATES>
+      <SET_SEARCH_TYPE_DUPLICATES_SPECIFIED>Change Mode to Search Duplicate Files （Specified)</SET_SEARCH_TYPE_DUPLICATES_SPECIFIED>
+      <SET_SEARCH_TYPE_FILE_ENUMERATE>Change Mode to Enumerate Files</SET_SEARCH_TYPE_FILE_ENUMERATE>
+      <SET_SEARCH_TYPE_REMOVE_METADATA>Change Mode to Remove Metadata</SET_SEARCH_TYPE_REMOVE_METADATA>
+      <SET_SEARCH_TYPE_RENAME>Change Mode to Rename FimeName</SET_SEARCH_TYPE_RENAME>
+      <SET_SEARCH_TYPE_SIMILARITIES>Change Mode to Search Similar Images</SET_SEARCH_TYPE_SIMILARITIES>
+      <SET_SEARCH_TYPE_SIMILARITIES_SPECIFIED>Change Mode to Search Similar Images (Specified)</SET_SEARCH_TYPE_SIMILARITIES_SPECIFIED>
+      <SET_SEARCH_TYPE_SORT_FILES>Change Mode to Sorting</SET_SEARCH_TYPE_SORT_FILES>
+      <SET_SEARCH_TYPE_WATCH_DUPLICATES>Change Mode to Watch Duplicate Files</SET_SEARCH_TYPE_WATCH_DUPLICATES>
+      <SET_SEARCH_TYPE_WATCH_SIMILARITIES>Change Mode to Watch Similar Images</SET_SEARCH_TYPE_WATCH_SIMILARITIES>
+    </Sc_SearchType>
+    <Sc_General>
+      <!--Sc General-->
+      <SHORTCUT_HEADER_GENERAL>Misc</SHORTCUT_HEADER_GENERAL>
+      <ABORT>Abort</ABORT>
+      <QUIT>QUit</QUIT>
+      <COPY_FILE_TO_CLIPBOARD>Copy</COPY_FILE_TO_CLIPBOARD>
+      <CUT_FILE_TO_CLIPBOARD>Cut</CUT_FILE_TO_CLIPBOARD>
+      <PASET_FILE_FROM_CLIPBOARD>Paste</PASET_FILE_FROM_CLIPBOARD>
+      <EDIT_TEXT>Edit</EDIT_TEXT>
+      <DELETE_ITEM>Delete</DELETE_ITEM>
+      <SELECT_ALL_ITEM>Select All Item</SELECT_ALL_ITEM>
+      <UPDATE_FOLDER_LIST>Update Folder List</UPDATE_FOLDER_LIST>
+    </Sc_General>
+  </Shortcut>
+</Language>

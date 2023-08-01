@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">リネーム設定</p>
+			<p class="HeaderM">概要</p>
+			<div class="Indent">
+				<p>ファイルをリネームするルールを設定します。</p>
+			</div>
+
+			<p class="HeaderM">リネームルール</p>
+			<div class="Indent">
+				<p>登録されているルールがリスト表示されます。</p>
+				<br />
+				<p>ルール毎にラジオボタンが用意されています。オンになっているルールが有効になります。</p>
+				<br />
+				<p class="Bold Dot">登録</p>
+				<div class="Indent">
+					<p><span class="Button">＋</span>ボタンを押します。</p>
+				</div>
+				<p class="Bold Dot">編集</p>
+				<div class="Indent">
+					<p>編集したいルールを選択します。</p>
+					<p>ルール編集欄に選択したルールの内容が表示され、編集できるようになります。</p>
+				</div>
+				<p class="Bold Dot">削除</p>
+				<div class="Indent">
+					<p>削除したいルールを選択して、<span class="Button">－</span>ボタンを押します。</p>
+				</div>
+				<p class="Bold Dot">並べ替え</p>
+				<div class="Indent">
+					<p>ドラッグ＆ドロップで並べ替えが出来ます。</p>
+					<br />
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">ドラッグを開始するには、移動させたいルールをポイントした状態でマウスの左ボタンを長押しします。</td>
+						</tr>
+					</table>
+				</div>
+				<p class="Bold Dot">エクスポート</p>
+				<div class="Indent">
+					<p><span class="Button">→</span>ボタンを押すと、登録されているルールをタブ区切りテキストに書き出します。</p>
+				</div>
+				<p class="Bold Dot">インポート</p>
+				<div class="Indent">
+					<p><span class="Button">←</span>ボタンを押して、タブ区切りテキストからルールを追加できます。</p>
+				</div>
+			</div>
+
+			<p class="HeaderM">ルール編集</p>
+			<div class="Indent">
+				<p>ルールの名前、動作等を指定します。</p>
+				<br />
+				<p class="Bold Dot">ソート</p>
+				<div class="Indent">
+					<p>リネーム前にソートするか否か、ソートする場合はソート方法を設定します。</p>
+					<p>リネーム前のソートは一括リネーム時のみ機能します。フォルダ監視と併用している場合は機能しません。</p>
+				</div>
+
+				<p class="Bold Dot">連番開始</p>
+				<div class="Indent">
+					<p>連番を付加するリネームルールの場合の、連番の開始番号を入力します。</p>
+					<p>ソート機能との併用を想定しています。</p>
+					<p>一括リネーム時のみ機能します。フォルダ監視と併用している場合は機能しません。</p>
+				</div>
+				<p class="Bold Dot">ステップ</p>
+				<div class="Indent">
+					<p>連番を付加する場合のステップを入力します。</p>
+				</div>
+				<p class="Bold Dot">同名ファイルがある場合</p>
+				<div class="Indent">
+					<p>リネーム後のファイル名と同じ名前のファイルがあった場合に、上書きするか否かを設定します。</p>
+				</div>
+
+				<p class="Bold Dot">要素</p>
+				<div class="Indent">
+					<p>ルールを構成する要素がリスト表示されます。</p>
+					<p>要素毎にチェックボックスが用意されています。チェックされている要素が有効になります。</p>
+					<br />
+					<div class="Indent">
+						<p class="Bold Dia">登録</p>
+						<div class="Indent">
+							<p><span class="Button">＋</span>ボタンを押します。</p>
+						</div>
+						<p class="Bold Dia">編集</p>
+						<div class="Indent">
+							<p>編集したい要素を選択します。</p>
+							<p>選択した要素の内容が要素編集欄に表示され、編集できるようになります。</p>
+						</div>
+						<p class="Bold Dia">削除</p>
+						<div class="Indent">
+							<p>削除したい要素を選択して、<span class="Button">－</span>ボタンを押します。</p>
+						</div>
+					</div>
+				</div>
+
+				<p class="Bold Dot">要素編集</p>
+				<div class="Indent">
+					<p>ルール要素を編集します。</p>
+					<br />
+					<div class="Indent">
+						<p class="Bold Dia">対象</p>
+						<div class="Indent">
+							<p>リネームの対象を指定します。</p>
+							<br />
+							<table width="565">
+								<tr>
+									<td class="ItemHeader">両方</td>
+									<td class="Item">拡張子と拡張子を除いた部分の両方を対象とします。</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">拡張子</td>
+									<td class="Item">拡張子のみを対象とします。</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">名前</td>
+									<td class="Item">拡張子を除いた部分のみを対象とします。</td>
+								</tr>
+							</table>
+						</div>
+						<p class="Bold Dia">モード</p>
+						<div class="Indent">
+							<p>リネームの動作モードを指定します。</p>
+						</div>
+						<p class="Bold Dia">位置</p>
+						<div class="Indent">
+							<p>置換・削除の対象となる文字列の位置、または文字列を挿入する位置を指定します。</p>
+						</div>
+						<p class="Bold Dia">大/小文字</p>
+						<div class="Indent">
+							<p>大文字と小文字を区別するか否かを設定します。</p>
+						</div>
+						<p class="Bold Dia">対象文字列</p>
+						<div class="Indent">
+							<p>置換・削除の対象となる文字列の種類、または文字列を挿入する対象を指定します。</p>
+							<p>対象（名前/拡張子）、位置（先頭/末尾）との組み合わせであることに注意してください。</p>
+							<br />
+							<table width="565">
+								<tr>
+									<td class="ItemHeader">全て</td>
+									<td class="Item">
+										全ての文字列が置換・削除の対象となります。<br />
+										<p class="Small Gray">例）hoge.jpg ⇒ 「hoge」が対象（対象を名前とした場合）</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">日付</td>
+									<td class="Item">
+										日付と認識される文字列が置換・削除の対象となります。<br />
+										<p class="Small Gray">例）</p>
+										<p class="Small Gray">hoge_2005年12月14日.jpg ⇒ 「2005年12月14日」が対象</p>
+										<p class="Small Gray">hoge_2005/12/14.jpg ⇒ 「2005/12/14」が対象</p>
+										<p class="Small Gray">hoge_2005-12-14.jpg ⇒ 「2005-12-14」が対象</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">日時</td>
+									<td class="Item">日付と時間と認識される文字列が置換・削除の対象となります。</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">正規表現</td>
+									<td class="Item">置換・削除の対象文字列を正規表現で指定します。<br />正規表現は、文字列/正規表現の欄に入力します。</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">位置</td>
+									<td class="Item">
+										置換・削除の対象となる文字を位置と長さで指定します。<br />
+										位置と長さはそれぞれの欄に入力します。<br />
+										位置は先頭または末尾からの文字数を指定します。<br />
+										長さはその位置からの文字数を指定します。<br />
+										<p class="Small Gray">例）</p>
+										<p class="Small Gray">hoge.jpg 先頭＋位置1、長さ2の場合 ⇒ 「og」が対象となります。</p>
+										<p class="Small Gray">hoge.jpg 末尾＋位置0、長さ3の場合 ⇒ 「oge」が対象となります。</p>
+										<br />
+										挿入の場合は、位置のみを指定します。
+										<p class="Small Gray">例）hoge.jpg 先頭＋位置1の場合 ⇒ hとoの間に挿入されます。</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">数字</td>
+									<td class="Item">数字と認識される文字列が置換・削除の対象となります。</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">括弧付き数字</td>
+									<td class="Item">括弧で囲まれた数字が置換・削除の対象となります。</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">文字列</td>
+									<td class="Item">置換・削除の対象となる文字列を直接指定します。<br />文字列は文字列/正規表現の欄に入力します。</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">時間</td>
+									<td class="Item">
+										時間と認識される文字列が置換・削除の対象となります。<br />
+										<p class="Small Gray">例）hoge_12:34:56.jpg ⇒「12:34:56」が対象となります。</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<p class="Bold Dia">挿入文字列</p>
+						<div class="Indent">
+							<p>置換・挿入する文字列を指定します。</p>
+							<p>種類に<span class="Button">作成日時</span>、<span class="Button">更新日時</span>を指定した場合は、日時を表す文字列を入力します。</p>
+							<br />
+							<table width="565">
+								<tr>
+									<td class="ItemHeader">連番</td>
+									<td class="Item">
+										連続した番号で置換、挿入したい場合に指定します。<br />
+										開始番号とステップは、連番開始、ステップの欄に入力します。<br />
+										一括リネームの場合のみ有効になります。フォルダ監視と併用した場合には動作しません。<br />
+										<br />
+										書式を文字列/書式の欄に入力します。<br />
+										下記の書式文字が使用できます。書式文字以外はそのまま置換・挿入に使用されます。
+										<br /><br />
+										<table>
+											<tr>
+												<td class="ItemHeader">0</td>
+												<td class="Item">
+													番号で置換されます。固定の桁数としたい場合は、0を桁の数だけ並べます。<br />
+													連番の桁数が指定された桁数より多い場合は、連番の桁数が優先されます。<br />
+													<p class="Small Gray">例）</p>
+													<p class="Small Gray">書式「_0000」、番号「10」⇒ _0010</p>
+													<p class="Small Gray">書式「_0000」、番号「12345」⇒ _12345</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">テキストの1行目</td>
+									<td class="Item">
+										テキストファイルの1行目の文字で置換・挿入したい場合に指定します。<br />
+										テキストファイル以外の場合は無視されます。
+									</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">作成日時</td>
+									<td class="Item">
+										ファイルの作成日時で置換・挿入したい場合に指定します。<br />
+										書式を文字列/書式の欄に入力します。<br />
+										<br />
+										<a href="DateFormat.html">日時書式文字</a>が使用できます。<br />
+										書式文字以外はそのまま置換・挿入に使用されます。
+									</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">更新日時</td>
+									<td class="Item">
+										ファイルの更新日時で置換・挿入したい場合に指定します。<br />
+										書式を文字列/書式の欄に入力します。<br />
+										<br />
+										<a href="DateFormat.html">日時書式文字</a>が使用できます。<br />
+										書式文字以外はそのまま置換・挿入に使用されます。
+									</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">現在日時</td>
+									<td class="Item">
+										現在（リネーム処理した）時刻で置換・挿入したい場合に指定します。<br />
+										書式を文字列/書式の欄に入力します。<br />
+										<br />
+										<a href="DateFormat.html">日時書式文字</a>が使用できます。<br />
+										書式文字以外はそのまま置換・挿入に使用されます。
+									</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">画像サイズ</td>
+									<td class="Item">
+										画像のサイズで置換・挿入したい場合に指定します。<br />
+										書式を文字列/書式の欄に入力します。<br />
+										<br />
+										<a href="PictureFormat.html">画像書式文字</a>が使用できます。<br />
+										書式文字以外はそのまま置換・挿入に使用されます。
+									</td>
+								</tr>
+								<tr>
+									<td class="ItemHeader">文字列</td>
+									<td class="Item">
+										指定した文字列で置換・挿入したい場合に指定します。<br />
+										文字列を文字列/書式の欄に入力します。
+									</td>
+								</tr>
+							</table>
+							<br />
+							
+							<table class="Memo" width="565">
+								<tr>
+									<td class="RelativeHeader">関連</td>
+								</tr>
+								<tr>
+									<td class="Memo"><a href="PictureFormat.html">画像書式文字</a></td>
+								</tr>
+								<tr>
+									<td class="Memo"><a href="DateFormat.html">日時書式文字</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

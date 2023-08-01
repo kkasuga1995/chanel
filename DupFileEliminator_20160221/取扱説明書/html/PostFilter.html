@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">ポストフィルタ</p>
+			<p class="HeaderM">概要</p>
+			<div class="Indent">
+				<p>フィルタリングによって検索結果の一部を表示します。</p>
+				<p>ファイル名とファイルサイズでのフィルタリングが出来るほか、チェックや選択といったコマンドも実行できます。</p>
+				<br />
+				<p class="Red Bold">自動チェックやファイル削除などの処理は、検索結果全てに対して行います。</p>
+				<br />
+				<table class="Memo" width="625">
+					<tr>
+						<td class="CautionHeader">注意</td>
+					</tr>
+					<tr>
+						<td class="Memo">
+							フィルタリングした状態に更にフィルタリングをする事は出来ません。<br />
+							複数のフィルタ条件を組み合わせるか、OKコマンドを利用し、フィルタリング結果を確定してから再度フィルタリングして下さい。
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">フィルタリング</p>
+			<div class="Indent">
+				<p>ツールバーのテキストボックスにフィルタ条件を入力します。</p>
+				<p>条件を入力後、<span class="ButtonKB">Enter</span>キーを押すとフィルタリングが実行されます。</p>
+				<br />
+				<p>フィルタ条件は過去8件までの履歴が保存されています。</p>
+				<p><span class="ButtonKB">↓</span>キーと<span class="ButtonKB">↑</span>キーで過去の履歴を選択できます。</p>
+				<br />
+				<p>フィルタリングを解除するには、テキストボックスを空にしてから<span class="ButtonKB">Enter</span>キーを押します。</p>
+				<br />
+				<p class="Bold Dia">フィルタ書式</p>
+				<div class="Indent">
+					<p>フィルタ条件は、下記の書式で入力します。大文字小文字は区別されません。</p>
+					<p>複数のフィルタを組み合わせて記述できます。</p>
+					<br />
+					<table width="610">
+						<tr>
+							<td class="ItemHeader">任意の文字列</td>
+							<td class="Item">
+								ファイル名でのフィルタリング。<br />
+								指定した文字列をファイル名に含むファイルがリストに残ります。<br />
+								<p class="Small Gray">*（ワイルドカード）が使用できます。</p>
+								<p class="Small Gray">ファイル名に使用できない文字は使用できません。</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">:任意の文字列</td>
+							<td class="Item">
+								ファイル名でのフィルタリング。<br />
+								指定した文字列をファイル名に含まないファイルがリストに残ります。<br />
+								<p class="Small Gray">*（ワイルドカード）が使用できます。</p>
+								<p class="Small Gray">ファイル名に使用できない文字は使用できません。</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">SIZE:<br />S:</td>
+							<td class="Item">
+								ファイルサイズでのフィルタリング。<br />
+								書式文字に続けてファイルサイズをバイト数で記入します。<br /><br />
+								ファイルサイズの範囲を指定したい場合は、「-」を使用します。<br /><br />
+								ファイルサイズの記述には、以下のサフィックスが使用できます。<br />
+								<table>
+									<tr>
+										<td class="ItemHeader">K</td>
+										<td class="Item">キロ（1024バイト）</td>
+									</tr>
+									<tr>
+										<td class="ItemHeader">M</td>
+										<td class="Item">メガ（1048576バイト）</td>
+									</tr>
+									<tr>
+										<td class="ItemHeader">G</td>
+										<td class="Item">ギガ（1073741824バイト）</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">|</td>
+							<td class="Item">複数のフィルタ条件を組み合わせる場合に使用します。</td>
+						</tr>
+					</table>
+					<br />
+					<table class="Memo" width="610">
+						<tr>
+							<td class="ExHeader" colspan="2">例</td>
+						</tr>
+						<tr>
+							<td class="Memo">hoge</td>
+							<td class="Memo">「hoge」をファイル名に含むファイル</td>
+						</tr>
+						<tr>
+							<td class="Memo">hoge*</td>
+							<td class="Memo">ファイル名が「hoge」で始まるファイル</td>
+						</tr>
+						<tr>
+							<td class="Memo">:hoge</td>
+							<td class="Memo">「hoge」をファイル名に含まないファイル</td>
+						</tr>
+						<tr>
+							<td class="Memo">s:1024</td>
+							<td class="Memo">ファイルサイズが1024バイトのファイル</td>
+						</tr>
+						<tr>
+							<td class="Memo">s:1024-</td>
+							<td class="Memo">ファイルサイズが1024バイト以上のファイル</td>
+						</tr>
+						<tr>
+							<td class="Memo">s:-1024</td>
+							<td class="Memo">ファイルサイズが1024バイト以下のファイル</td>
+						</tr>
+						<tr>
+							<td class="Memo">s:1024-2048</td>
+							<td class="Memo">ファイルサイズが1024バイト以上、2048バイト以下のファイル</td>
+						</tr>
+						<tr>
+							<td class="Memo">*.png|s:2m-</td>
+							<td class="Memo">拡張子が「png」で、ファイルサイズが2メガバイト以上のファイル</td>
+						</tr>
+						<tr>
+							<td class="Memo">hoge|piyo|*.txt|s:2k-5k</td>
+							<td class="Memo">
+								ファイル名に「hoge」と「piyo」を含み、拡張子が「txt」で、<br />
+								ファイルサイズが2キロバイト以上、5キロバイト以下のファイル
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<p class="HeaderM">コマンド</p>
+			<div class="Indent">
+				<p>ファイル名とファイルサイズを条件に、チェックや選択をすることが出来ます。</p>
+				<br />
+				<p class="Bold Dia">コマンド書式</p>
+				<div class="Indent">
+					<p>フィルタ条件は、下記の書式で入力します。大文字小文字は区別されません。</p>
+					<p>フィルタ書式と組み合わせて使用します。</p>
+					<br />
+					<table width="610">
+						<tr>
+							<td class="ItemHeader">\CHECK<br />\C</td>
+							<td class="Item">フィルタ条件に合致するファイルにチェックします。</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">\UNCHECK<br />\UC</td>
+							<td class="Item">フィルタ条件に合致するファイルのチェックを解除します。</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">\SELECT<br />\S</td>
+							<td class="Item">フィルタ条件に合致するファイルを選択します。</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">\UNSELECT<br />\US</td>
+							<td class="Item">フィルタ条件に合致するファイルの選択を解除します。</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">\OK</td>
+							<td class="Item">
+								フィルタリングの結果を確定し、検索結果として利用します。<br />
+								<p class="Small Gray">※この操作は不可逆の操作となります。</p>
+								<p class="Small Gray">※このコマンドは単独で利用します。</p>
+								</td>
+						</tr>
+					</table>
+					<br />
+					<table class="Memo" width="610">
+						<tr>
+							<td class="ExHeader" colspan="2">例</td>
+						</tr>
+						<tr>
+							<td class="Memo">\c|hoge</td>
+							<td class="Memo">「hoge」をファイル名に含むファイルをチェックする</td>
+						</tr>
+						<tr>
+							<td class="Memo">\uc|hoge</td>
+							<td class="Memo">「hoge」をファイル名に含むファイルのチェックを解除する</td>
+						</tr>
+						<tr>
+							<td class="Memo">\s|*.png|s:2m-</td>
+							<td class="Memo">拡張子が「png」で、ファイルサイズが2メガバイト以上のファイルを選択する</td>
+						</tr>
+						<tr>
+							<td class="Memo">\ok</td>
+							<td class="Memo">フィルタリングした結果を検索結果とする</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">手動振り分け先</p>
+			<p class="HeaderM">概要</p>
+			<div class="Indent">
+				<p>検索したファイルを手動で移動する時によく使用する移動先を登録します。</p>
+				<br />
+				<p>登録されたフォルダは、移動先選択時に移動先候補として表示されます。</p>
+				<br />
+				<p>各フォルダにはチェックボックスが付いています。</p>
+				<p>チェックされているフォルダが移動先として使用できるフォルダになります。</p>
+				<br />
+				<p>ショートカットキーを設定すると、ショートカットキーの操作のみでファイルを移動させることが出来ます。</p>
+				<p>初回起動時には、例としていくつかのフォルダが登録されています。</p>
+				<br />
+				<table class="Memo" width="625">
+					<tr>
+						<td class="RelativeHeader">関連</td>
+					</tr>
+					<tr>
+						<td class="Memo"><a href="SortSetting.html">振り分け設定</a></td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">操作</p>
+			<div class="Indent">
+				<p class="Bold Dot">登録</p>
+				<div class="Indent">
+					<p><span class="Button">＋</span>ボタンをクリックするか、エクスプローラ等から、フォルダまたはファイルをドロップします。</p>
+					<p>ファイルがドロップされた場合は、ファイルの親フォルダが追加されます。</p>
+					<br />
+					<p>初期設定ではいくつかのフォルダが移動先フォルダとして設定されています。</p>
+					<br />
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">「Desktop」のようにフルパス表示でないものは、エイリアスを表示しています。</td>
+						</tr>
+						<tr>
+							<td class="Memo">エイリアスが括弧（&lt;&gt;）で囲まれたものは、削除する事が出来ないフォルダを表します。</td>
+						</tr>
+					</table>
+					<br />
+					<table class="Memo" width="610">
+						<tr>
+							<td class="ExHeader" colspan="2">例</td>
+						</tr>
+						<tr>
+							<td class="Memo">&lt;Desktop&gt;</td>
+							<td class="Memo">エイリアス表示（削除不可）</td>
+						</tr>
+						<tr>
+							<td class="Memo">MyPictures</td>
+							<td class="Memo">エイリアス表示（削除可能）</td>
+						</tr>
+						<tr>
+							<td class="Memo">D:\Data</td>
+							<td class="Memo">フルパス表示</td>
+						</tr>
+					</table>
+				</div>
+				<p class="Bold Dot">ショートカットキーの設定</p>
+				<div class="Indent">
+					<p>設定したいフォルダを選択し、リストの下にある<span class="Button">キー</span>ボタンから設定したいキーを選びます。</p>
+					<p><span class="Button">ALT</span>キー、<span class="Button">CTRL</span>キー、<span class="Button">SHIFT</span>キーと組み合わせるには、各チェックボックスをチェックします。</p>
+					<p>OKボタンを押して決定します。</p>
+					<br />
+					<p>ショートカットキーの設定を削除する場合は、<span class="Button">なし</span>を選択します。</p>
+					<br />
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">手動振り分けのショートカットキー設定は、動作のショートカットキー設定、アプリ連携のショートカットキー設定と共通です。</td>
+						</tr>
+						<tr>
+							<td class="Memo">既に他で設定されているショートカットキーの場合、OKボタンを押すことは出来ません。</td>
+						</tr>
+					</table>
+				</div>
+				<p class="Bold Dot">削除</p>
+				<div class="Indent">
+					<p>削除したいフォルダを選択した状態で、<span class="Button">－</span>ボタンを押します。</p>
+				</div>
+			</div>
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

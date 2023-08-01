@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">コマンドラインオプション</p>
+			<div class="Indent">
+				<p>コマンドラインオプションで指定した設定は記憶しません。毎回オプションを付けて起動してください。</p>
+				<br />
+
+				<table width="625">
+					<tr>
+						<td class="ItemHeader">/DB:</td>
+						<td class="Item">
+							<p>データベースファイルの保存先フォルダを指定します。</p>
+							<p>必ず存在するフォルダを指定してください。存在しないフォルダが指定された場合は、デフォルトのフォルダ（実行ファイルと同じフォルダに作成）を使用します。</p>
+							<br />
+							<p class="Small Gray">例) /DB:C:\Database</p>
+							<p class="Small Gray">　⇒ データベースファイルの保存先を C:\Database にします。</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">/Size:</td>
+						<td class="Item">
+							<p>画像サイズ表記のリストファイルのパスを指定します</p>
+							<p>存在しないパスを指定した場合、そのパスにデフォルトのリストファイルを書き出します。リストファイルはXMLファイルです。適宜編集して使用してください。</p>
+							<br />
+							<p class="Small Gray">例) /Size:C:\DupFileEliminator\Size.xml</p>
+							<p class="Small Gray">　⇒ リストファイルに、C:\DupFileEliminator\Size.xml を使用します。</p>
+							<p class="Small Gray">　　 このファイルが存在しない場合は、このファイル名でデフォルト設定を書き出します。</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">/Temp:</td>
+						<td class="Item">
+							<p>テンポラリフォルダを指定します。</p>
+							<p>ZIP内を検索する場合に、このフォルダに一時的にファイルを解凍します。存在しないフォルダが指定された場合、フォルダを作成します。このオプションを指定しないで起動した場合は、デフォルトのフォルダ（実行ファイルと同じフォルダに作成）を使用します。</p>
+							<br />
+							<p class="Small Gray">例) /Temp:R:\Temporary</p>
+							<p class="Small Gray">　⇒ テンポラリフォルダに R:\Temporary を使用します。</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">検索設定</p>
+			<p class="HeaderM">概要</p>
+			<div class="Indent">
+				<p>ファイルを検索（列挙）する際の動作を設定します。</p>
+				<p>設定はいつでも変更できますが、既に検索操作がされている場合、次回の検索・操作から有効になります。</p>
+				<p class="Bold Red">この設定は、ファイルを列挙する全ての動作に影響します。</p>
+			</div>
+
+			<p class="HeaderM">ファイル検索</p>
+			<div class="Indent">
+				<p class="Bold Dot">サブフォルダを検索する</p>
+				<div class="Indent">
+					<p>サブフォルダに含まれるファイルも列挙します。</p>
+				</div>
+
+				<p class="Bold Dot">隠しフォルダ/ファイルを検索する</p>
+				<div class="Indent">
+					<p>隠し属性が付いたフォルダやファイルも列挙します。</p>
+				</div>
+
+				<p class="Bold Dot">システム属性のファイルを検索する</p>
+				<div class="Indent">
+					<p>システム属性が付いたファイルも列挙します。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="CautionHeader">注意</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								システム属性が付いたファイルは、OSの動作に必要なファイルである可能性があります。<br />
+								安易に検索対象に含めないで下さい。
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">書庫内を検索する</p>
+				<div class="Indent">
+					<p>ZIP内のファイルも列挙します。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">ZIP内のZIPはファイルとして扱い、その中にあるファイルは列挙しません。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">メタデータを認識する</p>
+				<div class="Indent">
+					<p>画像ファイルや音楽ファイルのタグ等を無視します。</p>
+					<p>メタデータの認識に対応しているファイルは、JPEG、PNG、MP3、WAVです。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="RelativeHeader">関連</td>
+						</tr>
+						<tr>
+							<td class="Memo"><a href="MetaData.html">メタデータの認識</a></td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">ショートカットを解釈する（ファイル）</p>
+				<div class="Indent">
+					<p>ファイルへのショートカットのリンク先を参照します。</p>
+					<p>オフの場合は、ショートカットをファイルとして扱います。</p>
+				</div>
+				<p class="Bold Dot">ショートカットを解釈する（フォルダ）</p>
+				<div class="Indent">
+					<p>フォルダへのショートカットのリンク先を参照します。</p>
+					<p>オフの場合は、ショートカットをファイルとして扱います。</p>
+				</div>
+
+				<p class="Bold Dot">シンボリックリンクを解釈する（ファイル）</p>
+				<div class="Indent">
+					<p>ファイルへのシンボリックリンクのリンク先を参照します。</p>
+					<p>オフの場合は、シンボリックリンクをファイルとして扱います。</p>
+				</div>
+				<p class="Bold Dot">シンボリックリンクを解釈する（フォルダ）</p>
+				<div class="Indent">
+					<p>フォルダへのシンボリックリンクのリンク先を参照します。</p>
+					<p>オフの場合は、シンボリックリンクをファイルとして扱います。</p>
+				</div>
+
+				<p class="Bold Dot">ファイルIDを取得する</p>
+				<div class="Indent">
+					<p>ボリュームシリアルナンバー、ファイルIDを取得します。</p>
+				</div>
+
+				<p class="Bold Dot">ハードリンクのみの重複グループを除外する</p>
+				<div class="Indent">
+					<p>重複ファイル検索において、リンクを取得するが有効になっている場合、ハードリンクのみで構成されているグループを結果リストから除外します。</p>
+				</div>
+
+				<p class="Bold Dot">ファイルのロック機能を使用する</p>
+				<div class="Indent">
+					<p>ファイルをロック指定出来るようにします。</p>
+					<p>ロック指定されたファイルは検索対象には含まれますが、削除対象として指定できなくなります。</p>
+				</div>
+
+				<p class="Bold Dot">ロックされたファイルのみのグループを除外する</p>
+				<div class="Indent">
+					<p>ロック指定されたファイルのみで構成されるグループを結果リストから除外します。</p>
+				</div>
+
+			</div>
+
+			<p class="HeaderM">フォルダ監視</p>
+			<div class="Indent">
+				<p class="Bold Dot">サブフォルダを監視する</p>
+				<div class="Indent">
+					<p>サブフォルダ内のファイルも監視対象にします。</p>
+				</div>
+
+				<p class="Bold Dot">監視時に削除対象を自動削除する</p>
+				<div class="Indent">
+					<p>削除するとしてチェックされたファイルを自動的に削除します。</p>
+					<p>削除対象を自動選択するよう設定している場合、完全自動での削除が可能となります。</p>
+					<br />
+					<table class="Memo" width="610">
+						<tr>
+							<td class="CautionHeader">注意</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								使い方を誤ると非常に危険な機能です。<br />
+								充分に注意して使用してください。
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">監視時にフォルダ振り分けを行う</p>
+				<div class="Indent">
+					<p>追加・変更があったファイルを振り分けルールに従って移動します。</p>
+				</div>
+
+				<p class="Bold Dot">監視時にリネームを行う</p>
+				<div class="Indent">
+					<p>追加・変更があったファイルをリネーム設定に従ってリネームします。</p>
+				</div>
+			</div>
+
+			<p class="HeaderM">フォルダフィルタ</p>
+			<div class="Indent">
+				<p class="Bold Dot">除外フォルダ</p>
+				<div class="Indent">
+					<p>検索対象から除外したいフォルダを設定します。操作方法などは検索フォルダと同様です。</p>
+					<br />
+					<p>初期設定ではいくつかのフォルダが除外フォルダとして設定されています。</p>
+					<br />
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">「Program Files」のようにフルパス表示でないものは、エイリアスを表示しています。</td>
+						</tr>
+						<tr>
+							<td class="Memo">エイリアスが括弧（&lt;&gt;）で囲まれたものは、削除する事が出来ないフォルダを表します。</td>
+						</tr>
+					</table>
+					<table class="Memo" width="610">
+						<tr>
+							<td class="ExHeader" colspan="2">例</td>
+						</tr>
+						<tr>
+							<td class="Memo">&lt;Desktop&gt;</td>
+							<td class="Memo">エイリアス表示（削除不可）</td>
+						</tr>
+						<tr>
+							<td class="Memo">MyPictures</td>
+							<td class="Memo">エイリアス表示（削除可能）</td>
+						</tr>
+						<tr>
+							<td class="Memo">D:\Dat</td>
+							<td class="Memo">フルパス表示</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<p class="HeaderM">ファイルサイズフィルタ</p>
+			<div class="Indent">
+				<p>ファイルサイズによってフィルタリングしたい場合に使用します。</p>
+				<br />
+				<p>0バイトから8エクサバイトの範囲で指定できます。</p>
+				<p>範囲外のサイズを入力した場合は、範囲内の数値に修正されます。</p>
+				<br />
+				<p><span class="ButtonKB">ホイール</span>を使用して数値の増減を行う事もできます。</p>
+				<p><span class="ButtonKB">SHIFT</span>キー＋<span class="ButtonKB">ホイール</span>の場合は、増減の値が大きくなります。</p>
+				<br />
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">フィルタリングの判定は、下限以上、上限以下で行います。つまり、上限と下限に指定したサイズのファイルも対象に含まれます。</td>
+					</tr>
+					<tr>
+						<td class="Memo">数字以外の文字は入力できません。</td>
+					</tr>
+					<tr>
+						<td class="Memo">桁区切りのカンマは自動的に挿入されます。</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">日付フィルタ</p>
+			<div class="Indent">
+				<p>ファイルのタイムスタンプによってフィルタリングしたい場合に使用します。</p>
+				<p>作成日時、更新日時について設定できます。</p>
+				<br />
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">フィルタリングの判定は、下限以上、上限以下で行います。つまり、上限と下限に指定した日時のファイルも対象に含まれます。</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">画像サイズフィルタ</p>
+			<div class="Indent">
+				<p>画像サイズでフィルタリングしたい場合に使用します。</p>
+				<p>縦横それぞれ0ピクセルから32767ピクセルの範囲で指定できます。</p>
+				<br />
+				<p>右側にあるヘルパーボタンを使用すると、画像サイズの呼称からサイズを指定することが出来ます。</p>
+				<br />
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">設定タブの画像ファイル設定で画像として扱うと指定したファイルに対してのみ有効です。</td>
+					</tr>
+					<tr>
+						<td class="Memo">フィルタリングの判定は、下限以上、上限以下で行います。つまり、上限と下限に指定したサイズの画像ファイルも対象に含まれます。</td>
+					</tr>
+					<tr>
+						<td class="Memo">ファイル列挙の処理時間が増えます。</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">正規表現フィルタ</p>
+			<div class="Indent">
+				<p>正規表現を用いてファイル名のフィルタリングしたい場合に使用します。</p>
+				<p>初回起動時には、正規表現の例としていくつかの条件が登録されています。</p>
+				<br />
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">複数の正規表現をリストに登録出来ますが、フィルタリングに使用できるのは1つだけです。</td>
+					</tr>
+					<tr>
+						<td class="Memo">大文字と小文字の区別はされません。</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">ファイル名フィルタ</p>
+			<div class="Indent">
+				<p>ファイル名でフィルタリングしたい場合に指定します。</p>
+				<p>初回起動時には、全てのファイルが列挙されるように設定されているほか、条件指定の例として、いくつかの条件が登録されています。</p>
+				<br />
+				<p>「検索する」に指定した条件に合致するファイルが列挙され、「除外する」に指定した条件に合致するファイルが対象から外れます。</p>
+				<br />
+				<p>各条件にはチェックボックスが付いており、チェックされている条件が有効になります。</p>
+				<br />
+				<p>複数の条件が有効な場合、それらの論理和を使用します。</p>
+				<p>つまり、いずれかの条件が合致したファイルがフィルタを通過あるいはブロックされます。</p>
+				<br />
+				<p>「検索する」条件が全て無効な場合、「*」（全てのファイルを列挙）が指定されたと見做されます。</p>
+				<br />
+				<p>条件の指定には、ワイルドカード（*）が使用できます。</p>
+				<p>大文字と小文字は混ぜて使用できますが、フィルタリング時には区別されません。</p>
+				<p>ファイル名に使用できない文字（:&lt;&gt;|など）は、条件の指定にも使用する事ができません。</p>
+				<br />
+				<table class="Memo" width="625">
+					<tr>
+						<td class="ExHeader" colspan="2">例</td>
+					</tr>
+					<tr>
+						<td class="Memo">A*</td>
+						<td class="Memo">「A」または「a」で始まるファイル</td>
+					</tr>
+					<tr>
+						<td class="Memo">*.jpg</td>
+						<td class="Memo">拡張子が「.JPG」のファイル</td>
+					</tr>
+					<tr>
+						<td class="Memo">Data.xls</td>
+						<td class="Memo">ファイル名を直接指定</td>
+					</tr>
+				</table>
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">「*.*」と「*」は、どちらを指定しても「*」が指定されたと解釈されます。</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">拡張子フィルタ</p>
+			<div class="Indent">
+				<p>拡張子でフィルタリングしたい場合に指定します。</p>
+				<p>初回起動時には、実行ファイルや設定ファイル等が列挙されないように設定されているほか、条件指定の例として、いくつかの条件が追加されています。</p>
+				<br />
+				<p>「検索する」に指定した条件に合致するファイルが列挙され、「除外する」に指定した条件に合致するファイルが対象から外れます。</p>
+				<br />
+				<p>各条件にはチェックボックスが付いており、チェックされている条件が有効になります。</p>
+				<br />
+				<p>条件の指定には、大文字のみ使用できます。小文字は大文字に自動的に変換されます。</p>
+				<p>ファイル名に使用できない文字は、条件の指定に使用する事ができません。</p>
+				<p>ワイルドカード（*）も使用できません。</p>
+				<br />
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">
+							拡張子フィルタは、拡張子に限定したファイル名フィルタです。<br />
+							拡張子でのフィルタリング設定を簡便に行うために用意されています。<br />
+							ファイル名フィルタを通過したファイルに対して、拡張子フィルタの処理が行われます。<br />
+							ファイル名フィルタで拡張子のフィルタリングを行い、拡張子フィルタの使用を止める事もできます。
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

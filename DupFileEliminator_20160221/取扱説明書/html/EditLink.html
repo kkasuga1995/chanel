@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">リンク編集</p>
+			<p class="HeaderM">概要</p>
+			<div class="Indent">
+				<p>重複しているファイルを、ハードリンク、シンボリックリンク、ショートカットで置換したり、元に戻すなどの操作を行います。</p>
+				<p>操作は重複ファイル検索の結果リストから行います。</p>
+				<br />
+
+				<table class="Memo" width="625">
+					<tr>
+						<td class="CautionHeader">注意</td>
+					</tr>
+					<tr>
+						<td class="Memo">各リンクについて充分に理解をした上でご使用ください。</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">表示</p>
+			<div class="Indent">
+				<p>グループ編集タブにリストビューで表示します。</p>
+				<br />
+
+				<table width="625">
+					<tr>
+						<td class="ColumnHeader">項目</td>
+						<td class="ColumnHeader">表示</td>
+						<td class="ColumnHeader">内容</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">アイコン</td>
+						<td class="Item">●</td>
+						<td class="Item">ファイルに関連付けられたアイコン</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">ファイル</td>
+						<td class="Item">●</td>
+						<td class="Item">ファイル名</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">フォルダ</td>
+						<td class="Item">●</td>
+						<td class="Item">フォルダ名</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">拡張子</td>
+						<td class="Item">○</td>
+						<td class="Item">ファイルの拡張子</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">ファイルタイプ</td>
+						<td class="Item">○</td>
+						<td class="Item">ファイルの種類を表す文字列</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">サイズ</td>
+						<td class="Item">●</td>
+						<td class="Item">ファイルサイズ</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">作成日時</td>
+						<td class="Item">●</td>
+						<td class="Item">ファイルの作成日時（シンボリックリンクの場合は、リンク先ファイルの作成日時）</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">更新日時</td>
+						<td class="Item">●</td>
+						<td class="Item">ファイルの更新日時（シンボリックリンクの場合は、リンク先ファイルの更新日時）</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">リンク数</td>
+						<td class="Item">●</td>
+						<td class="Item">ハードリンクの数（通常は1、ハードリンクされている場合2以上の数字）</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">ボリュームID</td>
+						<td class="Item">●</td>
+						<td class="Item">ボリュームシリアル番号（シンボリックリンクの場合は、リンク先ファイルのID）</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">ファイルID</td>
+						<td class="Item">●</td>
+						<td class="Item">ファイルのインデックス番号（シンボリックリンクの場合は、リンク先ファイルのID）</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">リンク先</td>
+						<td class="Item">●</td>
+						<td class="Item">シンボリックリンクまたはショートカットのリンク先のファイルパス</td>
+					</tr>
+				</table>
+				<br />
+
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">各項目の表示/非表示の切替、表示順の変更などが可能です。</td>
+					</tr>
+					<tr>
+						<td class="Memo">リンク数、ボリュームID、ファイルID、リンク先は、設定に関係なくリンクを取得し表示します。</td>
+					</tr>
+					<tr>
+						<td class="Memo">ボリュームIDは、本来「28CE-CCDA」のように表示するべきかもしれませんが、プロポーショナルフォントで表示すると桁が揃わず見難いため、10進数で表示しています。</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">操作</p>
+			<div class="Indent">
+				<p class="Bold Dot">編集画面に入る</p>
+				<div class="Indent">
+					<p>重複ファイル検索結果リストの右クリックメニューから「このグループのリンクを編集」をクリックするか、任意のファイルを選択した状態で、<span class="ButtonKB">CTRL</span>キー＋マウスの<span class="ButtonKB">進む</span>ボタンを押すと、グループ編集タブが追加されます。</p>
+				</div>
+
+				<p class="Bold Dot">編集画面を抜ける</p>
+				<div class="Indent">
+					<p>リンク編集以外のタブをクリックするか、マウスの戻るボタンを押します。</p>
+				</div>
+
+				<p class="Bold Dot">リストの操作</p>
+				<div class="Indent">
+					<p>リストビューの基本的な操作は、重複ファイル検索結果リストとほぼ同様です。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">チェックボックスを操作すると、重複ファイル検索結果リストにも反映されます。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">ハードリンクで置換</p>
+				<div class="Indent">
+					<p>リンクしたいファイルを選択し、<span class="Button">リンク</span>ボタンを押します。</p>
+					<br />
+					<p>選択されているファイルが同一実体へのハードリンクに置換されます。</p>
+					<p>置換前のオリジナルのファイルは、ディスク上から削除されます。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">ファイルが選択されていない場合は、グループ内の全てのファイルが対象となります。</td>
+						</tr>
+						<tr>
+							<td class="Memo">置換してもファイル名は変わりません。</td>
+						</tr>
+						<tr>
+							<td class="Memo">ローカル且つNTFSでフォーマットされている同一ボリュームのファイル同士でのみハードリンクが可能です。</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								ハードリンクへの置換は、検索結果リストの右クリックメニューからも行えます。<br />
+								この場合、グループ内の全てのファイルが同一実体へのハードリンクに置換されます。
+							</td>
+						</tr>
+						<tr>
+							<td class="Memo">ハードリンクには上下関係、親子関係のようなものはありません。全てのリンクが対等となります。</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								ハードリンクされたファイルを同じボリューム内で移動した場合は、リンクが維持されます。<br />
+								違うボリュームへ移動した場合は実体がコピーされ通常のファイルとなります。
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">ハードリンクを解除</p>
+				<div class="Indent">
+					<p>解除したいファイルを選択し<span class="Button">戻す</span>ボタンを押します。</p>
+					<p>実体を持つファイルが作成され、ハードリンクファイルはディスクから削除されます。</p>
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								ハードリンクを普通のファイルに戻してもリンク数が減らない場合があります。<br />
+								ゴミ箱に同じ実体へのハードリンクが残っていることが原因です。
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">シンボリックリンクで置換</p>
+				<div class="Indent">
+					<p>まず、リンク先（リンクされる側）に指定するファイルを1つ選択し<span class="Button">リンク先</span>ボタンを押します。</p>
+					<p>行の一番左に矢印が表示され、リンク先として指定されたことがわかります。</p>
+					<br />
+					<p>次に、置換する（リンクする）ファイルを選択し<span class="Button">置換</span>ボタンを押します。</p>
+					<p>選択したファイルがシンボリックリンクに置換されます。</p>
+					<br />
+					<p>置換前のオリジナルのファイルは、ディスク上から削除されます。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">置換してもファイル名は変わりません。</td>
+						</tr>
+						<tr>
+							<td class="Memo">リンク先（リンクされる側）のファイルには、ローカルまたはネットワーク上のファイルが指定できます。</td>
+						</tr>
+						<tr>
+							<td class="Memo">リンク元（リンクする側）のファイルは、ローカル且つNTFSでフォーマットされたボリュームのファイルでなければなりません。</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								リンク先（リンクされる側）のファイルを削除や移動した場合、リンクは追従せず無効なリンクとなります。<br />
+								リンク先のファイルを元に戻せば、再びリンクが有効となります。
+							</td>
+						</tr>
+						<tr>
+							<td class="Memo">リンク元（リンクしている側）のファイルは、エクスプローラで違うボリュームへ移動すると、普通のファイルに戻ってしまうようです。</td>
+						</tr>
+						<tr>
+							<td class="Memo">DupFileEliminatorが作成するシンボリックリンクは、リンクを絶対パスで指定しています。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">シンボリックリンクを解除</p>
+				<div class="Indent">
+					<p>解除したいファイルを選択し<span class="Button">戻す</span>ボタンを押します。</p>
+					<p>実体を持つファイルが作成され、ハードリンクファイルはディスクから削除されます。</p>
+				</div>
+
+				<p class="Bold Dot">ショートカットで置換と解除</p>
+				<div class="Indent">
+					<p>操作方法は、シンボリックリンクと同じです。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">ショートカットで置換するファイルは、ローカルボリュームのファイルでなければなりません。</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								ショートカットでの置換は、ファイル名が維持されません。拡張子が「.lnk」に変わります。<br />
+								「戻す」操作をした場合は、リンク先と同じ拡張子になります。
+							</td>
+						</tr>
+						<tr>
+							<td class="Memo">同名のファイルがすでにある場合は、置換することも戻すことも出来ません。。</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+			
+			<p class="HeaderM">その他</p>
+			<div class="Indent">
+				<p>リンクの種類は下記のように見分けることが出来ます。</p>
+				<br />
+
+				<table width="625">
+					<tr>
+						<td class="ItemHeader">ハードリンク</td>
+						<td class="Item">リンク数が2以上のもの</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">シンボリックリンク</td>
+						<td class="Item">リンク先が空欄でなく、アイコンに矢印が付いていないもの</td>
+					</tr>
+					<tr>
+						<td class="ItemHeader">ショートカット</td>
+						<td class="Item">
+							リンク先が空欄でなく、アイコンに矢印が付いているもの<br />
+							（拡張子は「.lnk」、ファイルタイプは「ショートカット」）
+						</td>
+					</tr>
+				</table>
+				<br />
+
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">エクスプローラでは、シンボリックリンクにもアイコンに矢印が付きます。</td>
+					</tr>
+					<tr>
+						<td class="Memo">リンク先が空のショートカットは、エクスプローラではマイコンピュータへのショートカットになりますが、DupFileEliminatorでは、ショートカットとしては扱いません。</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

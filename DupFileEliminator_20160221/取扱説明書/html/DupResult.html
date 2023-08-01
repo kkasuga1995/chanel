@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">重複ファイル検索結果</p>
+			<p class="HeaderM">概要</p>
+			<div class="Indent">
+				<p>重複ファイル検索の結果を表示し、削除、移動等の操作を行います。</p>
+			</div>
+
+			<p class="HeaderM">表示</p>
+			<div class="Indent">
+				<p class="SmallMargin">検索結果タブにリストビューで表示します。</p>
+				<br />
+				<p>同じ内容のファイル毎にグループ分けされて表示します。</p>
+				<p>隣り合うグループは異なる色で表示されます。</p>
+				<br />
+				
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">検索結果はソートされていません。必要に応じて並び替えてください。</td>
+					</tr>
+					<tr>
+						<td class="Memo">グループ内の全てのファイルがチェックされると、注意喚起のため色分けの色が変ります。</td>
+					</tr>
+				</table>
+				<br />
+
+				<p class="Bold Dot">表示項目</p>
+				<br />
+				<div class="Indent">
+					<table width="610">
+						<tr>
+							<td class="ColumnHeader">項目</td>
+							<td class="ColumnHeader">表示</td>
+							<td class="ColumnHeader">内容</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">アイコン</td>
+							<td class="Item">●</td>
+							<td class="Item">ファイルに関連付けられたアイコン</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">サムネイル</td>
+							<td class="Item">●</td>
+							<td class="Item">画像ファイルの場合、サムネイルを表示します</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">ファイル</td>
+							<td class="Item">●</td>
+							<td class="Item">ファイル名</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">フォルダ</td>
+							<td class="Item">●</td>
+							<td class="Item">フォルダ名</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">拡張子</td>
+							<td class="Item">○</td>
+							<td class="Item">ファイルの拡張子</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">ファイルタイプ</td>
+							<td class="Item">○</td>
+							<td class="Item">ファイルの種類を表す文字列</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">サイズ</td>
+							<td class="Item">●</td>
+							<td class="Item">ファイルサイズ</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">作成日時</td>
+							<td class="Item">●</td>
+							<td class="Item">ファイルの作成日時（シンボリックリンクの場合は、リンク先ファイルの作成日時）</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">更新日時</td>
+							<td class="Item">●</td>
+							<td class="Item">ファイルの更新日時（シンボリックリンクの場合は、リンク先ファイルの更新日時）</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">リンク数</td>
+							<td class="Item">○</td>
+							<td class="Item">ハードリンクの数（通常は1、ハードリンクされている場合2以上の数字）</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">ボリュームID</td>
+							<td class="Item">○</td>
+							<td class="Item">ボリュームシリアル番号（シンボリックリンクの場合は、リンク先ファイルのID）</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">ファイルID</td>
+							<td class="Item">○</td>
+							<td class="Item">ファイルのインデックス番号（シンボリックリンクの場合は、リンク先ファイルのID）</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">リンク先</td>
+							<td class="Item">○</td>
+							<td class="Item">シンボリックリンクまたはショートカットのリンク先のファイルパス</td>
+						</tr>
+					</table>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">各項目の表示/非表示の切替、表示順の変更などが可能です。</td>
+						</tr>
+						<tr>
+							<td class="Memo">リンク数、ボリュームID、ファイルID、リンク先は、設定に関係なくリンクを取得し表示します。</td>
+						</tr>
+						<tr>
+							<td class="Memo">ボリュームIDは、本来「28CE-CCDA」のように表示するべきかもしれませんが、プロポーショナルフォントで表示すると桁が揃わず見難いため、10進数で表示しています。</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<p class="HeaderM">操作</p>
+			<div class="Indent">
+				<p class="Bold Dot">削除するファイルの指定</p>
+				<div class="Indent">
+					<p>ファイル毎に用意されているチェックボックスをチェックすると削除する対象となります。</p>
+					<p>チェックボックスの状態を変えるには、チェックボックスをマウスで直接操作するか、ファイルを選択した状態で<span class="ButtonKB">SPACE</span>キーを押します。</p>
+					<br />
+					<p><span class="Button">自動</span>ボタンを押すと、予め用意された様々な条件によって自動でチェックすることが出来ます。</p>
+					<p>また、右クリックメニューからも様々な条件によって自動チェックをすることが出来ます。</p>
+				</div>
+
+				<p class="Bold Dot">ファイルの実行</p>
+				<div class="Indent">
+					<p>ファイル名をダブルクリックするか、ファイルを選択した状態で<span class="ButtonKB">Enter</span>キーを押すと、ファイルを実行するか、関連付けられたアプリケーション（既定のアプリケーション）でそのファイルを開きます。</p>
+					<br />
+					<p>設定タブでアプリ連携機能にアプリケーションを登録している場合は、ダブルクリックの動作は以下のようになります。</p>
+					<div class="Indent">
+						<p>●有効なアプリケーションが1つの場合：そのアプリケーションでファイルを開きます。</p>
+						<p>●有効なアプリケーションが複数ある場合：使用するアプリケーションを選択するメニューがポップアップします。</p>
+					</div>
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">Enterキーによる操作では、常に既定のアプリケーションでファイルを開きます。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">フォルダの表示</p>
+				<div class="Indent">
+					<p>フォルダ名をダブルクリックするると、ダブルクリックされたファイルが選択された状態でエクスプローラが開きます。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">アプリ連携機能にアプリケーションが登録してあり、1つ以上のアプリケーションが有効となっている場合は、ファイル名をダブルクリックしたのと同じ動作になります。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">ファイル名の変更</p>
+				<div class="Indent">
+					<p>ファイルを選択した状態で、ファイル名をクリックするか<span class="ButtonKB">F2</span>キーを押すと、テキスト入力ができる状態となりファイル名を編集できます。</p>
+					<br />
+					<p>編集後に<span class="ButtonKB">Enter</span>キーを押すかテキスト入力ボックス以外の部分をクリックすると、ファイル名が変更されます。</p>
+					<p>また、編集中に<span class="ButtonKB">ESC</span>キーを押すと、編集を中止します。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">ファイル名に使用できない文字が使用されていた場合は、ファイル名の変更は行いません。</td>
+						</tr>
+						<tr>
+							<td class="Memo">同名ファイルが存在した場合は、ファイル名の変更は行いません。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">フォルダの変更（ファイルの移動）</p>
+				<div class="Indent">
+					<p>ファイルを選択した状態で、フォルダ名をクリックすると、テキスト入力ができる状態となりフォルダを編集できます。</p>
+					<br />
+					<p>編集後に<span class="ButtonKB">Enter</span>キーを押すかテキスト入力ボックス以外の部分をクリックすると、フォルダが変更（移動）されます。</p>
+					<p>また、編集中に<span class="ButtonKB">ESC</span>キーを押すと、編集及び移動を中止します。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">フォルダ名に使用できない文字が使用されていた場合は、フォルダの変更は行いません。</td>
+						</tr>
+						<tr>
+							<td class="Memo">存在しないフォルダが入力された場合は、フォルダが作成されます。</td>
+						</tr>
+						<tr>
+							<td class="Memo">既存のフォルダを入力し、そのフォルダに同名のファイルが存在した場合は、ファイルの移動は行いません。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">即時削除</p>
+				<div class="Indent">
+					<p><span class="ButtonKB">DEL</span>キーで選択されているファイルを即座にゴミ箱へ入れることが出来ます。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">チェックボックスの状態に関係なく、選択されているファイルをゴミ箱へ入れます。</td>
+						</tr>
+						<tr>
+							<td class="Memo">ゴミ箱を使用しない設定になっていても、この操作では必ずゴミ箱を使用します。</td>
+						</tr>
+					</table>
+					<br />
+				</div>
+			</div>
+
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

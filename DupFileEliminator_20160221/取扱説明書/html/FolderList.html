@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">検索フォルダリスト</p>
+			<p class="HeaderM">概要</p>
+			<div class="Indent">
+				<p>検索対象となるフォルダを設定します。</p>
+			</div>
+
+			<p class="HeaderM">表示</p>
+			<div class="Indent">
+				<p>検索フォルダタブにリストビューで表示します。</p>
+				<br />
+				<p>各フォルダにはチェックボックスが付いていて、チェックされているフォルダが検索対象となります。</p>
+				<p>複数のフォルダを検索対象とする事が出来ます。</p>
+				<br />
+				<p>通常はフォルダのパスをリストに表示しますが、任意の別名を表示することも可能です。</p>
+				<br />
+
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">存在しないフォルダ、見失ったフォルダは、グレーアウトされます。</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">フォルダの登録</p>
+			<div class="Indent">
+				<p>検索フォルダを登録する方法は複数あります。お好み応じて、状況に応じて使い分けて下さい。</p>
+				<br />
+
+				<p class="Bold Dot">フォルダツリーから選択する</p>
+				<div class="Indent">
+					<p>検索フォルダリストの下にある<span class="Button">+</span>ボタンを押すと、フォルダツリーが表示されます。</p>
+					<p>フォルダツリーから登録したいフォルダを探してクリックします。</p>
+				</div>
+
+				<p class="Bold Dot">ドラッグ＆ドロップで登録する</p>
+				<div class="Indent">
+					<p>エクスプローラからDupFileEliminatorの検索フォルダリストへフォルダかファイルをドラッグ＆ドロップします。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">ファイルをドロップした場合は、そのファイルが入っているフォルダが登録されます。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">コピー＆ペーストで登録する</p>
+				<div class="Indent">
+					<div>
+						<p>エクスプローラでフォルダかファイルを選択し、コンテキストメニューで「コピー」をします。</p>
+						<p>次にDupFileEliminatorの検索フォルダリストを右クリックし、コンテキストメニューを表示させ「貼り付け」をします。</p>
+					</div>
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">ファイルが貼り付けられた場合は、そのファイルが入っているフォルダが登録されます。</td>
+						</tr>
+						<tr>
+							<td class="Memo">エクスプローラで「切り取り」をした場合もDupFileEliminatorで「貼り付け」が出来ます。この場合、切り取りをしたファイルやフォルダが移動したり削除されたりする事はありません。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">文字列をコピー＆ペースとする</p>
+				<div class="Indent">
+					<div>
+						<p>存在するパスの文字列をコピーしてから、DupFileEliminatorの検索フォルダリストを右クリックし、コンテキストメニューを表示し「貼り付け」をします。</p>
+					</div>
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">存在しないフォルダを登録する事はできません。</td>
+						</tr>
+						<tr>
+							<td class="Memo">複数のパスを改行またはタブで区切った文字列を貼り付けると、複数のフォルダを一度の操作で登録する事ができます。</td>
+						</tr>
+						<tr>
+							<td class="Memo">ファイルのパスが貼り付けられた場合は、そのファイルが入っているフォルダが登録されます。</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<p class="HeaderM">エイリアス（別名）設定</p>
+			<div class="Indent">
+				<p>リストに登録されているフォルダは、通常はフォルダのフルパスが表示されますが、判り易い別名を付ける事が出来ます。</p>
+				<p>リストに表示する名前を設定するもので、実際のフォルダ名は変更されません。</p>
+				<br />
+				<p>別名を付けるには、<span class="ButtonKB">F2</span>キーまたは選択されているフォルダを再クリックをして編集モードにした後、任意の名前を入力します。</p>
+				<br />
+
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">別名を付けたフォルダを選択すると、ステータスバーに実際のフォルダパスが表示されます。</td>
+					</tr>
+					<tr>
+						<td class="Memo">別名を削除する場合は、空の名前を指定します。</td>
+					</tr>
+					<tr>
+						<td class="Memo">ドライブレターから始まる名前を入力すると、登録フォルダの変更となります。</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="HeaderM">操作</p>
+			<div class="Indent">
+				<p class="Bold Dot">検索するフォルダの指定</p>
+				<div class="Indent">
+					<p>各フォルダに付いているチェックボックスをチェックすると検索対象となります。</p>
+					<p>チェックを外すとリストに登録されていても検索対象から外れます。</p>
+					<br />
+					<p>チェックボックスをクリックするか、フォルダを選択した状態で<span class="ButtonKB">スペース</span>キーを押すと、チェックボックスの状態が切り替わります。</p>
+				</div>
+
+				<p class="Bold Dot">並べ替え</p>
+				<div class="Indent">
+					<p>ヘッダ（リスト最上段のバー）をクリックすることで、ソートする事が出来ます。</p>
+					<p>クリックするヘッダによって、ソート方法が異なります。</p>
+					<br />
+					<p>また、リストの項目をドラッグ＆ドロップすることで、任意の順番に並べる事ができます。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								ドラッグを開始するには、ドラックしたい項目のをポイントした状態で、マウスボタンを長押しします。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">他アプリケーションへのドラッグ＆ドロップ</p>
+				<div class="Indent">
+					<p>登録されているフォルダを他のアプリケーションへドラッグ＆ドロップすることが出来ます。</p>
+					<br />
+					<p>ドロップした結果どのような動作になるかは、ドロップされた側のアプリケーションに委ねられます。例えば、エクスプローラへドロップした場合、同じドライブへは移動、異なるドライブへはコピーというのが既定の動作になります。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">ドラッグ＆ドロップによってフォルダが移動したり、削除されたりしても、追跡しません。フォルダを見失った状態になります。</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">最新の状態へ更新</p>
+				<div class="Indent">
+					<p><span class="ButtonKB">F5</span>キーを押します。</p>
+				</div>
+			</div>
+
+			<p class="HeaderM">マウス操作</p>
+			<div class="Indent">
+				<p class="Bold Dot">ダブルクリック</p>
+				<div class="Indent">
+					<p>リストに表示されているフォルダをダブルクリックすると、エクスプローラでそのフォルダを開きます。</p>
+				</div>
+
+				<p class="Bold Dot">長押し</p>
+				<div class="Indent">
+					<p>リストに表示されているフォルダの上で長押しすると、そのフォルダをドラッグする事が出来ます。</p>
+					<p>リスト内でドロップした場合は、リスト表示順の変更となります。</p>
+					<br />
+					<p>他のアプリケーションへドロップした場合の動作は、ドロップ先のアプリケーションに委ねられます。</p>
+					<p>エクスプローラへドロップした場合は、コピーまたは移動となります。</p>
+					<br />
+					<p><span class="ButtonKB">CTRL</span>キーや<span class="ButtonKB">SHIFT</span>キーとの併用が可能です。</p>
+					<br />
+					
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								この操作によりフォルダを移動してもリストから削除されません。<br />
+								手動でリストから削除して下さい。
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">右ボタンドラッグ</p>
+				<div class="Indent">
+					<p>リスト内で<span class="ButtonKB">右</span>ボタンを押しながらドラッグすると、複数アイテムの選択となります。</p>				</div>
+			</div>
+
+			<p class="HeaderM">キーボード操作</p>
+			<div class="Indent">
+				<p class="Bold"><span class="ButtonKB">SPACE</span></p>
+				<div class="Indent">
+					<p>選択されているフォルダのチェックボックスを切り替えることが出来ます。</p>
+				</div>
+
+				<p class="Bold"><span class="ButtonKB">F5</span></p>
+				<div class="Indent">
+					<p>登録されているフォルダが存在しているかどうかを確認し、存在していない場合はグレーアウトします。</p>
+				</div>
+			</div>
+
+			<p class="HeaderM">コンテキストメニュー</p>
+			<div class="Indent">
+				<p>コンテキストメニューから、フォルダの登録や削除などが出来ます。</p>
+				<br />
+				<p class="Bold Dot">貼り付け</p>
+				<div class="Indent">
+					<p>クリップボードにコピーされているフォルダやフォルダを検索フォルダに登録します。</p>
+					<p>パス（文字列）がコピーされていた場合も、検索フォルダに登録します。</p>
+				</div>
+
+				<p class="Bold Dot">切り取り</p>
+				<div class="Indent">
+					<p>選択されているフォルダをクリップボードに切り取ります。</p>
+					<p>切り取りをしたフォルダをエクスプローラで貼り付けすると、フォルダを移動することが出来ます。</p>
+					<p>フォルダが移動した場合は、リストから削除されます。</p>
+				</div>
+
+				<p class="Bold Dot">コピー</p>
+				<div class="Indent">
+					<p>選択されているフォルダとフォルダのパスをクリップボードにコピーします。</p>
+					<p>コピーしたフォルダをエクスプローラで貼り付けすると、フォルダをコピーすることが出来ます。</p>
+					<p>また、メモ帳などで貼り付けをすると、フォルダのパスを文字列として貼り付けることが出来ます。</p>
+					<br />
+				
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">
+								複数のフォルダをコピーすることが出来ます。<br />
+								この場合は、フォルダのパスは複数の行に分かれてコピーされます。
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<p class="Bold Dot">削除</p>
+				<div class="Indent">
+					<p>選択されているフォルダがリストから削除されます。</p>
+				</div>
+
+			</div>
+
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">類似画像検索結果</p>
+			<p class="HeaderM">概要</p>
+			<div class="Indent">
+				<p>類似画像検索の結果を表示し、削除、移動等の操作を行います。</p>
+			</div>
+
+			<p class="HeaderM">表示</p>
+			<div class="Indent">
+				<p>検索結果タブにリストビューで表示します。</p>
+				<br />
+				<p>類似している画像毎にグループ分けされて表示します。</p>
+				<p>隣り合うグループは異なる色で表示されます。</p>
+				<p>初期設定ではサムネイルを並べた状態で表示します。</p>
+				<br />
+				
+				<table class="Memo" width="625">
+					<tr>
+						<td class="MemoHeader">メモ</td>
+					</tr>
+					<tr>
+						<td class="Memo">
+							検索結果は、ソートされています。<br />
+							グループ内では、可逆ファイルまたは画像サイズが一番大きい画像を基準画像として、類似度順に並んでいます。<br />
+							同じ類似度の場合は、可逆ファイルまたは画像サイズが大きい方が上位に並びます。
+						</td>
+					</tr>
+					<tr>
+						<td class="Memo">グループ内の全てのファイルがチェックされると、注意喚起のため色分けの色が変ります。</td>
+					</tr>
+				</table>
+				<br />
+
+				<p class="Bold Dot">表示項目</p>
+				<br />
+				<div class="Indent">
+					<table width="610">
+						<tr>
+							<td class="ColumnHeader">項目</td>
+							<td class="ColumnHeader">表示</td>
+							<td class="ColumnHeader">内容</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">基準画像</td>
+							<td class="Item">●</td>
+							<td class="Item">類似判定の基準となる画像</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">類似画像</td>
+							<td class="Item">●</td>
+							<td class="Item">類似していると判定された画像</td>
+						</tr>
+					</table>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">リスト表示に切り替えることが出来ます。</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<p class="HeaderM">操作</p>
+			<div class="Indent">
+				<p>基本的な操作は重複ファイル検索結果と同じです。</p>
+				<br />
+				<p class="Bold Dot">削除するファイルの指定</p>
+				<div class="Indent">
+					<p>ファイル毎に用意されているチェックボックスをチェックすると削除する対象となります。</p>
+					<p>チェックボックスの状態を変えるには、チェックボックスをマウスで直接操作するか、ファイルを選択した状態で<span class="ButtonKB">SPACE</span>キーを押します。</p>
+					<br />
+					<p><span class="Button">自動</span>ボタンを押すと、予め用意された様々な条件によって自動でチェックすることが出来ます。</p>
+					<p>また、右クリックメニューからも様々な条件によって自動チェックをすることが出来ます。</p>
+					<br />
+					<p class="Bold">※可逆ファイルを優先して残す</p>
+					<div class="Indent">
+						<p>PNGファイルを最優先で残す動作となります。拡張子の判定順は、PNG &gt; BMP &gt; その他 です。</p>
+						<p>同じ拡張子のファイルは、画像サイズが大きいほうを残し、画像サイズが同じ場合は、ファイルサイズが大きいほうを残します。</p>
+						<br />
+						<table class="Memo" width="595">
+							<tr>
+								<td class="MemoHeader">メモ</td>
+							</tr>
+							<tr>
+								<td class="Memo">可逆ファイルが無い場合は、画像サイズが大きいものを優先します。</td>
+							</tr>
+							<tr>
+								<td class="Memo">
+									グループ内にPNGファイルがある場合、どんなにサイズが小さくてもPNGファイルが優先的に残ります。<br />
+									また、JPEGファイルなどの不可逆フォーマットのファイルの場合、劣化した画像であっても、画像サイズが大きければ残す方向で判定します。
+								</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+
+				<p class="Bold Dot">サムネイルサイズの変更</p>
+				<div class="Indent">
+					<p>基準画像列のヘッダの右端をドラッグすし、ヘッダの幅を変えることでサムネイルサイズを変えられます。</p>
+					<br />
+					<p>また、<span class="ButtonKB">Shift</span>キー＋<span class="ButtonKB">ホイール</span>の操作で、行高さを変えることが出来ます。<br />
+					行高さに合わせてサムネイルのサイズも変更されます。</p>
+				</div>
+
+				<p class="Bold Dot">ビューアへの表示</p>
+				<div class="Indent">
+					<p>選択されているファイルの内容をビューアに表示します。</p>
+					<p>サブビューアを使用する設定になっている場合、類似画像を選択すると、右に基準画像、左に選択した画像が表示されます。</p>
+					<br />
+
+					<table class="Memo" width="610">
+						<tr>
+							<td class="MemoHeader">メモ</td>
+						</tr>
+						<tr>
+							<td class="Memo">複数のファイルが選択されている場合、最初のファイル（一番上のファイル）がビューアに表示されます。</td>
+						</tr>
+					</table>
+					<br />
+				</div>
+			</div>
+
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>

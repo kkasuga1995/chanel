@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="Manual.css" />
+		<title>DupFileEliminatorの使い方</title>
+	</head>
+	<body>
+		<div class="All">
+			<p class="HeaderTop"></p>
+			<p class="Ver"></p>
+
+			<p class="HeaderL">メタデータの認識</p>
+			<p class="HeaderM">概要</p>
+			<div class="Indent">
+				<p>ファイルに含まれる、タグ、コメント、サムネイル等のメタデータを無視し、データ本体のみを比較することが出来ます。</p>
+				<p>ファイルの中身を丁寧に確認しているため、処理時間は長くなりますが、正確な比較が可能となっています。</p>
+			</div>
+
+			<p class="HeaderM">データ本体のみの比較が出来るファイル</p>
+			<div class="Indent">
+				<p class="Bold Dot">画像ファイル</p>
+				<br />
+				<div class="Indent">
+					<table width="615">
+						<tr>
+							<td class="ItemHeader">JPEG</td>
+							<td class="Item">
+								<p>Exif、サムネイル、コメントなどを無視します。</p>
+								<p class="Small Gray">・EOIマーカより後ろにある不要なデータは無視します。</p>
+								<p class="Small Gray">・JFIF以外のAPP0セグメントおよび、APPnセグメントは無視します。</p>
+								<p class="Small Gray">・SOIマーカで始まらないファイルや、EOIマーカがないファイルは、JPEGファイルとして認識しません。</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">PNG</td>
+							<td class="Item">
+								<p>時刻や、コメント等を無視します。</p>
+								<p class="Small Gray">・時刻やテキストが含まれるチャンク（tIME、tEXt、zTXt、iTXtなど）は無視します。</p>
+								<p class="Small Gray">・公開されていないチャンクは無視します。</p>
+								<p class="Small Gray">・PNG識別子で始まらないファイルや、必要なチャンク（IHDR、IEND、IDATなど）が欠けているファイルは、PNGファイルとして認識しません。</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<p class="Bold Dot">音声ファイル</p>
+				<br />
+				<div class="Indent">
+					<table width="615">
+						<tr>
+							<td class="ItemHeader">MP3</td>
+							<td class="Item">
+								<p>ID3タグを無視します。</p>
+								<p class="Small Gray">・ID3V1とV2のどちらにも対応しています。</p>
+								<p class="Small Gray">・フレームヘッダが見付からないファイルは、MP3ファイルとして認識しません。</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="ItemHeader">WAV</td>
+							<td class="Item">
+								<p>タグやコメントを無視します。</p>
+								<p class="Small Gray">・fmtチャンク、dataチャンク以外は無視します。</p>
+								<p class="Small Gray">・公開されていないチャンクは無視します。</p>
+								<p class="Small Gray">・IFF識別子、WAVE識別子や、必要なチャンク（fmt、dataなど）がないファイルは、WAVファイルとして認識しません。</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<p class="HeaderM">パフォーマンスへの影響</p>
+			<div class="Indent">
+				<p>拡張子ではなくファイルの中身を確認してファイルの種類を特定するため、メタデータ無視に対応していない種類のファイルであっても、必ずファイルの中身を読みに行きます。このため、処理時間が大幅に増加します。</p>
+				<br />
+				<p>検索対象に非対応のファイルが含まれないようにすると、処理時間を短くすることが出来ます。</p>
+				<br />
+				<p>画像ファイルや音声ファイルのみが入っているフォルダのみを検索フォルダとして指定したり、拡張子が信頼できる場合は、拡張子フィルタなどで対象とするファイルを絞り込んだりする事を推奨します。</p>
+			</div>
+
+			<p class="Copyright">&copy;</p>
+		</div>
+	</body>
+</html>
